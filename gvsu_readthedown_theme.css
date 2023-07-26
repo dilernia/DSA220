@@ -12,7 +12,6 @@
 
 /* Import font from Google Fonts API  */
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Lobster');
 
 /* Customization of body text with sans-serif as backup if font fails */
@@ -27,7 +26,7 @@ h1 {
     font-family: 'Arimo', sans-serif;
     background-color: #1467a3;
     outline: 2px groove black;
-    box-shadow: 0 0 5px 5px rgba(20, 103, 163, 0.5);
+    box-shadow: 0 0 3px 3px rgba(20, 103, 163, 0.5);
 }
 
 /* Customization of other headers */
@@ -37,7 +36,11 @@ h2, h3, h4, h5, h6, legend {
     font-family: 'Arimo', sans-serif;
     background-color: #1467a3;
     outline: 2px ridge black;
-    box-shadow: 0 0 5px 5px rgba(20, 103, 163, 0.5);
+    box-shadow: 0 0 3px 3px rgba(20, 103, 163, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Optional: Adjust the stacking order if needed */
+    inset-block-start: 10px;
 }
 
 #nav-top span.glyphicon {
@@ -70,4 +73,3 @@ a:visited {
 #content h2 {
     background-color: #1467a3;
 }
-
