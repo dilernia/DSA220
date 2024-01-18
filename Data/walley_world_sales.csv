@@ -1,0 +1,2929 @@
+date,sales_category,daily_sales
+01 Jan 2024,Groceries,24868.83
+01 Jan 2024,Electronics,11932.33
+01 Jan 2024,Clothing and Apparel,20140.03
+01 Jan 2024,Home and Furniture,12123.59
+01 Jan 2024,Toys and Games,2713.13
+01 Jan 2024,Health and Beauty,3083.22
+01 Jan 2024,Automotive,3866.33
+01 Jan 2024,Sports and Outdoors,2449.14
+02 Jan 2024,Groceries,43759.33
+02 Jan 2024,Electronics,3604.52
+02 Jan 2024,Clothing and Apparel,7049.77
+02 Jan 2024,Home and Furniture,6410.68
+02 Jan 2024,Toys and Games,3281.23
+02 Jan 2024,Health and Beauty,2535.06
+02 Jan 2024,Automotive,2383.62
+02 Jan 2024,Sports and Outdoors,2318.29
+03 Jan 2024,Groceries,40024.34
+03 Jan 2024,Electronics,5493.56
+03 Jan 2024,Clothing and Apparel,3184.71
+03 Jan 2024,Home and Furniture,3422.89
+03 Jan 2024,Toys and Games,2072.66
+03 Jan 2024,Health and Beauty,4806.52
+03 Jan 2024,Automotive,1712.73
+03 Jan 2024,Sports and Outdoors,2712.61
+04 Jan 2024,Groceries,25197.46
+04 Jan 2024,Electronics,16326.16
+04 Jan 2024,Clothing and Apparel,3754.64
+04 Jan 2024,Home and Furniture,4089.09
+04 Jan 2024,Toys and Games,2522.94
+04 Jan 2024,Health and Beauty,5205.69
+04 Jan 2024,Automotive,3362.24
+04 Jan 2024,Sports and Outdoors,1896.1
+05 Jan 2024,Groceries,29890.61
+05 Jan 2024,Electronics,14925.97
+05 Jan 2024,Clothing and Apparel,15567.07
+05 Jan 2024,Home and Furniture,7967.47
+05 Jan 2024,Toys and Games,3557.17
+05 Jan 2024,Health and Beauty,8719.55
+05 Jan 2024,Automotive,6349.54
+05 Jan 2024,Sports and Outdoors,4072.34
+06 Jan 2024,Groceries,55648.23
+06 Jan 2024,Electronics,42002.29
+06 Jan 2024,Clothing and Apparel,29412.75
+06 Jan 2024,Home and Furniture,16691.65
+06 Jan 2024,Toys and Games,3410.41
+06 Jan 2024,Health and Beauty,22496.42
+06 Jan 2024,Automotive,14098.72
+06 Jan 2024,Sports and Outdoors,5549.91
+07 Jan 2024,Groceries,102042.25
+07 Jan 2024,Electronics,12136.37
+07 Jan 2024,Clothing and Apparel,22428.97
+07 Jan 2024,Home and Furniture,19804.63
+07 Jan 2024,Toys and Games,3869.2
+07 Jan 2024,Health and Beauty,16161.81
+07 Jan 2024,Automotive,7108.24
+07 Jan 2024,Sports and Outdoors,3077.13
+08 Jan 2024,Groceries,65701.29
+08 Jan 2024,Electronics,11138.06
+08 Jan 2024,Clothing and Apparel,6752.35
+08 Jan 2024,Home and Furniture,6909.82
+08 Jan 2024,Toys and Games,4918.63
+08 Jan 2024,Health and Beauty,3915.25
+08 Jan 2024,Automotive,2102.68
+08 Jan 2024,Sports and Outdoors,2723.58
+09 Jan 2024,Groceries,38632.27
+09 Jan 2024,Electronics,10173.5
+09 Jan 2024,Clothing and Apparel,3326.08
+09 Jan 2024,Home and Furniture,4880.9
+09 Jan 2024,Toys and Games,2984.33
+09 Jan 2024,Health and Beauty,4696.6
+09 Jan 2024,Automotive,2058.08
+09 Jan 2024,Sports and Outdoors,3224.62
+10 Jan 2024,Groceries,35162.55
+10 Jan 2024,Electronics,6096.69
+10 Jan 2024,Clothing and Apparel,12167.12
+10 Jan 2024,Home and Furniture,9120.74
+10 Jan 2024,Toys and Games,3345.15
+10 Jan 2024,Health and Beauty,4979.54
+10 Jan 2024,Automotive,1208.03
+10 Jan 2024,Sports and Outdoors,2165.1
+11 Jan 2024,Groceries,68014.66
+11 Jan 2024,Electronics,13163.8
+11 Jan 2024,Clothing and Apparel,7977.46
+11 Jan 2024,Home and Furniture,3005.24
+11 Jan 2024,Toys and Games,6380.67
+11 Jan 2024,Health and Beauty,11316.73
+11 Jan 2024,Automotive,1952.99
+11 Jan 2024,Sports and Outdoors,4989.82
+12 Jan 2024,Groceries,103155.57
+12 Jan 2024,Electronics,13063.34
+12 Jan 2024,Clothing and Apparel,7969.11
+12 Jan 2024,Home and Furniture,7139.76
+12 Jan 2024,Toys and Games,14686.08
+12 Jan 2024,Health and Beauty,13008.46
+12 Jan 2024,Automotive,6788.22
+12 Jan 2024,Sports and Outdoors,4699.76
+13 Jan 2024,Groceries,174323.37
+13 Jan 2024,Electronics,17098.73
+13 Jan 2024,Clothing and Apparel,19464.51
+13 Jan 2024,Home and Furniture,17560.58
+13 Jan 2024,Toys and Games,6539.74
+13 Jan 2024,Health and Beauty,7786.9
+13 Jan 2024,Automotive,6412.84
+13 Jan 2024,Sports and Outdoors,8683.33
+14 Jan 2024,Groceries,87882.15
+14 Jan 2024,Electronics,22300.33
+14 Jan 2024,Clothing and Apparel,20183.59
+14 Jan 2024,Home and Furniture,16601.17
+14 Jan 2024,Toys and Games,2758.25
+14 Jan 2024,Health and Beauty,5081.43
+14 Jan 2024,Automotive,2629.32
+14 Jan 2024,Sports and Outdoors,12749.08
+15 Jan 2024,Groceries,25596.85
+15 Jan 2024,Electronics,12069.69
+15 Jan 2024,Clothing and Apparel,15263.47
+15 Jan 2024,Home and Furniture,8168.07
+15 Jan 2024,Toys and Games,1723.37
+15 Jan 2024,Health and Beauty,4666.24
+15 Jan 2024,Automotive,3606.79
+15 Jan 2024,Sports and Outdoors,3671.69
+16 Jan 2024,Groceries,31185.53
+16 Jan 2024,Electronics,15684.63
+16 Jan 2024,Clothing and Apparel,14958.59
+16 Jan 2024,Home and Furniture,5026.52
+16 Jan 2024,Toys and Games,755.61
+16 Jan 2024,Health and Beauty,9655.56
+16 Jan 2024,Automotive,1186.99
+16 Jan 2024,Sports and Outdoors,4343.27
+17 Jan 2024,Groceries,79637.63
+17 Jan 2024,Electronics,6470.57
+17 Jan 2024,Clothing and Apparel,9322.73
+17 Jan 2024,Home and Furniture,4637.05
+17 Jan 2024,Toys and Games,2708.79
+17 Jan 2024,Health and Beauty,4997.26
+17 Jan 2024,Automotive,1307.76
+17 Jan 2024,Sports and Outdoors,812.73
+18 Jan 2024,Groceries,113687.42
+18 Jan 2024,Electronics,11543.08
+18 Jan 2024,Clothing and Apparel,2549.72
+18 Jan 2024,Home and Furniture,3865.51
+18 Jan 2024,Toys and Games,2796.3
+18 Jan 2024,Health and Beauty,6498.01
+18 Jan 2024,Automotive,3142.71
+18 Jan 2024,Sports and Outdoors,954.46
+19 Jan 2024,Groceries,148068.62
+19 Jan 2024,Electronics,27321.63
+19 Jan 2024,Clothing and Apparel,12838.57
+19 Jan 2024,Home and Furniture,8563.5
+19 Jan 2024,Toys and Games,3130.45
+19 Jan 2024,Health and Beauty,5279.73
+19 Jan 2024,Automotive,3627.22
+19 Jan 2024,Sports and Outdoors,3472.15
+20 Jan 2024,Groceries,243183.43
+20 Jan 2024,Electronics,28418.38
+20 Jan 2024,Clothing and Apparel,34403.3
+20 Jan 2024,Home and Furniture,12101.81
+20 Jan 2024,Toys and Games,5612.14
+20 Jan 2024,Health and Beauty,21983.28
+20 Jan 2024,Automotive,15262.58
+20 Jan 2024,Sports and Outdoors,4810
+21 Jan 2024,Groceries,120174.36
+21 Jan 2024,Electronics,12077.84
+21 Jan 2024,Clothing and Apparel,18571.48
+21 Jan 2024,Home and Furniture,18982.74
+21 Jan 2024,Toys and Games,8107.09
+21 Jan 2024,Health and Beauty,20480.71
+21 Jan 2024,Automotive,8778.77
+21 Jan 2024,Sports and Outdoors,7960.02
+22 Jan 2024,Groceries,114477.36
+22 Jan 2024,Electronics,5920.54
+22 Jan 2024,Clothing and Apparel,31332.98
+22 Jan 2024,Home and Furniture,3495.59
+22 Jan 2024,Toys and Games,3459.5
+22 Jan 2024,Health and Beauty,3387.47
+22 Jan 2024,Automotive,5472.72
+22 Jan 2024,Sports and Outdoors,5958.03
+23 Jan 2024,Groceries,24790.65
+23 Jan 2024,Electronics,6370.66
+23 Jan 2024,Clothing and Apparel,13507.11
+23 Jan 2024,Home and Furniture,4523
+23 Jan 2024,Toys and Games,2390.63
+23 Jan 2024,Health and Beauty,6243.3
+23 Jan 2024,Automotive,1544.04
+23 Jan 2024,Sports and Outdoors,1214.27
+24 Jan 2024,Groceries,23412.18
+24 Jan 2024,Electronics,4892.21
+24 Jan 2024,Clothing and Apparel,7836.95
+24 Jan 2024,Home and Furniture,2776.81
+24 Jan 2024,Toys and Games,1914.78
+24 Jan 2024,Health and Beauty,3335.65
+24 Jan 2024,Automotive,2487.44
+24 Jan 2024,Sports and Outdoors,2094.64
+25 Jan 2024,Groceries,79937.22
+25 Jan 2024,Electronics,3090.59
+25 Jan 2024,Clothing and Apparel,29474.47
+25 Jan 2024,Home and Furniture,8473.59
+25 Jan 2024,Toys and Games,1641.57
+25 Jan 2024,Health and Beauty,3608.7
+25 Jan 2024,Automotive,2275.32
+25 Jan 2024,Sports and Outdoors,3233.85
+26 Jan 2024,Groceries,73321.1
+26 Jan 2024,Electronics,9414.43
+26 Jan 2024,Clothing and Apparel,9294.72
+26 Jan 2024,Home and Furniture,17402.09
+26 Jan 2024,Toys and Games,12583.51
+26 Jan 2024,Health and Beauty,12076.8
+26 Jan 2024,Automotive,3695.77
+26 Jan 2024,Sports and Outdoors,4019.46
+27 Jan 2024,Groceries,295871.73
+27 Jan 2024,Electronics,22481.08
+27 Jan 2024,Clothing and Apparel,21803.93
+27 Jan 2024,Home and Furniture,35268.17
+27 Jan 2024,Toys and Games,4925.07
+27 Jan 2024,Health and Beauty,7193.94
+27 Jan 2024,Automotive,11326.95
+27 Jan 2024,Sports and Outdoors,16834.51
+28 Jan 2024,Groceries,52004.3
+28 Jan 2024,Electronics,24758.35
+28 Jan 2024,Clothing and Apparel,12004.44
+28 Jan 2024,Home and Furniture,11882.38
+28 Jan 2024,Toys and Games,2954.54
+28 Jan 2024,Health and Beauty,13982.2
+28 Jan 2024,Automotive,9313.16
+28 Jan 2024,Sports and Outdoors,5165.52
+29 Jan 2024,Groceries,42305.67
+29 Jan 2024,Electronics,9682.52
+29 Jan 2024,Clothing and Apparel,7354.28
+29 Jan 2024,Home and Furniture,4918.8
+29 Jan 2024,Toys and Games,2775.7
+29 Jan 2024,Health and Beauty,8653.72
+29 Jan 2024,Automotive,1440.89
+29 Jan 2024,Sports and Outdoors,2374.06
+30 Jan 2024,Groceries,27515.06
+30 Jan 2024,Electronics,6074.97
+30 Jan 2024,Clothing and Apparel,2057.84
+30 Jan 2024,Home and Furniture,1255.69
+30 Jan 2024,Toys and Games,1429.44
+30 Jan 2024,Health and Beauty,5985.46
+30 Jan 2024,Automotive,2115
+30 Jan 2024,Sports and Outdoors,3203.79
+31 Jan 2024,Groceries,32257.82
+31 Jan 2024,Electronics,4374.12
+31 Jan 2024,Clothing and Apparel,5256.35
+31 Jan 2024,Home and Furniture,5093.18
+31 Jan 2024,Toys and Games,2891.24
+31 Jan 2024,Health and Beauty,2323.27
+31 Jan 2024,Automotive,2019.76
+31 Jan 2024,Sports and Outdoors,1406.43
+01 Feb 2024,Groceries,66962.04
+01 Feb 2024,Electronics,8512.5
+01 Feb 2024,Clothing and Apparel,8642.01
+01 Feb 2024,Home and Furniture,3971.92
+01 Feb 2024,Toys and Games,1335.58
+01 Feb 2024,Health and Beauty,6721.68
+01 Feb 2024,Automotive,1185.71
+01 Feb 2024,Sports and Outdoors,777.27
+02 Feb 2024,Groceries,26375.59
+02 Feb 2024,Electronics,6997.62
+02 Feb 2024,Clothing and Apparel,14471.19
+02 Feb 2024,Home and Furniture,7186.53
+02 Feb 2024,Toys and Games,2565.82
+02 Feb 2024,Health and Beauty,3593.48
+02 Feb 2024,Automotive,3561.91
+02 Feb 2024,Sports and Outdoors,3356.85
+03 Feb 2024,Groceries,88526.17
+03 Feb 2024,Electronics,15009.33
+03 Feb 2024,Clothing and Apparel,17162.48
+03 Feb 2024,Home and Furniture,4359.12
+03 Feb 2024,Toys and Games,5533.73
+03 Feb 2024,Health and Beauty,10302.63
+03 Feb 2024,Automotive,3047.55
+03 Feb 2024,Sports and Outdoors,1978.19
+04 Feb 2024,Groceries,37998.67
+04 Feb 2024,Electronics,17508.71
+04 Feb 2024,Clothing and Apparel,24969.38
+04 Feb 2024,Home and Furniture,8263.83
+04 Feb 2024,Toys and Games,6236.54
+04 Feb 2024,Health and Beauty,12532.58
+04 Feb 2024,Automotive,3807.8
+04 Feb 2024,Sports and Outdoors,3883.05
+05 Feb 2024,Groceries,64694.52
+05 Feb 2024,Electronics,13694.97
+05 Feb 2024,Clothing and Apparel,5180.49
+05 Feb 2024,Home and Furniture,6000.42
+05 Feb 2024,Toys and Games,1507.71
+05 Feb 2024,Health and Beauty,12722.9
+05 Feb 2024,Automotive,2581.66
+05 Feb 2024,Sports and Outdoors,1847.87
+06 Feb 2024,Groceries,47539.82
+06 Feb 2024,Electronics,5460.15
+06 Feb 2024,Clothing and Apparel,3313.13
+06 Feb 2024,Home and Furniture,4315.64
+06 Feb 2024,Toys and Games,3027.81
+06 Feb 2024,Health and Beauty,3681.61
+06 Feb 2024,Automotive,674.53
+06 Feb 2024,Sports and Outdoors,1023.64
+07 Feb 2024,Groceries,15069.34
+07 Feb 2024,Electronics,4963.95
+07 Feb 2024,Clothing and Apparel,6995.54
+07 Feb 2024,Home and Furniture,3027.23
+07 Feb 2024,Toys and Games,1138.57
+07 Feb 2024,Health and Beauty,2418.72
+07 Feb 2024,Automotive,2273.32
+07 Feb 2024,Sports and Outdoors,1636.7
+08 Feb 2024,Groceries,26083.81
+08 Feb 2024,Electronics,4675.73
+08 Feb 2024,Clothing and Apparel,3572.07
+08 Feb 2024,Home and Furniture,4264.01
+08 Feb 2024,Toys and Games,2508.6
+08 Feb 2024,Health and Beauty,6187.16
+08 Feb 2024,Automotive,777.71
+08 Feb 2024,Sports and Outdoors,3124.49
+09 Feb 2024,Groceries,49442.55
+09 Feb 2024,Electronics,14410.93
+09 Feb 2024,Clothing and Apparel,6290.86
+09 Feb 2024,Home and Furniture,4531.8
+09 Feb 2024,Toys and Games,6600.36
+09 Feb 2024,Health and Beauty,6896.62
+09 Feb 2024,Automotive,1662.76
+09 Feb 2024,Sports and Outdoors,2433.74
+10 Feb 2024,Groceries,126370.8
+10 Feb 2024,Electronics,19704.71
+10 Feb 2024,Clothing and Apparel,48208.43
+10 Feb 2024,Home and Furniture,21587.7
+10 Feb 2024,Toys and Games,4831.43
+10 Feb 2024,Health and Beauty,12873.24
+10 Feb 2024,Automotive,4493.5
+10 Feb 2024,Sports and Outdoors,2010.82
+11 Feb 2024,Groceries,102551.58
+11 Feb 2024,Electronics,21804.21
+11 Feb 2024,Clothing and Apparel,12066.85
+11 Feb 2024,Home and Furniture,18500.37
+11 Feb 2024,Toys and Games,3279.51
+11 Feb 2024,Health and Beauty,6785.08
+11 Feb 2024,Automotive,4938.59
+11 Feb 2024,Sports and Outdoors,7960.69
+12 Feb 2024,Groceries,14122.23
+12 Feb 2024,Electronics,7875.08
+12 Feb 2024,Clothing and Apparel,2175.28
+12 Feb 2024,Home and Furniture,8804.7
+12 Feb 2024,Toys and Games,1371.02
+12 Feb 2024,Health and Beauty,8212.45
+12 Feb 2024,Automotive,1734.77
+12 Feb 2024,Sports and Outdoors,2676.8
+13 Feb 2024,Groceries,12712.4
+13 Feb 2024,Electronics,3200.34
+13 Feb 2024,Clothing and Apparel,2552.47
+13 Feb 2024,Home and Furniture,1634.21
+13 Feb 2024,Toys and Games,1000.52
+13 Feb 2024,Health and Beauty,2499.93
+13 Feb 2024,Automotive,984.53
+13 Feb 2024,Sports and Outdoors,441.01
+14 Feb 2024,Groceries,16307.61
+14 Feb 2024,Electronics,6464.01
+14 Feb 2024,Clothing and Apparel,4290.97
+14 Feb 2024,Home and Furniture,1616.87
+14 Feb 2024,Toys and Games,4385.82
+14 Feb 2024,Health and Beauty,9771.3
+14 Feb 2024,Automotive,1691.42
+14 Feb 2024,Sports and Outdoors,1821.49
+15 Feb 2024,Groceries,30012.95
+15 Feb 2024,Electronics,6349.24
+15 Feb 2024,Clothing and Apparel,4584.5
+15 Feb 2024,Home and Furniture,2896
+15 Feb 2024,Toys and Games,2508.72
+15 Feb 2024,Health and Beauty,6930.33
+15 Feb 2024,Automotive,2186.36
+15 Feb 2024,Sports and Outdoors,860.58
+16 Feb 2024,Groceries,115075.18
+16 Feb 2024,Electronics,15943.12
+16 Feb 2024,Clothing and Apparel,10087.83
+16 Feb 2024,Home and Furniture,5766.54
+16 Feb 2024,Toys and Games,3359.12
+16 Feb 2024,Health and Beauty,5006.97
+16 Feb 2024,Automotive,2483.36
+16 Feb 2024,Sports and Outdoors,2509.86
+17 Feb 2024,Groceries,61754.03
+17 Feb 2024,Electronics,13583.37
+17 Feb 2024,Clothing and Apparel,67323.51
+17 Feb 2024,Home and Furniture,11273.66
+17 Feb 2024,Toys and Games,5549.94
+17 Feb 2024,Health and Beauty,28482.83
+17 Feb 2024,Automotive,7039.61
+17 Feb 2024,Sports and Outdoors,5669.34
+18 Feb 2024,Groceries,96361.45
+18 Feb 2024,Electronics,14445.69
+18 Feb 2024,Clothing and Apparel,22436.77
+18 Feb 2024,Home and Furniture,32220.91
+18 Feb 2024,Toys and Games,4376.48
+18 Feb 2024,Health and Beauty,15471.71
+18 Feb 2024,Automotive,3909.84
+18 Feb 2024,Sports and Outdoors,6650.9
+19 Feb 2024,Groceries,86140.98
+19 Feb 2024,Electronics,3319.31
+19 Feb 2024,Clothing and Apparel,4429.47
+19 Feb 2024,Home and Furniture,4209.17
+19 Feb 2024,Toys and Games,1618.77
+19 Feb 2024,Health and Beauty,3067.84
+19 Feb 2024,Automotive,1001.12
+19 Feb 2024,Sports and Outdoors,1218.37
+20 Feb 2024,Groceries,47029.77
+20 Feb 2024,Electronics,2320.98
+20 Feb 2024,Clothing and Apparel,7926.67
+20 Feb 2024,Home and Furniture,2211.29
+20 Feb 2024,Toys and Games,1915.02
+20 Feb 2024,Health and Beauty,3064.97
+20 Feb 2024,Automotive,1552.49
+20 Feb 2024,Sports and Outdoors,1330.46
+21 Feb 2024,Groceries,15353.78
+21 Feb 2024,Electronics,10272.18
+21 Feb 2024,Clothing and Apparel,5052.42
+21 Feb 2024,Home and Furniture,4993.98
+21 Feb 2024,Toys and Games,2570.97
+21 Feb 2024,Health and Beauty,1801.29
+21 Feb 2024,Automotive,595.57
+21 Feb 2024,Sports and Outdoors,1331.83
+22 Feb 2024,Groceries,43203.86
+22 Feb 2024,Electronics,11338.74
+22 Feb 2024,Clothing and Apparel,7362.44
+22 Feb 2024,Home and Furniture,8644.03
+22 Feb 2024,Toys and Games,2713.14
+22 Feb 2024,Health and Beauty,2124.75
+22 Feb 2024,Automotive,1248.1
+22 Feb 2024,Sports and Outdoors,1655.55
+23 Feb 2024,Groceries,61507.11
+23 Feb 2024,Electronics,13500.4
+23 Feb 2024,Clothing and Apparel,11114.86
+23 Feb 2024,Home and Furniture,3072.98
+23 Feb 2024,Toys and Games,2251.45
+23 Feb 2024,Health and Beauty,6851.66
+23 Feb 2024,Automotive,1248.83
+23 Feb 2024,Sports and Outdoors,2879.5
+24 Feb 2024,Groceries,72669.9
+24 Feb 2024,Electronics,18247.16
+24 Feb 2024,Clothing and Apparel,8526.85
+24 Feb 2024,Home and Furniture,17268.83
+24 Feb 2024,Toys and Games,4005.47
+24 Feb 2024,Health and Beauty,14305.89
+24 Feb 2024,Automotive,11466.13
+24 Feb 2024,Sports and Outdoors,11784.51
+25 Feb 2024,Groceries,82902.22
+25 Feb 2024,Electronics,11555.66
+25 Feb 2024,Clothing and Apparel,22855.16
+25 Feb 2024,Home and Furniture,9063.1
+25 Feb 2024,Toys and Games,2421.82
+25 Feb 2024,Health and Beauty,4745.9
+25 Feb 2024,Automotive,18486.77
+25 Feb 2024,Sports and Outdoors,2452.41
+26 Feb 2024,Groceries,47125.25
+26 Feb 2024,Electronics,2440.96
+26 Feb 2024,Clothing and Apparel,5189.02
+26 Feb 2024,Home and Furniture,6553.09
+26 Feb 2024,Toys and Games,1812.65
+26 Feb 2024,Health and Beauty,4416.78
+26 Feb 2024,Automotive,3691.7
+26 Feb 2024,Sports and Outdoors,3143.71
+27 Feb 2024,Groceries,45130.39
+27 Feb 2024,Electronics,2278.03
+27 Feb 2024,Clothing and Apparel,5592.09
+27 Feb 2024,Home and Furniture,1700.27
+27 Feb 2024,Toys and Games,3336.8
+27 Feb 2024,Health and Beauty,3168.52
+27 Feb 2024,Automotive,1473.85
+27 Feb 2024,Sports and Outdoors,1309.48
+28 Feb 2024,Groceries,34774
+28 Feb 2024,Electronics,5958.34
+28 Feb 2024,Clothing and Apparel,6686.44
+28 Feb 2024,Home and Furniture,3228.76
+28 Feb 2024,Toys and Games,1149.73
+28 Feb 2024,Health and Beauty,3248.36
+28 Feb 2024,Automotive,1397.86
+28 Feb 2024,Sports and Outdoors,1258.62
+29 Feb 2024,Groceries,49323.35
+29 Feb 2024,Electronics,12102.21
+29 Feb 2024,Clothing and Apparel,3773.91
+29 Feb 2024,Home and Furniture,6422.58
+29 Feb 2024,Toys and Games,1855.1
+29 Feb 2024,Health and Beauty,3779.91
+29 Feb 2024,Automotive,2122.71
+29 Feb 2024,Sports and Outdoors,3662.72
+01 Mar 2024,Groceries,106911.2
+01 Mar 2024,Electronics,12642.07
+01 Mar 2024,Clothing and Apparel,6362.77
+01 Mar 2024,Home and Furniture,2776.9
+01 Mar 2024,Toys and Games,3178.18
+01 Mar 2024,Health and Beauty,11858.32
+01 Mar 2024,Automotive,4294.86
+01 Mar 2024,Sports and Outdoors,2854.77
+02 Mar 2024,Groceries,111181.86
+02 Mar 2024,Electronics,8876.94
+02 Mar 2024,Clothing and Apparel,23234.82
+02 Mar 2024,Home and Furniture,9994.48
+02 Mar 2024,Toys and Games,7169.97
+02 Mar 2024,Health and Beauty,11136.69
+02 Mar 2024,Automotive,3259.82
+02 Mar 2024,Sports and Outdoors,3141.42
+03 Mar 2024,Groceries,79940.85
+03 Mar 2024,Electronics,9213.5
+03 Mar 2024,Clothing and Apparel,15331.19
+03 Mar 2024,Home and Furniture,8893.7
+03 Mar 2024,Toys and Games,2713.06
+03 Mar 2024,Health and Beauty,17640.79
+03 Mar 2024,Automotive,1423.12
+03 Mar 2024,Sports and Outdoors,3674.29
+04 Mar 2024,Groceries,28706.78
+04 Mar 2024,Electronics,3824.16
+04 Mar 2024,Clothing and Apparel,2839.48
+04 Mar 2024,Home and Furniture,4550.48
+04 Mar 2024,Toys and Games,1364.8
+04 Mar 2024,Health and Beauty,3586.69
+04 Mar 2024,Automotive,1810.54
+04 Mar 2024,Sports and Outdoors,1710.32
+05 Mar 2024,Groceries,12506.9
+05 Mar 2024,Electronics,8029.93
+05 Mar 2024,Clothing and Apparel,7309.49
+05 Mar 2024,Home and Furniture,493.18
+05 Mar 2024,Toys and Games,987.01
+05 Mar 2024,Health and Beauty,900.25
+05 Mar 2024,Automotive,1376.79
+05 Mar 2024,Sports and Outdoors,822.28
+06 Mar 2024,Groceries,13339.78
+06 Mar 2024,Electronics,6558.19
+06 Mar 2024,Clothing and Apparel,3551.58
+06 Mar 2024,Home and Furniture,1485.14
+06 Mar 2024,Toys and Games,1729.68
+06 Mar 2024,Health and Beauty,4444.13
+06 Mar 2024,Automotive,673.39
+06 Mar 2024,Sports and Outdoors,841.87
+07 Mar 2024,Groceries,18877.92
+07 Mar 2024,Electronics,3379.89
+07 Mar 2024,Clothing and Apparel,7096.44
+07 Mar 2024,Home and Furniture,1987.46
+07 Mar 2024,Toys and Games,972.14
+07 Mar 2024,Health and Beauty,1939.68
+07 Mar 2024,Automotive,1152.23
+07 Mar 2024,Sports and Outdoors,2423.68
+08 Mar 2024,Groceries,94439.83
+08 Mar 2024,Electronics,13191.72
+08 Mar 2024,Clothing and Apparel,11100.4
+08 Mar 2024,Home and Furniture,2179.13
+08 Mar 2024,Toys and Games,2945.01
+08 Mar 2024,Health and Beauty,5244.97
+08 Mar 2024,Automotive,5430.14
+08 Mar 2024,Sports and Outdoors,1362.15
+09 Mar 2024,Groceries,61084.47
+09 Mar 2024,Electronics,12571.16
+09 Mar 2024,Clothing and Apparel,15882.99
+09 Mar 2024,Home and Furniture,7652.89
+09 Mar 2024,Toys and Games,8133.99
+09 Mar 2024,Health and Beauty,37283.77
+09 Mar 2024,Automotive,6683.64
+09 Mar 2024,Sports and Outdoors,4157.26
+10 Mar 2024,Groceries,70891.45
+10 Mar 2024,Electronics,16191.14
+10 Mar 2024,Clothing and Apparel,12750.54
+10 Mar 2024,Home and Furniture,4132.13
+10 Mar 2024,Toys and Games,3884.23
+10 Mar 2024,Health and Beauty,10196.73
+10 Mar 2024,Automotive,1366.45
+10 Mar 2024,Sports and Outdoors,2040.06
+11 Mar 2024,Groceries,31364.25
+11 Mar 2024,Electronics,15646.14
+11 Mar 2024,Clothing and Apparel,2284.76
+11 Mar 2024,Home and Furniture,838.95
+11 Mar 2024,Toys and Games,3609.86
+11 Mar 2024,Health and Beauty,2477.58
+11 Mar 2024,Automotive,1350.72
+11 Mar 2024,Sports and Outdoors,2415.98
+12 Mar 2024,Groceries,31747.94
+12 Mar 2024,Electronics,2411.28
+12 Mar 2024,Clothing and Apparel,4078.35
+12 Mar 2024,Home and Furniture,2756.11
+12 Mar 2024,Toys and Games,432.41
+12 Mar 2024,Health and Beauty,1678.98
+12 Mar 2024,Automotive,759.16
+12 Mar 2024,Sports and Outdoors,273.89
+13 Mar 2024,Groceries,7326.57
+13 Mar 2024,Electronics,4774.19
+13 Mar 2024,Clothing and Apparel,3561.13
+13 Mar 2024,Home and Furniture,2122.64
+13 Mar 2024,Toys and Games,695.2
+13 Mar 2024,Health and Beauty,2783.85
+13 Mar 2024,Automotive,628.56
+13 Mar 2024,Sports and Outdoors,727.86
+14 Mar 2024,Groceries,94248.78
+14 Mar 2024,Electronics,8410.85
+14 Mar 2024,Clothing and Apparel,5184.24
+14 Mar 2024,Home and Furniture,1692.07
+14 Mar 2024,Toys and Games,3596.56
+14 Mar 2024,Health and Beauty,5225.47
+14 Mar 2024,Automotive,1241.49
+14 Mar 2024,Sports and Outdoors,1483.98
+15 Mar 2024,Groceries,50175.2
+15 Mar 2024,Electronics,10891.54
+15 Mar 2024,Clothing and Apparel,6259.99
+15 Mar 2024,Home and Furniture,2852.38
+15 Mar 2024,Toys and Games,796.06
+15 Mar 2024,Health and Beauty,3302.71
+15 Mar 2024,Automotive,1680.41
+15 Mar 2024,Sports and Outdoors,1376.41
+16 Mar 2024,Groceries,114305.06
+16 Mar 2024,Electronics,20862.04
+16 Mar 2024,Clothing and Apparel,17697.38
+16 Mar 2024,Home and Furniture,6118.98
+16 Mar 2024,Toys and Games,5343.76
+16 Mar 2024,Health and Beauty,11250.09
+16 Mar 2024,Automotive,3290.8
+16 Mar 2024,Sports and Outdoors,3195.6
+17 Mar 2024,Groceries,62020.94
+17 Mar 2024,Electronics,8302.02
+17 Mar 2024,Clothing and Apparel,23344.44
+17 Mar 2024,Home and Furniture,3884.67
+17 Mar 2024,Toys and Games,3178.34
+17 Mar 2024,Health and Beauty,7409.07
+17 Mar 2024,Automotive,2438.46
+17 Mar 2024,Sports and Outdoors,3894.15
+18 Mar 2024,Groceries,15734.63
+18 Mar 2024,Electronics,5643.21
+18 Mar 2024,Clothing and Apparel,4969.71
+18 Mar 2024,Home and Furniture,1941.29
+18 Mar 2024,Toys and Games,1371.83
+18 Mar 2024,Health and Beauty,1933.95
+18 Mar 2024,Automotive,656.91
+18 Mar 2024,Sports and Outdoors,4852.21
+19 Mar 2024,Groceries,11072.67
+19 Mar 2024,Electronics,6722.67
+19 Mar 2024,Clothing and Apparel,6610.54
+19 Mar 2024,Home and Furniture,4346.04
+19 Mar 2024,Toys and Games,981.44
+19 Mar 2024,Health and Beauty,1101.22
+19 Mar 2024,Automotive,2299.26
+19 Mar 2024,Sports and Outdoors,1150.78
+20 Mar 2024,Groceries,23499.18
+20 Mar 2024,Electronics,5162.01
+20 Mar 2024,Clothing and Apparel,3878.74
+20 Mar 2024,Home and Furniture,1703.14
+20 Mar 2024,Toys and Games,825.63
+20 Mar 2024,Health and Beauty,5758.73
+20 Mar 2024,Automotive,960.89
+20 Mar 2024,Sports and Outdoors,591.46
+21 Mar 2024,Groceries,26170.26
+21 Mar 2024,Electronics,5173.01
+21 Mar 2024,Clothing and Apparel,8104.77
+21 Mar 2024,Home and Furniture,1440.75
+21 Mar 2024,Toys and Games,2812.28
+21 Mar 2024,Health and Beauty,1772.05
+21 Mar 2024,Automotive,798.32
+21 Mar 2024,Sports and Outdoors,848.44
+22 Mar 2024,Groceries,20287.49
+22 Mar 2024,Electronics,13494.83
+22 Mar 2024,Clothing and Apparel,15825.11
+22 Mar 2024,Home and Furniture,12842.74
+22 Mar 2024,Toys and Games,1935.81
+22 Mar 2024,Health and Beauty,6646.01
+22 Mar 2024,Automotive,2690.31
+22 Mar 2024,Sports and Outdoors,4011.16
+23 Mar 2024,Groceries,171896.49
+23 Mar 2024,Electronics,28825.12
+23 Mar 2024,Clothing and Apparel,12797.34
+23 Mar 2024,Home and Furniture,8836.4
+23 Mar 2024,Toys and Games,3399.48
+23 Mar 2024,Health and Beauty,5487.14
+23 Mar 2024,Automotive,7236.29
+23 Mar 2024,Sports and Outdoors,4963.56
+24 Mar 2024,Groceries,126468.29
+24 Mar 2024,Electronics,15983.04
+24 Mar 2024,Clothing and Apparel,12697.25
+24 Mar 2024,Home and Furniture,12234.06
+24 Mar 2024,Toys and Games,7383.58
+24 Mar 2024,Health and Beauty,13379.76
+24 Mar 2024,Automotive,4779.83
+24 Mar 2024,Sports and Outdoors,7192.08
+25 Mar 2024,Groceries,43070.62
+25 Mar 2024,Electronics,4054.34
+25 Mar 2024,Clothing and Apparel,2481.86
+25 Mar 2024,Home and Furniture,4617.81
+25 Mar 2024,Toys and Games,1464.79
+25 Mar 2024,Health and Beauty,2202.41
+25 Mar 2024,Automotive,1633.14
+25 Mar 2024,Sports and Outdoors,1501.86
+26 Mar 2024,Groceries,21684.34
+26 Mar 2024,Electronics,3428.44
+26 Mar 2024,Clothing and Apparel,1850.86
+26 Mar 2024,Home and Furniture,4233.52
+26 Mar 2024,Toys and Games,589.89
+26 Mar 2024,Health and Beauty,1020.11
+26 Mar 2024,Automotive,947.57
+26 Mar 2024,Sports and Outdoors,2204.45
+27 Mar 2024,Groceries,20900.47
+27 Mar 2024,Electronics,4152.76
+27 Mar 2024,Clothing and Apparel,5355.46
+27 Mar 2024,Home and Furniture,1843.2
+27 Mar 2024,Toys and Games,550.69
+27 Mar 2024,Health and Beauty,2867.17
+27 Mar 2024,Automotive,750.06
+27 Mar 2024,Sports and Outdoors,1923.69
+28 Mar 2024,Groceries,23706.69
+28 Mar 2024,Electronics,22035.85
+28 Mar 2024,Clothing and Apparel,2269.78
+28 Mar 2024,Home and Furniture,2210.21
+28 Mar 2024,Toys and Games,1173.72
+28 Mar 2024,Health and Beauty,2046.57
+28 Mar 2024,Automotive,2333.71
+28 Mar 2024,Sports and Outdoors,1178.07
+29 Mar 2024,Groceries,65749.5
+29 Mar 2024,Electronics,10202.54
+29 Mar 2024,Clothing and Apparel,17615.68
+29 Mar 2024,Home and Furniture,6041.5
+29 Mar 2024,Toys and Games,1455.67
+29 Mar 2024,Health and Beauty,2262.22
+29 Mar 2024,Automotive,1620.86
+29 Mar 2024,Sports and Outdoors,2017.45
+30 Mar 2024,Groceries,149127.52
+30 Mar 2024,Electronics,22191.79
+30 Mar 2024,Clothing and Apparel,7813.99
+30 Mar 2024,Home and Furniture,19765.92
+30 Mar 2024,Toys and Games,3213.56
+30 Mar 2024,Health and Beauty,8349.36
+30 Mar 2024,Automotive,3824.57
+30 Mar 2024,Sports and Outdoors,12180.17
+31 Mar 2024,Groceries,37140.44
+31 Mar 2024,Electronics,7983.42
+31 Mar 2024,Clothing and Apparel,16371.07
+31 Mar 2024,Home and Furniture,14741.43
+31 Mar 2024,Toys and Games,1057.55
+31 Mar 2024,Health and Beauty,8056.12
+31 Mar 2024,Automotive,2634.58
+31 Mar 2024,Sports and Outdoors,5439.3
+01 Apr 2024,Groceries,22598.73
+01 Apr 2024,Electronics,8285.18
+01 Apr 2024,Clothing and Apparel,4424.37
+01 Apr 2024,Home and Furniture,1690.49
+01 Apr 2024,Toys and Games,1603.84
+01 Apr 2024,Health and Beauty,3604.99
+01 Apr 2024,Automotive,2847.86
+01 Apr 2024,Sports and Outdoors,2678.24
+02 Apr 2024,Groceries,27279.3
+02 Apr 2024,Electronics,3338.19
+02 Apr 2024,Clothing and Apparel,2249.32
+02 Apr 2024,Home and Furniture,2429.35
+02 Apr 2024,Toys and Games,880.94
+02 Apr 2024,Health and Beauty,2546.06
+02 Apr 2024,Automotive,565.06
+02 Apr 2024,Sports and Outdoors,1326.62
+03 Apr 2024,Groceries,15281.44
+03 Apr 2024,Electronics,6978.04
+03 Apr 2024,Clothing and Apparel,2771.38
+03 Apr 2024,Home and Furniture,3129.43
+03 Apr 2024,Toys and Games,943.21
+03 Apr 2024,Health and Beauty,4322.71
+03 Apr 2024,Automotive,1147.5
+03 Apr 2024,Sports and Outdoors,1782.41
+04 Apr 2024,Groceries,67738.51
+04 Apr 2024,Electronics,4053.82
+04 Apr 2024,Clothing and Apparel,7584.51
+04 Apr 2024,Home and Furniture,3673.34
+04 Apr 2024,Toys and Games,1924.31
+04 Apr 2024,Health and Beauty,2476.75
+04 Apr 2024,Automotive,1137.64
+04 Apr 2024,Sports and Outdoors,1542.57
+05 Apr 2024,Groceries,44401.56
+05 Apr 2024,Electronics,16463.98
+05 Apr 2024,Clothing and Apparel,27665.42
+05 Apr 2024,Home and Furniture,6648.77
+05 Apr 2024,Toys and Games,3456.7
+05 Apr 2024,Health and Beauty,3090.85
+05 Apr 2024,Automotive,1839.19
+05 Apr 2024,Sports and Outdoors,5703.67
+06 Apr 2024,Groceries,172008.49
+06 Apr 2024,Electronics,17844.79
+06 Apr 2024,Clothing and Apparel,22254.06
+06 Apr 2024,Home and Furniture,11753.48
+06 Apr 2024,Toys and Games,4019.27
+06 Apr 2024,Health and Beauty,4512.92
+06 Apr 2024,Automotive,3051.87
+06 Apr 2024,Sports and Outdoors,2299.94
+07 Apr 2024,Groceries,41948.8
+07 Apr 2024,Electronics,10699.19
+07 Apr 2024,Clothing and Apparel,21128.92
+07 Apr 2024,Home and Furniture,14110.4
+07 Apr 2024,Toys and Games,6521.01
+07 Apr 2024,Health and Beauty,7265.93
+07 Apr 2024,Automotive,11091.4
+07 Apr 2024,Sports and Outdoors,3139.77
+08 Apr 2024,Groceries,43490.08
+08 Apr 2024,Electronics,9443.02
+08 Apr 2024,Clothing and Apparel,8622.37
+08 Apr 2024,Home and Furniture,3426.15
+08 Apr 2024,Toys and Games,1454.69
+08 Apr 2024,Health and Beauty,5394.14
+08 Apr 2024,Automotive,946.77
+08 Apr 2024,Sports and Outdoors,7888.22
+09 Apr 2024,Groceries,22807.97
+09 Apr 2024,Electronics,4190.52
+09 Apr 2024,Clothing and Apparel,2800.58
+09 Apr 2024,Home and Furniture,2121.87
+09 Apr 2024,Toys and Games,1839.7
+09 Apr 2024,Health and Beauty,2671.88
+09 Apr 2024,Automotive,1302.99
+09 Apr 2024,Sports and Outdoors,1894.3
+10 Apr 2024,Groceries,19040.45
+10 Apr 2024,Electronics,4847.13
+10 Apr 2024,Clothing and Apparel,2167.51
+10 Apr 2024,Home and Furniture,4114.72
+10 Apr 2024,Toys and Games,538.24
+10 Apr 2024,Health and Beauty,3375.14
+10 Apr 2024,Automotive,1071.84
+10 Apr 2024,Sports and Outdoors,1411.72
+11 Apr 2024,Groceries,48168.56
+11 Apr 2024,Electronics,3885.63
+11 Apr 2024,Clothing and Apparel,6112.39
+11 Apr 2024,Home and Furniture,3672.96
+11 Apr 2024,Toys and Games,1614.71
+11 Apr 2024,Health and Beauty,4948.73
+11 Apr 2024,Automotive,3473.85
+11 Apr 2024,Sports and Outdoors,1224.6
+12 Apr 2024,Groceries,32977.02
+12 Apr 2024,Electronics,15304.58
+12 Apr 2024,Clothing and Apparel,10099.8
+12 Apr 2024,Home and Furniture,4613.26
+12 Apr 2024,Toys and Games,3764.89
+12 Apr 2024,Health and Beauty,18222.03
+12 Apr 2024,Automotive,2547.9
+12 Apr 2024,Sports and Outdoors,2087.62
+13 Apr 2024,Groceries,166299.08
+13 Apr 2024,Electronics,21684
+13 Apr 2024,Clothing and Apparel,14054.78
+13 Apr 2024,Home and Furniture,14346.34
+13 Apr 2024,Toys and Games,5611.17
+13 Apr 2024,Health and Beauty,16539.6
+13 Apr 2024,Automotive,6636.08
+13 Apr 2024,Sports and Outdoors,3048.25
+14 Apr 2024,Groceries,25979.27
+14 Apr 2024,Electronics,19709.38
+14 Apr 2024,Clothing and Apparel,10881.25
+14 Apr 2024,Home and Furniture,6978.8
+14 Apr 2024,Toys and Games,3590.76
+14 Apr 2024,Health and Beauty,16613.13
+14 Apr 2024,Automotive,3317.9
+14 Apr 2024,Sports and Outdoors,4378.04
+15 Apr 2024,Groceries,59924.42
+15 Apr 2024,Electronics,4699.45
+15 Apr 2024,Clothing and Apparel,2700.54
+15 Apr 2024,Home and Furniture,7641.76
+15 Apr 2024,Toys and Games,1411.4
+15 Apr 2024,Health and Beauty,3220.81
+15 Apr 2024,Automotive,1926.75
+15 Apr 2024,Sports and Outdoors,2107.28
+16 Apr 2024,Groceries,21187.1
+16 Apr 2024,Electronics,8377.66
+16 Apr 2024,Clothing and Apparel,2964.74
+16 Apr 2024,Home and Furniture,1141.52
+16 Apr 2024,Toys and Games,1649.53
+16 Apr 2024,Health and Beauty,1758.12
+16 Apr 2024,Automotive,813.67
+16 Apr 2024,Sports and Outdoors,1106.85
+17 Apr 2024,Groceries,36583.23
+17 Apr 2024,Electronics,7096.53
+17 Apr 2024,Clothing and Apparel,2738.85
+17 Apr 2024,Home and Furniture,3568.9
+17 Apr 2024,Toys and Games,831.84
+17 Apr 2024,Health and Beauty,2787.37
+17 Apr 2024,Automotive,1709.18
+17 Apr 2024,Sports and Outdoors,970.15
+18 Apr 2024,Groceries,45201.53
+18 Apr 2024,Electronics,13589.76
+18 Apr 2024,Clothing and Apparel,2710.21
+18 Apr 2024,Home and Furniture,9313.1
+18 Apr 2024,Toys and Games,1772.62
+18 Apr 2024,Health and Beauty,3473.32
+18 Apr 2024,Automotive,1135.17
+18 Apr 2024,Sports and Outdoors,2603.86
+19 Apr 2024,Groceries,34990.22
+19 Apr 2024,Electronics,20835.71
+19 Apr 2024,Clothing and Apparel,20467.21
+19 Apr 2024,Home and Furniture,9755.71
+19 Apr 2024,Toys and Games,1348.25
+19 Apr 2024,Health and Beauty,7154.74
+19 Apr 2024,Automotive,1471.81
+19 Apr 2024,Sports and Outdoors,2328.03
+20 Apr 2024,Groceries,155708.77
+20 Apr 2024,Electronics,20745.51
+20 Apr 2024,Clothing and Apparel,11053.14
+20 Apr 2024,Home and Furniture,7874.45
+20 Apr 2024,Toys and Games,6326.91
+20 Apr 2024,Health and Beauty,9807.25
+20 Apr 2024,Automotive,9267.97
+20 Apr 2024,Sports and Outdoors,3497.03
+21 Apr 2024,Groceries,116258.67
+21 Apr 2024,Electronics,23475.9
+21 Apr 2024,Clothing and Apparel,14337.73
+21 Apr 2024,Home and Furniture,10368.94
+21 Apr 2024,Toys and Games,3434.34
+21 Apr 2024,Health and Beauty,7008.44
+21 Apr 2024,Automotive,1927.74
+21 Apr 2024,Sports and Outdoors,6680.53
+22 Apr 2024,Groceries,39865.76
+22 Apr 2024,Electronics,8496.57
+22 Apr 2024,Clothing and Apparel,4586.72
+22 Apr 2024,Home and Furniture,2423.04
+22 Apr 2024,Toys and Games,2369.4
+22 Apr 2024,Health and Beauty,2470.11
+22 Apr 2024,Automotive,1138.8
+22 Apr 2024,Sports and Outdoors,1393.59
+23 Apr 2024,Groceries,41894.51
+23 Apr 2024,Electronics,6466.85
+23 Apr 2024,Clothing and Apparel,3332.08
+23 Apr 2024,Home and Furniture,1754.41
+23 Apr 2024,Toys and Games,962.34
+23 Apr 2024,Health and Beauty,2233.02
+23 Apr 2024,Automotive,687.42
+23 Apr 2024,Sports and Outdoors,2454.51
+24 Apr 2024,Groceries,19483.96
+24 Apr 2024,Electronics,6110.98
+24 Apr 2024,Clothing and Apparel,3652.63
+24 Apr 2024,Home and Furniture,2048.32
+24 Apr 2024,Toys and Games,639.23
+24 Apr 2024,Health and Beauty,2832.31
+24 Apr 2024,Automotive,1426.34
+24 Apr 2024,Sports and Outdoors,2462.33
+25 Apr 2024,Groceries,19709.44
+25 Apr 2024,Electronics,10489.16
+25 Apr 2024,Clothing and Apparel,5975.6
+25 Apr 2024,Home and Furniture,3590.37
+25 Apr 2024,Toys and Games,1495.87
+25 Apr 2024,Health and Beauty,6142.75
+25 Apr 2024,Automotive,1442.12
+25 Apr 2024,Sports and Outdoors,3471.68
+26 Apr 2024,Groceries,63749.7
+26 Apr 2024,Electronics,16063.51
+26 Apr 2024,Clothing and Apparel,15031.85
+26 Apr 2024,Home and Furniture,10863.59
+26 Apr 2024,Toys and Games,1857.27
+26 Apr 2024,Health and Beauty,5965.89
+26 Apr 2024,Automotive,1806.49
+26 Apr 2024,Sports and Outdoors,3592.91
+27 Apr 2024,Groceries,62777.6
+27 Apr 2024,Electronics,34608.46
+27 Apr 2024,Clothing and Apparel,14133.11
+27 Apr 2024,Home and Furniture,10817.44
+27 Apr 2024,Toys and Games,5440.32
+27 Apr 2024,Health and Beauty,14484.3
+27 Apr 2024,Automotive,8089.49
+27 Apr 2024,Sports and Outdoors,2095.46
+28 Apr 2024,Groceries,128992.97
+28 Apr 2024,Electronics,11367.72
+28 Apr 2024,Clothing and Apparel,4944.99
+28 Apr 2024,Home and Furniture,3574.97
+28 Apr 2024,Toys and Games,5782.46
+28 Apr 2024,Health and Beauty,6699.84
+28 Apr 2024,Automotive,2835.19
+28 Apr 2024,Sports and Outdoors,10440.94
+29 Apr 2024,Groceries,39062.1
+29 Apr 2024,Electronics,12539.43
+29 Apr 2024,Clothing and Apparel,8801.35
+29 Apr 2024,Home and Furniture,1409.11
+29 Apr 2024,Toys and Games,1541.29
+29 Apr 2024,Health and Beauty,3709.62
+29 Apr 2024,Automotive,4789.24
+29 Apr 2024,Sports and Outdoors,1064.25
+30 Apr 2024,Groceries,13847.6
+30 Apr 2024,Electronics,5563.55
+30 Apr 2024,Clothing and Apparel,9732.19
+30 Apr 2024,Home and Furniture,1722.6
+30 Apr 2024,Toys and Games,845.06
+30 Apr 2024,Health and Beauty,976.06
+30 Apr 2024,Automotive,508.63
+30 Apr 2024,Sports and Outdoors,570.31
+01 May 2024,Groceries,65712.28
+01 May 2024,Electronics,6011.85
+01 May 2024,Clothing and Apparel,3758.36
+01 May 2024,Home and Furniture,2116.32
+01 May 2024,Toys and Games,514.42
+01 May 2024,Health and Beauty,3161.47
+01 May 2024,Automotive,1511.9
+01 May 2024,Sports and Outdoors,1860.3
+02 May 2024,Groceries,21141.69
+02 May 2024,Electronics,6208.43
+02 May 2024,Clothing and Apparel,12810.01
+02 May 2024,Home and Furniture,2041.89
+02 May 2024,Toys and Games,1620.89
+02 May 2024,Health and Beauty,3210.54
+02 May 2024,Automotive,4658.08
+02 May 2024,Sports and Outdoors,2883.92
+03 May 2024,Groceries,89114.18
+03 May 2024,Electronics,13360.14
+03 May 2024,Clothing and Apparel,6405.51
+03 May 2024,Home and Furniture,5704.28
+03 May 2024,Toys and Games,1747.25
+03 May 2024,Health and Beauty,14768.55
+03 May 2024,Automotive,1271.5
+03 May 2024,Sports and Outdoors,5259.44
+04 May 2024,Groceries,130680.91
+04 May 2024,Electronics,39784.1
+04 May 2024,Clothing and Apparel,9362.14
+04 May 2024,Home and Furniture,7803.39
+04 May 2024,Toys and Games,3697.68
+04 May 2024,Health and Beauty,13269.63
+04 May 2024,Automotive,6808.89
+04 May 2024,Sports and Outdoors,2910.02
+05 May 2024,Groceries,65909.09
+05 May 2024,Electronics,14082.66
+05 May 2024,Clothing and Apparel,22354.87
+05 May 2024,Home and Furniture,3952.18
+05 May 2024,Toys and Games,19946.36
+05 May 2024,Health and Beauty,7412.52
+05 May 2024,Automotive,7051.33
+05 May 2024,Sports and Outdoors,2830.3
+06 May 2024,Groceries,14657.03
+06 May 2024,Electronics,4525.3
+06 May 2024,Clothing and Apparel,8153.2
+06 May 2024,Home and Furniture,6122.76
+06 May 2024,Toys and Games,997.86
+06 May 2024,Health and Beauty,3854.45
+06 May 2024,Automotive,2877.52
+06 May 2024,Sports and Outdoors,1639.53
+07 May 2024,Groceries,17616.92
+07 May 2024,Electronics,2257.22
+07 May 2024,Clothing and Apparel,3017.64
+07 May 2024,Home and Furniture,2330.45
+07 May 2024,Toys and Games,689.66
+07 May 2024,Health and Beauty,3405.29
+07 May 2024,Automotive,1105.09
+07 May 2024,Sports and Outdoors,839.3
+08 May 2024,Groceries,36096.83
+08 May 2024,Electronics,4984.67
+08 May 2024,Clothing and Apparel,6268
+08 May 2024,Home and Furniture,1471.68
+08 May 2024,Toys and Games,1398.18
+08 May 2024,Health and Beauty,2162.73
+08 May 2024,Automotive,1088.61
+08 May 2024,Sports and Outdoors,1714.76
+09 May 2024,Groceries,38363.07
+09 May 2024,Electronics,7596.87
+09 May 2024,Clothing and Apparel,4133.46
+09 May 2024,Home and Furniture,2219.79
+09 May 2024,Toys and Games,2754.02
+09 May 2024,Health and Beauty,4630.36
+09 May 2024,Automotive,1909.87
+09 May 2024,Sports and Outdoors,3560.37
+10 May 2024,Groceries,61351.59
+10 May 2024,Electronics,16497.71
+10 May 2024,Clothing and Apparel,11419.96
+10 May 2024,Home and Furniture,5546.28
+10 May 2024,Toys and Games,2122.27
+10 May 2024,Health and Beauty,9108.7
+10 May 2024,Automotive,746.5
+10 May 2024,Sports and Outdoors,2724.32
+11 May 2024,Groceries,90881.81
+11 May 2024,Electronics,44302.01
+11 May 2024,Clothing and Apparel,34720.94
+11 May 2024,Home and Furniture,10746.17
+11 May 2024,Toys and Games,1737.79
+11 May 2024,Health and Beauty,28564.52
+11 May 2024,Automotive,9129.73
+11 May 2024,Sports and Outdoors,9503.1
+12 May 2024,Groceries,33418.35
+12 May 2024,Electronics,31969.88
+12 May 2024,Clothing and Apparel,17176.45
+12 May 2024,Home and Furniture,11174.38
+12 May 2024,Toys and Games,4461.04
+12 May 2024,Health and Beauty,8302.98
+12 May 2024,Automotive,3754.06
+12 May 2024,Sports and Outdoors,5454.44
+13 May 2024,Groceries,55161.53
+13 May 2024,Electronics,10830.54
+13 May 2024,Clothing and Apparel,5099.38
+13 May 2024,Home and Furniture,8175.57
+13 May 2024,Toys and Games,1412.84
+13 May 2024,Health and Beauty,4619.98
+13 May 2024,Automotive,2366.07
+13 May 2024,Sports and Outdoors,2686.8
+14 May 2024,Groceries,26930.01
+14 May 2024,Electronics,6703.24
+14 May 2024,Clothing and Apparel,1379.82
+14 May 2024,Home and Furniture,2297.78
+14 May 2024,Toys and Games,1130.89
+14 May 2024,Health and Beauty,6911.69
+14 May 2024,Automotive,1415.93
+14 May 2024,Sports and Outdoors,1592.95
+15 May 2024,Groceries,18572.07
+15 May 2024,Electronics,4977.38
+15 May 2024,Clothing and Apparel,2960.75
+15 May 2024,Home and Furniture,3742.84
+15 May 2024,Toys and Games,542.93
+15 May 2024,Health and Beauty,2774.7
+15 May 2024,Automotive,1018.43
+15 May 2024,Sports and Outdoors,2156.89
+16 May 2024,Groceries,23012.79
+16 May 2024,Electronics,3891.67
+16 May 2024,Clothing and Apparel,5699.59
+16 May 2024,Home and Furniture,9069.69
+16 May 2024,Toys and Games,1150.71
+16 May 2024,Health and Beauty,5006.91
+16 May 2024,Automotive,2167.57
+16 May 2024,Sports and Outdoors,1535.92
+17 May 2024,Groceries,52941.62
+17 May 2024,Electronics,20410.99
+17 May 2024,Clothing and Apparel,12121.68
+17 May 2024,Home and Furniture,13049.94
+17 May 2024,Toys and Games,4183.17
+17 May 2024,Health and Beauty,6550.19
+17 May 2024,Automotive,1578.12
+17 May 2024,Sports and Outdoors,2723.88
+18 May 2024,Groceries,141654.86
+18 May 2024,Electronics,17990.58
+18 May 2024,Clothing and Apparel,6148.82
+18 May 2024,Home and Furniture,21631.88
+18 May 2024,Toys and Games,3807.12
+18 May 2024,Health and Beauty,7115.49
+18 May 2024,Automotive,6626.33
+18 May 2024,Sports and Outdoors,7226.2
+19 May 2024,Groceries,163433.76
+19 May 2024,Electronics,12567.82
+19 May 2024,Clothing and Apparel,11857.58
+19 May 2024,Home and Furniture,8061.83
+19 May 2024,Toys and Games,3539.24
+19 May 2024,Health and Beauty,10512.95
+19 May 2024,Automotive,9297.34
+19 May 2024,Sports and Outdoors,5771.41
+20 May 2024,Groceries,21712.29
+20 May 2024,Electronics,12759.52
+20 May 2024,Clothing and Apparel,4448.86
+20 May 2024,Home and Furniture,2860.98
+20 May 2024,Toys and Games,892.14
+20 May 2024,Health and Beauty,2447.93
+20 May 2024,Automotive,1342
+20 May 2024,Sports and Outdoors,1164.39
+21 May 2024,Groceries,13318.5
+21 May 2024,Electronics,9264.05
+21 May 2024,Clothing and Apparel,6006.12
+21 May 2024,Home and Furniture,1085.67
+21 May 2024,Toys and Games,2779.05
+21 May 2024,Health and Beauty,5235.35
+21 May 2024,Automotive,1370.87
+21 May 2024,Sports and Outdoors,2113.13
+22 May 2024,Groceries,12017.19
+22 May 2024,Electronics,11558.8
+22 May 2024,Clothing and Apparel,5326.99
+22 May 2024,Home and Furniture,2376.17
+22 May 2024,Toys and Games,836.74
+22 May 2024,Health and Beauty,3450.66
+22 May 2024,Automotive,740.07
+22 May 2024,Sports and Outdoors,888.36
+23 May 2024,Groceries,41552.73
+23 May 2024,Electronics,4672.51
+23 May 2024,Clothing and Apparel,14778.81
+23 May 2024,Home and Furniture,4614.41
+23 May 2024,Toys and Games,2616.19
+23 May 2024,Health and Beauty,2584.27
+23 May 2024,Automotive,4327.71
+23 May 2024,Sports and Outdoors,2103.36
+24 May 2024,Groceries,94018.63
+24 May 2024,Electronics,9096.78
+24 May 2024,Clothing and Apparel,10873.3
+24 May 2024,Home and Furniture,5578.32
+24 May 2024,Toys and Games,2528.69
+24 May 2024,Health and Beauty,7964.76
+24 May 2024,Automotive,5370.2
+24 May 2024,Sports and Outdoors,1207.76
+25 May 2024,Groceries,61042.9
+25 May 2024,Electronics,27341.18
+25 May 2024,Clothing and Apparel,18419.79
+25 May 2024,Home and Furniture,8946.03
+25 May 2024,Toys and Games,3060.05
+25 May 2024,Health and Beauty,8806.75
+25 May 2024,Automotive,13438.91
+25 May 2024,Sports and Outdoors,6124.83
+26 May 2024,Groceries,88087
+26 May 2024,Electronics,15820.22
+26 May 2024,Clothing and Apparel,11113.75
+26 May 2024,Home and Furniture,14059.91
+26 May 2024,Toys and Games,3868.72
+26 May 2024,Health and Beauty,6506.02
+26 May 2024,Automotive,7000.54
+26 May 2024,Sports and Outdoors,2321.02
+27 May 2024,Groceries,33785.19
+27 May 2024,Electronics,4829.39
+27 May 2024,Clothing and Apparel,11064.78
+27 May 2024,Home and Furniture,14041.35
+27 May 2024,Toys and Games,2945.87
+27 May 2024,Health and Beauty,5350.31
+27 May 2024,Automotive,1348.14
+27 May 2024,Sports and Outdoors,2687.43
+28 May 2024,Groceries,25492.52
+28 May 2024,Electronics,6752.06
+28 May 2024,Clothing and Apparel,2747.68
+28 May 2024,Home and Furniture,1997.19
+28 May 2024,Toys and Games,2307.94
+28 May 2024,Health and Beauty,2741.63
+28 May 2024,Automotive,3328.14
+28 May 2024,Sports and Outdoors,2203.55
+29 May 2024,Groceries,30537.55
+29 May 2024,Electronics,6831.83
+29 May 2024,Clothing and Apparel,10338.87
+29 May 2024,Home and Furniture,5035.29
+29 May 2024,Toys and Games,2235.82
+29 May 2024,Health and Beauty,5394.83
+29 May 2024,Automotive,2036.41
+29 May 2024,Sports and Outdoors,1969.21
+30 May 2024,Groceries,13018.89
+30 May 2024,Electronics,10263.84
+30 May 2024,Clothing and Apparel,4444
+30 May 2024,Home and Furniture,4210.38
+30 May 2024,Toys and Games,860.51
+30 May 2024,Health and Beauty,5350.92
+30 May 2024,Automotive,4262.48
+30 May 2024,Sports and Outdoors,3021.21
+31 May 2024,Groceries,42205.12
+31 May 2024,Electronics,31703.25
+31 May 2024,Clothing and Apparel,7896.91
+31 May 2024,Home and Furniture,6566.65
+31 May 2024,Toys and Games,2298.21
+31 May 2024,Health and Beauty,4041.3
+31 May 2024,Automotive,5270.02
+31 May 2024,Sports and Outdoors,3738.12
+01 Jun 2024,Groceries,175324.25
+01 Jun 2024,Electronics,35222.57
+01 Jun 2024,Clothing and Apparel,10183.61
+01 Jun 2024,Home and Furniture,11723.96
+01 Jun 2024,Toys and Games,4608.79
+01 Jun 2024,Health and Beauty,22965.57
+01 Jun 2024,Automotive,6679.53
+01 Jun 2024,Sports and Outdoors,5645.43
+02 Jun 2024,Groceries,54860.61
+02 Jun 2024,Electronics,78765.89
+02 Jun 2024,Clothing and Apparel,14662.03
+02 Jun 2024,Home and Furniture,7579.59
+02 Jun 2024,Toys and Games,10231.45
+02 Jun 2024,Health and Beauty,15348.21
+02 Jun 2024,Automotive,4030.5
+02 Jun 2024,Sports and Outdoors,2957.5
+03 Jun 2024,Groceries,86241.3
+03 Jun 2024,Electronics,7655.94
+03 Jun 2024,Clothing and Apparel,9403.45
+03 Jun 2024,Home and Furniture,4100.48
+03 Jun 2024,Toys and Games,4196.29
+03 Jun 2024,Health and Beauty,7206.01
+03 Jun 2024,Automotive,2084.09
+03 Jun 2024,Sports and Outdoors,3236.96
+04 Jun 2024,Groceries,19781.19
+04 Jun 2024,Electronics,3438.1
+04 Jun 2024,Clothing and Apparel,10402.65
+04 Jun 2024,Home and Furniture,7299.21
+04 Jun 2024,Toys and Games,1641.61
+04 Jun 2024,Health and Beauty,3402.12
+04 Jun 2024,Automotive,3136.82
+04 Jun 2024,Sports and Outdoors,2066.75
+05 Jun 2024,Groceries,23088.74
+05 Jun 2024,Electronics,4750.56
+05 Jun 2024,Clothing and Apparel,4063.01
+05 Jun 2024,Home and Furniture,3974.67
+05 Jun 2024,Toys and Games,2931.77
+05 Jun 2024,Health and Beauty,7924.35
+05 Jun 2024,Automotive,3011.62
+05 Jun 2024,Sports and Outdoors,1313.99
+06 Jun 2024,Groceries,56597.07
+06 Jun 2024,Electronics,8890.38
+06 Jun 2024,Clothing and Apparel,10002.32
+06 Jun 2024,Home and Furniture,12613.62
+06 Jun 2024,Toys and Games,2142.27
+06 Jun 2024,Health and Beauty,10769.87
+06 Jun 2024,Automotive,4179.33
+06 Jun 2024,Sports and Outdoors,2438.73
+07 Jun 2024,Groceries,62914.35
+07 Jun 2024,Electronics,25996.43
+07 Jun 2024,Clothing and Apparel,8618.41
+07 Jun 2024,Home and Furniture,10576.05
+07 Jun 2024,Toys and Games,4188.77
+07 Jun 2024,Health and Beauty,15098.51
+07 Jun 2024,Automotive,4217.59
+07 Jun 2024,Sports and Outdoors,4539.48
+08 Jun 2024,Groceries,207473.83
+08 Jun 2024,Electronics,22141.42
+08 Jun 2024,Clothing and Apparel,13624.57
+08 Jun 2024,Home and Furniture,9443.38
+08 Jun 2024,Toys and Games,6233.61
+08 Jun 2024,Health and Beauty,9233.75
+08 Jun 2024,Automotive,9146.03
+08 Jun 2024,Sports and Outdoors,5324.6
+09 Jun 2024,Groceries,48537.6
+09 Jun 2024,Electronics,15849.67
+09 Jun 2024,Clothing and Apparel,12275.54
+09 Jun 2024,Home and Furniture,25189.02
+09 Jun 2024,Toys and Games,6033.6
+09 Jun 2024,Health and Beauty,32546.55
+09 Jun 2024,Automotive,10334.94
+09 Jun 2024,Sports and Outdoors,6997.61
+10 Jun 2024,Groceries,18075.35
+10 Jun 2024,Electronics,13494.15
+10 Jun 2024,Clothing and Apparel,20531.2
+10 Jun 2024,Home and Furniture,9003.13
+10 Jun 2024,Toys and Games,3435.73
+10 Jun 2024,Health and Beauty,9512.27
+10 Jun 2024,Automotive,3264.48
+10 Jun 2024,Sports and Outdoors,2910.38
+11 Jun 2024,Groceries,49554.86
+11 Jun 2024,Electronics,9019.88
+11 Jun 2024,Clothing and Apparel,7079.96
+11 Jun 2024,Home and Furniture,5989.31
+11 Jun 2024,Toys and Games,1954.05
+11 Jun 2024,Health and Beauty,4346.44
+11 Jun 2024,Automotive,1072.26
+11 Jun 2024,Sports and Outdoors,1954.56
+12 Jun 2024,Groceries,35896.28
+12 Jun 2024,Electronics,7448.04
+12 Jun 2024,Clothing and Apparel,14755.68
+12 Jun 2024,Home and Furniture,8963.11
+12 Jun 2024,Toys and Games,2445.94
+12 Jun 2024,Health and Beauty,7417.85
+12 Jun 2024,Automotive,4817.19
+12 Jun 2024,Sports and Outdoors,3430.96
+13 Jun 2024,Groceries,30995.64
+13 Jun 2024,Electronics,4689.04
+13 Jun 2024,Clothing and Apparel,10196.16
+13 Jun 2024,Home and Furniture,4448.35
+13 Jun 2024,Toys and Games,1585.06
+13 Jun 2024,Health and Beauty,10389.84
+13 Jun 2024,Automotive,1594.76
+13 Jun 2024,Sports and Outdoors,1692.59
+14 Jun 2024,Groceries,30543.7
+14 Jun 2024,Electronics,11599.84
+14 Jun 2024,Clothing and Apparel,4911.28
+14 Jun 2024,Home and Furniture,3115.61
+14 Jun 2024,Toys and Games,8370.93
+14 Jun 2024,Health and Beauty,15696.27
+14 Jun 2024,Automotive,1878.1
+14 Jun 2024,Sports and Outdoors,2588.39
+15 Jun 2024,Groceries,118032.44
+15 Jun 2024,Electronics,48071.04
+15 Jun 2024,Clothing and Apparel,42031.48
+15 Jun 2024,Home and Furniture,18891.77
+15 Jun 2024,Toys and Games,11872.69
+15 Jun 2024,Health and Beauty,17538.36
+15 Jun 2024,Automotive,12275.4
+15 Jun 2024,Sports and Outdoors,6211.17
+16 Jun 2024,Groceries,157130.35
+16 Jun 2024,Electronics,20110.88
+16 Jun 2024,Clothing and Apparel,20838.16
+16 Jun 2024,Home and Furniture,5636.75
+16 Jun 2024,Toys and Games,13542.98
+16 Jun 2024,Health and Beauty,7622.9
+16 Jun 2024,Automotive,12756.92
+16 Jun 2024,Sports and Outdoors,21715.41
+17 Jun 2024,Groceries,56459.84
+17 Jun 2024,Electronics,8985.11
+17 Jun 2024,Clothing and Apparel,9682.45
+17 Jun 2024,Home and Furniture,3996.56
+17 Jun 2024,Toys and Games,2671.33
+17 Jun 2024,Health and Beauty,2544.48
+17 Jun 2024,Automotive,1790.55
+17 Jun 2024,Sports and Outdoors,1910.37
+18 Jun 2024,Groceries,74737.25
+18 Jun 2024,Electronics,7080.68
+18 Jun 2024,Clothing and Apparel,6567.69
+18 Jun 2024,Home and Furniture,5232.97
+18 Jun 2024,Toys and Games,1741.84
+18 Jun 2024,Health and Beauty,6409.02
+18 Jun 2024,Automotive,725.42
+18 Jun 2024,Sports and Outdoors,2935.62
+19 Jun 2024,Groceries,39547.07
+19 Jun 2024,Electronics,4224.88
+19 Jun 2024,Clothing and Apparel,6831.23
+19 Jun 2024,Home and Furniture,3471.85
+19 Jun 2024,Toys and Games,1243.17
+19 Jun 2024,Health and Beauty,3556.41
+19 Jun 2024,Automotive,1040.63
+19 Jun 2024,Sports and Outdoors,2320.24
+20 Jun 2024,Groceries,77336.39
+20 Jun 2024,Electronics,28447.38
+20 Jun 2024,Clothing and Apparel,7032.26
+20 Jun 2024,Home and Furniture,8706.58
+20 Jun 2024,Toys and Games,3588.4
+20 Jun 2024,Health and Beauty,5531.08
+20 Jun 2024,Automotive,2359.53
+20 Jun 2024,Sports and Outdoors,1748.52
+21 Jun 2024,Groceries,53692.87
+21 Jun 2024,Electronics,29455.92
+21 Jun 2024,Clothing and Apparel,5962.08
+21 Jun 2024,Home and Furniture,9079.49
+21 Jun 2024,Toys and Games,3882.07
+21 Jun 2024,Health and Beauty,17911.86
+21 Jun 2024,Automotive,4287.12
+21 Jun 2024,Sports and Outdoors,4257.68
+22 Jun 2024,Groceries,145651.65
+22 Jun 2024,Electronics,32216.03
+22 Jun 2024,Clothing and Apparel,16043.36
+22 Jun 2024,Home and Furniture,13516.77
+22 Jun 2024,Toys and Games,6158.41
+22 Jun 2024,Health and Beauty,13201.01
+22 Jun 2024,Automotive,7212.49
+22 Jun 2024,Sports and Outdoors,3365.68
+23 Jun 2024,Groceries,221270.2
+23 Jun 2024,Electronics,37128.19
+23 Jun 2024,Clothing and Apparel,19415.39
+23 Jun 2024,Home and Furniture,3732.58
+23 Jun 2024,Toys and Games,16940.73
+23 Jun 2024,Health and Beauty,10850.36
+23 Jun 2024,Automotive,5916.98
+23 Jun 2024,Sports and Outdoors,3559.88
+24 Jun 2024,Groceries,69130.41
+24 Jun 2024,Electronics,9811.74
+24 Jun 2024,Clothing and Apparel,21592.55
+24 Jun 2024,Home and Furniture,9009.17
+24 Jun 2024,Toys and Games,1965.74
+24 Jun 2024,Health and Beauty,7358
+24 Jun 2024,Automotive,1705.91
+24 Jun 2024,Sports and Outdoors,3212.91
+25 Jun 2024,Groceries,33757.88
+25 Jun 2024,Electronics,10732.32
+25 Jun 2024,Clothing and Apparel,5115.81
+25 Jun 2024,Home and Furniture,5312.44
+25 Jun 2024,Toys and Games,1085.59
+25 Jun 2024,Health and Beauty,879.02
+25 Jun 2024,Automotive,997.28
+25 Jun 2024,Sports and Outdoors,1274.76
+26 Jun 2024,Groceries,22507.73
+26 Jun 2024,Electronics,4405.49
+26 Jun 2024,Clothing and Apparel,2553.92
+26 Jun 2024,Home and Furniture,10487.04
+26 Jun 2024,Toys and Games,658.95
+26 Jun 2024,Health and Beauty,3495.62
+26 Jun 2024,Automotive,2021.32
+26 Jun 2024,Sports and Outdoors,2889.73
+27 Jun 2024,Groceries,11318.97
+27 Jun 2024,Electronics,14084.97
+27 Jun 2024,Clothing and Apparel,4116.7
+27 Jun 2024,Home and Furniture,10018.33
+27 Jun 2024,Toys and Games,2540.85
+27 Jun 2024,Health and Beauty,4578.15
+27 Jun 2024,Automotive,3593.97
+27 Jun 2024,Sports and Outdoors,1105.66
+28 Jun 2024,Groceries,60998.4
+28 Jun 2024,Electronics,28269.78
+28 Jun 2024,Clothing and Apparel,11115
+28 Jun 2024,Home and Furniture,4237.3
+28 Jun 2024,Toys and Games,2887.42
+28 Jun 2024,Health and Beauty,10428.74
+28 Jun 2024,Automotive,3935.58
+28 Jun 2024,Sports and Outdoors,3115.88
+29 Jun 2024,Groceries,216395.78
+29 Jun 2024,Electronics,23140.11
+29 Jun 2024,Clothing and Apparel,20214.85
+29 Jun 2024,Home and Furniture,12734.06
+29 Jun 2024,Toys and Games,17627.58
+29 Jun 2024,Health and Beauty,30982.51
+29 Jun 2024,Automotive,13907.49
+29 Jun 2024,Sports and Outdoors,5088.73
+30 Jun 2024,Groceries,87761.02
+30 Jun 2024,Electronics,19406.66
+30 Jun 2024,Clothing and Apparel,17201.77
+30 Jun 2024,Home and Furniture,13905.8
+30 Jun 2024,Toys and Games,2698
+30 Jun 2024,Health and Beauty,21577.62
+30 Jun 2024,Automotive,10558.15
+30 Jun 2024,Sports and Outdoors,7171.1
+01 Jul 2024,Groceries,34933.71
+01 Jul 2024,Electronics,6579.7
+01 Jul 2024,Clothing and Apparel,10874.86
+01 Jul 2024,Home and Furniture,13911.4
+01 Jul 2024,Toys and Games,2199.54
+01 Jul 2024,Health and Beauty,4862.97
+01 Jul 2024,Automotive,5810.43
+01 Jul 2024,Sports and Outdoors,8546.78
+02 Jul 2024,Groceries,76440.07
+02 Jul 2024,Electronics,6137.29
+02 Jul 2024,Clothing and Apparel,9936.72
+02 Jul 2024,Home and Furniture,6191.81
+02 Jul 2024,Toys and Games,4416.33
+02 Jul 2024,Health and Beauty,4907.15
+02 Jul 2024,Automotive,1162.82
+02 Jul 2024,Sports and Outdoors,891.92
+03 Jul 2024,Groceries,17726.02
+03 Jul 2024,Electronics,10790.97
+03 Jul 2024,Clothing and Apparel,11501.13
+03 Jul 2024,Home and Furniture,6176.63
+03 Jul 2024,Toys and Games,1583.68
+03 Jul 2024,Health and Beauty,6043.38
+03 Jul 2024,Automotive,1616.3
+03 Jul 2024,Sports and Outdoors,1315.99
+04 Jul 2024,Groceries,187554.21
+04 Jul 2024,Electronics,7918.31
+04 Jul 2024,Clothing and Apparel,13929.38
+04 Jul 2024,Home and Furniture,4541.54
+04 Jul 2024,Toys and Games,2643.57
+04 Jul 2024,Health and Beauty,9362.54
+04 Jul 2024,Automotive,4035.53
+04 Jul 2024,Sports and Outdoors,1981.74
+05 Jul 2024,Groceries,83829.6
+05 Jul 2024,Electronics,43480.05
+05 Jul 2024,Clothing and Apparel,46839.09
+05 Jul 2024,Home and Furniture,30549.06
+05 Jul 2024,Toys and Games,16492.12
+05 Jul 2024,Health and Beauty,3376.05
+05 Jul 2024,Automotive,3710.58
+05 Jul 2024,Sports and Outdoors,4485.31
+06 Jul 2024,Groceries,86980.8
+06 Jul 2024,Electronics,140240.76
+06 Jul 2024,Clothing and Apparel,32260.85
+06 Jul 2024,Home and Furniture,22346.29
+06 Jul 2024,Toys and Games,9282.7
+06 Jul 2024,Health and Beauty,23264.72
+06 Jul 2024,Automotive,6129.22
+06 Jul 2024,Sports and Outdoors,7681.99
+07 Jul 2024,Groceries,61363.78
+07 Jul 2024,Electronics,26420.85
+07 Jul 2024,Clothing and Apparel,14410.81
+07 Jul 2024,Home and Furniture,48775.36
+07 Jul 2024,Toys and Games,14251.41
+07 Jul 2024,Health and Beauty,62835.86
+07 Jul 2024,Automotive,32217.36
+07 Jul 2024,Sports and Outdoors,10498.72
+08 Jul 2024,Groceries,118305.69
+08 Jul 2024,Electronics,12890.07
+08 Jul 2024,Clothing and Apparel,10022.02
+08 Jul 2024,Home and Furniture,12985.14
+08 Jul 2024,Toys and Games,2726.05
+08 Jul 2024,Health and Beauty,9896.36
+08 Jul 2024,Automotive,4489.03
+08 Jul 2024,Sports and Outdoors,4116.7
+09 Jul 2024,Groceries,34901.24
+09 Jul 2024,Electronics,11955.07
+09 Jul 2024,Clothing and Apparel,13554.9
+09 Jul 2024,Home and Furniture,11436.63
+09 Jul 2024,Toys and Games,1848.51
+09 Jul 2024,Health and Beauty,5471.96
+09 Jul 2024,Automotive,2928.53
+09 Jul 2024,Sports and Outdoors,3049.17
+10 Jul 2024,Groceries,74299.79
+10 Jul 2024,Electronics,7526.27
+10 Jul 2024,Clothing and Apparel,14917.83
+10 Jul 2024,Home and Furniture,5683.18
+10 Jul 2024,Toys and Games,1925.48
+10 Jul 2024,Health and Beauty,3043.9
+10 Jul 2024,Automotive,2093.17
+10 Jul 2024,Sports and Outdoors,5275.83
+11 Jul 2024,Groceries,41991.65
+11 Jul 2024,Electronics,8366.25
+11 Jul 2024,Clothing and Apparel,18695.61
+11 Jul 2024,Home and Furniture,11804.95
+11 Jul 2024,Toys and Games,4056.25
+11 Jul 2024,Health and Beauty,5008.41
+11 Jul 2024,Automotive,7055.97
+11 Jul 2024,Sports and Outdoors,1391.13
+12 Jul 2024,Groceries,48441.36
+12 Jul 2024,Electronics,11928.56
+12 Jul 2024,Clothing and Apparel,21346.85
+12 Jul 2024,Home and Furniture,7877.63
+12 Jul 2024,Toys and Games,3352.95
+12 Jul 2024,Health and Beauty,8567.87
+12 Jul 2024,Automotive,4906.77
+12 Jul 2024,Sports and Outdoors,6412.93
+13 Jul 2024,Groceries,172171.25
+13 Jul 2024,Electronics,23590.64
+13 Jul 2024,Clothing and Apparel,20218.17
+13 Jul 2024,Home and Furniture,27765.21
+13 Jul 2024,Toys and Games,12265.92
+13 Jul 2024,Health and Beauty,28276.31
+13 Jul 2024,Automotive,15795.19
+13 Jul 2024,Sports and Outdoors,10790.67
+14 Jul 2024,Groceries,243046.03
+14 Jul 2024,Electronics,21393.64
+14 Jul 2024,Clothing and Apparel,30755.32
+14 Jul 2024,Home and Furniture,12532.67
+14 Jul 2024,Toys and Games,12101.87
+14 Jul 2024,Health and Beauty,9073.75
+14 Jul 2024,Automotive,9513.45
+14 Jul 2024,Sports and Outdoors,7885.23
+15 Jul 2024,Groceries,96418.08
+15 Jul 2024,Electronics,9234.13
+15 Jul 2024,Clothing and Apparel,16676.98
+15 Jul 2024,Home and Furniture,3996.77
+15 Jul 2024,Toys and Games,3313.81
+15 Jul 2024,Health and Beauty,5593.12
+15 Jul 2024,Automotive,1961.97
+15 Jul 2024,Sports and Outdoors,5042.11
+16 Jul 2024,Groceries,77873.6
+16 Jul 2024,Electronics,21250.92
+16 Jul 2024,Clothing and Apparel,6417.64
+16 Jul 2024,Home and Furniture,6238.93
+16 Jul 2024,Toys and Games,1563.69
+16 Jul 2024,Health and Beauty,5960.52
+16 Jul 2024,Automotive,3436.28
+16 Jul 2024,Sports and Outdoors,2221.32
+17 Jul 2024,Groceries,33692.59
+17 Jul 2024,Electronics,8539.64
+17 Jul 2024,Clothing and Apparel,17402.03
+17 Jul 2024,Home and Furniture,11031.6
+17 Jul 2024,Toys and Games,1776.18
+17 Jul 2024,Health and Beauty,2882.95
+17 Jul 2024,Automotive,3023.47
+17 Jul 2024,Sports and Outdoors,3289.85
+18 Jul 2024,Groceries,33765.85
+18 Jul 2024,Electronics,12768.82
+18 Jul 2024,Clothing and Apparel,14365.27
+18 Jul 2024,Home and Furniture,9869.82
+18 Jul 2024,Toys and Games,2677.34
+18 Jul 2024,Health and Beauty,11342.61
+18 Jul 2024,Automotive,2715.88
+18 Jul 2024,Sports and Outdoors,2787.43
+19 Jul 2024,Groceries,124075.08
+19 Jul 2024,Electronics,19064.67
+19 Jul 2024,Clothing and Apparel,7850.43
+19 Jul 2024,Home and Furniture,21595.9
+19 Jul 2024,Toys and Games,2860.88
+19 Jul 2024,Health and Beauty,7229.5
+19 Jul 2024,Automotive,5038.3
+19 Jul 2024,Sports and Outdoors,3314.73
+20 Jul 2024,Groceries,204938.2
+20 Jul 2024,Electronics,33692.51
+20 Jul 2024,Clothing and Apparel,23147.17
+20 Jul 2024,Home and Furniture,12174.38
+20 Jul 2024,Toys and Games,6219.52
+20 Jul 2024,Health and Beauty,24468.55
+20 Jul 2024,Automotive,6429.17
+20 Jul 2024,Sports and Outdoors,10614.93
+21 Jul 2024,Groceries,120923.31
+21 Jul 2024,Electronics,18914.02
+21 Jul 2024,Clothing and Apparel,31277.81
+21 Jul 2024,Home and Furniture,32985.6
+21 Jul 2024,Toys and Games,5703.56
+21 Jul 2024,Health and Beauty,8980.81
+21 Jul 2024,Automotive,4032.47
+21 Jul 2024,Sports and Outdoors,8490.22
+22 Jul 2024,Groceries,26081.88
+22 Jul 2024,Electronics,12301.83
+22 Jul 2024,Clothing and Apparel,10676.05
+22 Jul 2024,Home and Furniture,11852.38
+22 Jul 2024,Toys and Games,3107.1
+22 Jul 2024,Health and Beauty,8722.51
+22 Jul 2024,Automotive,5599.62
+22 Jul 2024,Sports and Outdoors,5811.67
+23 Jul 2024,Groceries,88191.79
+23 Jul 2024,Electronics,14035.82
+23 Jul 2024,Clothing and Apparel,10408.88
+23 Jul 2024,Home and Furniture,4385.31
+23 Jul 2024,Toys and Games,5833.18
+23 Jul 2024,Health and Beauty,1440.41
+23 Jul 2024,Automotive,3192.62
+23 Jul 2024,Sports and Outdoors,1457.21
+24 Jul 2024,Groceries,39187.44
+24 Jul 2024,Electronics,6033.91
+24 Jul 2024,Clothing and Apparel,4753.52
+24 Jul 2024,Home and Furniture,9483.56
+24 Jul 2024,Toys and Games,2057.89
+24 Jul 2024,Health and Beauty,12205.35
+24 Jul 2024,Automotive,1898.85
+24 Jul 2024,Sports and Outdoors,2157
+25 Jul 2024,Groceries,68688.29
+25 Jul 2024,Electronics,23641.99
+25 Jul 2024,Clothing and Apparel,11507.91
+25 Jul 2024,Home and Furniture,8351.84
+25 Jul 2024,Toys and Games,1007.23
+25 Jul 2024,Health and Beauty,12541.33
+25 Jul 2024,Automotive,2087.13
+25 Jul 2024,Sports and Outdoors,2419.53
+26 Jul 2024,Groceries,107551.09
+26 Jul 2024,Electronics,9672.78
+26 Jul 2024,Clothing and Apparel,21934.1
+26 Jul 2024,Home and Furniture,7428.76
+26 Jul 2024,Toys and Games,5994.64
+26 Jul 2024,Health and Beauty,14657.88
+26 Jul 2024,Automotive,3588.05
+26 Jul 2024,Sports and Outdoors,1243.39
+27 Jul 2024,Groceries,267842.19
+27 Jul 2024,Electronics,60824.26
+27 Jul 2024,Clothing and Apparel,21841.71
+27 Jul 2024,Home and Furniture,29785.24
+27 Jul 2024,Toys and Games,6787.66
+27 Jul 2024,Health and Beauty,18442.3
+27 Jul 2024,Automotive,13668.59
+27 Jul 2024,Sports and Outdoors,22428.53
+28 Jul 2024,Groceries,98319.02
+28 Jul 2024,Electronics,17759.07
+28 Jul 2024,Clothing and Apparel,30230.49
+28 Jul 2024,Home and Furniture,12960.74
+28 Jul 2024,Toys and Games,3763.8
+28 Jul 2024,Health and Beauty,20400.33
+28 Jul 2024,Automotive,7357.73
+28 Jul 2024,Sports and Outdoors,5722.17
+29 Jul 2024,Groceries,52926.41
+29 Jul 2024,Electronics,26901.05
+29 Jul 2024,Clothing and Apparel,24687.2
+29 Jul 2024,Home and Furniture,6227.34
+29 Jul 2024,Toys and Games,2139.31
+29 Jul 2024,Health and Beauty,2837.7
+29 Jul 2024,Automotive,4921.67
+29 Jul 2024,Sports and Outdoors,4057.69
+30 Jul 2024,Groceries,20305.1
+30 Jul 2024,Electronics,9038.42
+30 Jul 2024,Clothing and Apparel,6345.61
+30 Jul 2024,Home and Furniture,3553.71
+30 Jul 2024,Toys and Games,1434.79
+30 Jul 2024,Health and Beauty,5457.78
+30 Jul 2024,Automotive,2165.29
+30 Jul 2024,Sports and Outdoors,7033.19
+31 Jul 2024,Groceries,51024.75
+31 Jul 2024,Electronics,10778.88
+31 Jul 2024,Clothing and Apparel,15035.91
+31 Jul 2024,Home and Furniture,4836.79
+31 Jul 2024,Toys and Games,2363.31
+31 Jul 2024,Health and Beauty,2574.89
+31 Jul 2024,Automotive,1788.26
+31 Jul 2024,Sports and Outdoors,2286.77
+01 Aug 2024,Groceries,99905.4
+01 Aug 2024,Electronics,30412.87
+01 Aug 2024,Clothing and Apparel,11360.69
+01 Aug 2024,Home and Furniture,4863.44
+01 Aug 2024,Toys and Games,1876.08
+01 Aug 2024,Health and Beauty,3194.84
+01 Aug 2024,Automotive,5801.99
+01 Aug 2024,Sports and Outdoors,6453.66
+02 Aug 2024,Groceries,152591.07
+02 Aug 2024,Electronics,24648.93
+02 Aug 2024,Clothing and Apparel,13750.12
+02 Aug 2024,Home and Furniture,9778.29
+02 Aug 2024,Toys and Games,3313.44
+02 Aug 2024,Health and Beauty,13991.4
+02 Aug 2024,Automotive,6000.69
+02 Aug 2024,Sports and Outdoors,12026.43
+03 Aug 2024,Groceries,159913.48
+03 Aug 2024,Electronics,64764.82
+03 Aug 2024,Clothing and Apparel,23091
+03 Aug 2024,Home and Furniture,45368.75
+03 Aug 2024,Toys and Games,10659.62
+03 Aug 2024,Health and Beauty,88041.03
+03 Aug 2024,Automotive,14251.38
+03 Aug 2024,Sports and Outdoors,8895.56
+04 Aug 2024,Groceries,462390.29
+04 Aug 2024,Electronics,53284.97
+04 Aug 2024,Clothing and Apparel,20797.57
+04 Aug 2024,Home and Furniture,10932.18
+04 Aug 2024,Toys and Games,13222.94
+04 Aug 2024,Health and Beauty,16782.23
+04 Aug 2024,Automotive,7195.26
+04 Aug 2024,Sports and Outdoors,7864.92
+05 Aug 2024,Groceries,50845.83
+05 Aug 2024,Electronics,23325.52
+05 Aug 2024,Clothing and Apparel,16783.51
+05 Aug 2024,Home and Furniture,11277.67
+05 Aug 2024,Toys and Games,5619.32
+05 Aug 2024,Health and Beauty,3110.19
+05 Aug 2024,Automotive,4065.22
+05 Aug 2024,Sports and Outdoors,2700.8
+06 Aug 2024,Groceries,58979.89
+06 Aug 2024,Electronics,10030.31
+06 Aug 2024,Clothing and Apparel,12268.38
+06 Aug 2024,Home and Furniture,9104.26
+06 Aug 2024,Toys and Games,5927.58
+06 Aug 2024,Health and Beauty,4744.44
+06 Aug 2024,Automotive,2559.52
+06 Aug 2024,Sports and Outdoors,2482.86
+07 Aug 2024,Groceries,26992.37
+07 Aug 2024,Electronics,8301.27
+07 Aug 2024,Clothing and Apparel,12244.78
+07 Aug 2024,Home and Furniture,6452.38
+07 Aug 2024,Toys and Games,3132.79
+07 Aug 2024,Health and Beauty,4576.91
+07 Aug 2024,Automotive,2322.71
+07 Aug 2024,Sports and Outdoors,2920.06
+08 Aug 2024,Groceries,82649.96
+08 Aug 2024,Electronics,14145.61
+08 Aug 2024,Clothing and Apparel,13774.62
+08 Aug 2024,Home and Furniture,9291.97
+08 Aug 2024,Toys and Games,7274.99
+08 Aug 2024,Health and Beauty,6739.57
+08 Aug 2024,Automotive,5992.39
+08 Aug 2024,Sports and Outdoors,4780.69
+09 Aug 2024,Groceries,234769.79
+09 Aug 2024,Electronics,25299.79
+09 Aug 2024,Clothing and Apparel,19361.72
+09 Aug 2024,Home and Furniture,35055.04
+09 Aug 2024,Toys and Games,11955.26
+09 Aug 2024,Health and Beauty,6022.41
+09 Aug 2024,Automotive,4874.04
+09 Aug 2024,Sports and Outdoors,5156.47
+10 Aug 2024,Groceries,209038.49
+10 Aug 2024,Electronics,29983.61
+10 Aug 2024,Clothing and Apparel,13534.47
+10 Aug 2024,Home and Furniture,10033.88
+10 Aug 2024,Toys and Games,19621.41
+10 Aug 2024,Health and Beauty,64899.13
+10 Aug 2024,Automotive,29479.99
+10 Aug 2024,Sports and Outdoors,19050.03
+11 Aug 2024,Groceries,218412.43
+11 Aug 2024,Electronics,34889.39
+11 Aug 2024,Clothing and Apparel,25985.71
+11 Aug 2024,Home and Furniture,15819.31
+11 Aug 2024,Toys and Games,6919.34
+11 Aug 2024,Health and Beauty,22174.36
+11 Aug 2024,Automotive,18696.48
+11 Aug 2024,Sports and Outdoors,10166.49
+12 Aug 2024,Groceries,68167.43
+12 Aug 2024,Electronics,28656.85
+12 Aug 2024,Clothing and Apparel,11660.31
+12 Aug 2024,Home and Furniture,3897.31
+12 Aug 2024,Toys and Games,6618.27
+12 Aug 2024,Health and Beauty,9943.92
+12 Aug 2024,Automotive,1812.14
+12 Aug 2024,Sports and Outdoors,7336.92
+13 Aug 2024,Groceries,50849.95
+13 Aug 2024,Electronics,2755.7
+13 Aug 2024,Clothing and Apparel,17192.8
+13 Aug 2024,Home and Furniture,13747.61
+13 Aug 2024,Toys and Games,1530.77
+13 Aug 2024,Health and Beauty,2730.56
+13 Aug 2024,Automotive,2813.15
+13 Aug 2024,Sports and Outdoors,2194.69
+14 Aug 2024,Groceries,24040.62
+14 Aug 2024,Electronics,7266.17
+14 Aug 2024,Clothing and Apparel,12291.96
+14 Aug 2024,Home and Furniture,9548.36
+14 Aug 2024,Toys and Games,1381.55
+14 Aug 2024,Health and Beauty,6598.83
+14 Aug 2024,Automotive,9033.66
+14 Aug 2024,Sports and Outdoors,9030.77
+15 Aug 2024,Groceries,56121.06
+15 Aug 2024,Electronics,33716.3
+15 Aug 2024,Clothing and Apparel,17607.73
+15 Aug 2024,Home and Furniture,25535.63
+15 Aug 2024,Toys and Games,5810.33
+15 Aug 2024,Health and Beauty,13019.67
+15 Aug 2024,Automotive,2067.09
+15 Aug 2024,Sports and Outdoors,4877.54
+16 Aug 2024,Groceries,295430.37
+16 Aug 2024,Electronics,18643.66
+16 Aug 2024,Clothing and Apparel,17545.82
+16 Aug 2024,Home and Furniture,11974.44
+16 Aug 2024,Toys and Games,5715.75
+16 Aug 2024,Health and Beauty,21927.21
+16 Aug 2024,Automotive,5762.11
+16 Aug 2024,Sports and Outdoors,9242.47
+17 Aug 2024,Groceries,594224.19
+17 Aug 2024,Electronics,158376.75
+17 Aug 2024,Clothing and Apparel,82104.97
+17 Aug 2024,Home and Furniture,27750.74
+17 Aug 2024,Toys and Games,19900.55
+17 Aug 2024,Health and Beauty,35719.14
+17 Aug 2024,Automotive,7798.45
+17 Aug 2024,Sports and Outdoors,7746.48
+18 Aug 2024,Groceries,242900.88
+18 Aug 2024,Electronics,35590.01
+18 Aug 2024,Clothing and Apparel,40531.63
+18 Aug 2024,Home and Furniture,45232.02
+18 Aug 2024,Toys and Games,16324.2
+18 Aug 2024,Health and Beauty,15844.05
+18 Aug 2024,Automotive,15775.75
+18 Aug 2024,Sports and Outdoors,23018.4
+19 Aug 2024,Groceries,83794.96
+19 Aug 2024,Electronics,14559.6
+19 Aug 2024,Clothing and Apparel,10471.4
+19 Aug 2024,Home and Furniture,7393.79
+19 Aug 2024,Toys and Games,4511.51
+19 Aug 2024,Health and Beauty,9286.56
+19 Aug 2024,Automotive,3543.38
+19 Aug 2024,Sports and Outdoors,8908.55
+20 Aug 2024,Groceries,142357.26
+20 Aug 2024,Electronics,15750.42
+20 Aug 2024,Clothing and Apparel,5622.27
+20 Aug 2024,Home and Furniture,6547.6
+20 Aug 2024,Toys and Games,2184.27
+20 Aug 2024,Health and Beauty,6118.54
+20 Aug 2024,Automotive,6843.1
+20 Aug 2024,Sports and Outdoors,3548.51
+21 Aug 2024,Groceries,21585.74
+21 Aug 2024,Electronics,12837.04
+21 Aug 2024,Clothing and Apparel,6438.66
+21 Aug 2024,Home and Furniture,3769.1
+21 Aug 2024,Toys and Games,2760.79
+21 Aug 2024,Health and Beauty,4617.75
+21 Aug 2024,Automotive,2798.32
+21 Aug 2024,Sports and Outdoors,2139.11
+22 Aug 2024,Groceries,78071.49
+22 Aug 2024,Electronics,30184.9
+22 Aug 2024,Clothing and Apparel,23624.17
+22 Aug 2024,Home and Furniture,5755.34
+22 Aug 2024,Toys and Games,6288.77
+22 Aug 2024,Health and Beauty,10176.84
+22 Aug 2024,Automotive,5643.44
+22 Aug 2024,Sports and Outdoors,8485.41
+23 Aug 2024,Groceries,237252.48
+23 Aug 2024,Electronics,22705.89
+23 Aug 2024,Clothing and Apparel,41343.29
+23 Aug 2024,Home and Furniture,16474
+23 Aug 2024,Toys and Games,1800.04
+23 Aug 2024,Health and Beauty,30993.25
+23 Aug 2024,Automotive,3097.14
+23 Aug 2024,Sports and Outdoors,6934.3
+24 Aug 2024,Groceries,125811.55
+24 Aug 2024,Electronics,61989.35
+24 Aug 2024,Clothing and Apparel,21475.79
+24 Aug 2024,Home and Furniture,20760.09
+24 Aug 2024,Toys and Games,8226.99
+24 Aug 2024,Health and Beauty,32459.02
+24 Aug 2024,Automotive,16461.74
+24 Aug 2024,Sports and Outdoors,7068.2
+25 Aug 2024,Groceries,293113.45
+25 Aug 2024,Electronics,52225.12
+25 Aug 2024,Clothing and Apparel,51307.97
+25 Aug 2024,Home and Furniture,21373.3
+25 Aug 2024,Toys and Games,21092.72
+25 Aug 2024,Health and Beauty,16966.72
+25 Aug 2024,Automotive,6126.87
+25 Aug 2024,Sports and Outdoors,7054.84
+26 Aug 2024,Groceries,53169.01
+26 Aug 2024,Electronics,26881.39
+26 Aug 2024,Clothing and Apparel,15005.39
+26 Aug 2024,Home and Furniture,23600
+26 Aug 2024,Toys and Games,4796.56
+26 Aug 2024,Health and Beauty,15421.49
+26 Aug 2024,Automotive,3634.73
+26 Aug 2024,Sports and Outdoors,2628.55
+27 Aug 2024,Groceries,52284.51
+27 Aug 2024,Electronics,25598.82
+27 Aug 2024,Clothing and Apparel,13872.25
+27 Aug 2024,Home and Furniture,7658.58
+27 Aug 2024,Toys and Games,8328.27
+27 Aug 2024,Health and Beauty,10507.67
+27 Aug 2024,Automotive,3050.79
+27 Aug 2024,Sports and Outdoors,3537.47
+28 Aug 2024,Groceries,61421.6
+28 Aug 2024,Electronics,10252.42
+28 Aug 2024,Clothing and Apparel,5835.04
+28 Aug 2024,Home and Furniture,6898.19
+28 Aug 2024,Toys and Games,12072.97
+28 Aug 2024,Health and Beauty,5325.31
+28 Aug 2024,Automotive,3641.7
+28 Aug 2024,Sports and Outdoors,3890.25
+29 Aug 2024,Groceries,91737.5
+29 Aug 2024,Electronics,44424.34
+29 Aug 2024,Clothing and Apparel,14851.12
+29 Aug 2024,Home and Furniture,16513.86
+29 Aug 2024,Toys and Games,6192.06
+29 Aug 2024,Health and Beauty,14789.69
+29 Aug 2024,Automotive,7770
+29 Aug 2024,Sports and Outdoors,4815.01
+30 Aug 2024,Groceries,132982.64
+30 Aug 2024,Electronics,26328.92
+30 Aug 2024,Clothing and Apparel,28854.55
+30 Aug 2024,Home and Furniture,9042.83
+30 Aug 2024,Toys and Games,4356.82
+30 Aug 2024,Health and Beauty,22406.6
+30 Aug 2024,Automotive,3395.04
+30 Aug 2024,Sports and Outdoors,6346.23
+31 Aug 2024,Groceries,125610.32
+31 Aug 2024,Electronics,24039.71
+31 Aug 2024,Clothing and Apparel,116563.46
+31 Aug 2024,Home and Furniture,14913.03
+31 Aug 2024,Toys and Games,7780.89
+31 Aug 2024,Health and Beauty,22045.49
+31 Aug 2024,Automotive,17601.44
+31 Aug 2024,Sports and Outdoors,21234.18
+01 Sep 2024,Groceries,185724.38
+01 Sep 2024,Electronics,20109.38
+01 Sep 2024,Clothing and Apparel,12585.55
+01 Sep 2024,Home and Furniture,13492.52
+01 Sep 2024,Toys and Games,4180.4
+01 Sep 2024,Health and Beauty,29394.59
+01 Sep 2024,Automotive,7145.44
+01 Sep 2024,Sports and Outdoors,4924.16
+02 Sep 2024,Groceries,43807.95
+02 Sep 2024,Electronics,9040.72
+02 Sep 2024,Clothing and Apparel,7752.02
+02 Sep 2024,Home and Furniture,2447.26
+02 Sep 2024,Toys and Games,3166.46
+02 Sep 2024,Health and Beauty,8189.52
+02 Sep 2024,Automotive,4570.79
+02 Sep 2024,Sports and Outdoors,2118.86
+03 Sep 2024,Groceries,33568.81
+03 Sep 2024,Electronics,10652.7
+03 Sep 2024,Clothing and Apparel,8951.54
+03 Sep 2024,Home and Furniture,3708.49
+03 Sep 2024,Toys and Games,1070.32
+03 Sep 2024,Health and Beauty,5681.01
+03 Sep 2024,Automotive,2568.56
+03 Sep 2024,Sports and Outdoors,2386.04
+04 Sep 2024,Groceries,56687.1
+04 Sep 2024,Electronics,9557.88
+04 Sep 2024,Clothing and Apparel,5177.24
+04 Sep 2024,Home and Furniture,6575.54
+04 Sep 2024,Toys and Games,2112.51
+04 Sep 2024,Health and Beauty,1771.86
+04 Sep 2024,Automotive,2748.77
+04 Sep 2024,Sports and Outdoors,1614.28
+05 Sep 2024,Groceries,72806.58
+05 Sep 2024,Electronics,25958.7
+05 Sep 2024,Clothing and Apparel,15916.08
+05 Sep 2024,Home and Furniture,7212.98
+05 Sep 2024,Toys and Games,6156.77
+05 Sep 2024,Health and Beauty,5688.88
+05 Sep 2024,Automotive,6978.83
+05 Sep 2024,Sports and Outdoors,2387.29
+06 Sep 2024,Groceries,96536.71
+06 Sep 2024,Electronics,44570.85
+06 Sep 2024,Clothing and Apparel,35299.67
+06 Sep 2024,Home and Furniture,7256.7
+06 Sep 2024,Toys and Games,4560.83
+06 Sep 2024,Health and Beauty,12785.61
+06 Sep 2024,Automotive,4559.08
+06 Sep 2024,Sports and Outdoors,7080.06
+07 Sep 2024,Groceries,270268.09
+07 Sep 2024,Electronics,45102.31
+07 Sep 2024,Clothing and Apparel,32824.91
+07 Sep 2024,Home and Furniture,15758.1
+07 Sep 2024,Toys and Games,14716.8
+07 Sep 2024,Health and Beauty,11788.71
+07 Sep 2024,Automotive,7111.87
+07 Sep 2024,Sports and Outdoors,16175.2
+08 Sep 2024,Groceries,74245.3
+08 Sep 2024,Electronics,38824.17
+08 Sep 2024,Clothing and Apparel,25338.64
+08 Sep 2024,Home and Furniture,21752.51
+08 Sep 2024,Toys and Games,4138.38
+08 Sep 2024,Health and Beauty,14786.47
+08 Sep 2024,Automotive,5593.95
+08 Sep 2024,Sports and Outdoors,8250.14
+09 Sep 2024,Groceries,104073.56
+09 Sep 2024,Electronics,9470.36
+09 Sep 2024,Clothing and Apparel,9099.1
+09 Sep 2024,Home and Furniture,10883.27
+09 Sep 2024,Toys and Games,1404.97
+09 Sep 2024,Health and Beauty,9586.39
+09 Sep 2024,Automotive,4723.61
+09 Sep 2024,Sports and Outdoors,2856.78
+10 Sep 2024,Groceries,42379.32
+10 Sep 2024,Electronics,12110.63
+10 Sep 2024,Clothing and Apparel,16684.88
+10 Sep 2024,Home and Furniture,4904.37
+10 Sep 2024,Toys and Games,1487.29
+10 Sep 2024,Health and Beauty,10073.62
+10 Sep 2024,Automotive,1048.89
+10 Sep 2024,Sports and Outdoors,3948.57
+11 Sep 2024,Groceries,19728.9
+11 Sep 2024,Electronics,3314.68
+11 Sep 2024,Clothing and Apparel,10654.8
+11 Sep 2024,Home and Furniture,8637.69
+11 Sep 2024,Toys and Games,2882.15
+11 Sep 2024,Health and Beauty,8867.15
+11 Sep 2024,Automotive,1462.77
+11 Sep 2024,Sports and Outdoors,2351.58
+12 Sep 2024,Groceries,25855.82
+12 Sep 2024,Electronics,13373.26
+12 Sep 2024,Clothing and Apparel,10296.74
+12 Sep 2024,Home and Furniture,9373.38
+12 Sep 2024,Toys and Games,5342.58
+12 Sep 2024,Health and Beauty,5572.93
+12 Sep 2024,Automotive,1635.52
+12 Sep 2024,Sports and Outdoors,5156.87
+13 Sep 2024,Groceries,85988.25
+13 Sep 2024,Electronics,15780.22
+13 Sep 2024,Clothing and Apparel,15077.14
+13 Sep 2024,Home and Furniture,15783.11
+13 Sep 2024,Toys and Games,3741.46
+13 Sep 2024,Health and Beauty,9031.01
+13 Sep 2024,Automotive,9561.5
+13 Sep 2024,Sports and Outdoors,4414.55
+14 Sep 2024,Groceries,185970.44
+14 Sep 2024,Electronics,33367.42
+14 Sep 2024,Clothing and Apparel,73735.05
+14 Sep 2024,Home and Furniture,13485.14
+14 Sep 2024,Toys and Games,6371.79
+14 Sep 2024,Health and Beauty,35662.88
+14 Sep 2024,Automotive,7278.49
+14 Sep 2024,Sports and Outdoors,10089.55
+15 Sep 2024,Groceries,230159
+15 Sep 2024,Electronics,29934.51
+15 Sep 2024,Clothing and Apparel,23377.43
+15 Sep 2024,Home and Furniture,22768.47
+15 Sep 2024,Toys and Games,10802.6
+15 Sep 2024,Health and Beauty,8832.47
+15 Sep 2024,Automotive,8129.01
+15 Sep 2024,Sports and Outdoors,13065.37
+16 Sep 2024,Groceries,69328.21
+16 Sep 2024,Electronics,16021.21
+16 Sep 2024,Clothing and Apparel,9107.63
+16 Sep 2024,Home and Furniture,4870.64
+16 Sep 2024,Toys and Games,3754.04
+16 Sep 2024,Health and Beauty,8065.37
+16 Sep 2024,Automotive,1857.59
+16 Sep 2024,Sports and Outdoors,3300.47
+17 Sep 2024,Groceries,48721.09
+17 Sep 2024,Electronics,17480.62
+17 Sep 2024,Clothing and Apparel,10461.25
+17 Sep 2024,Home and Furniture,10835.24
+17 Sep 2024,Toys and Games,3278.17
+17 Sep 2024,Health and Beauty,3466.78
+17 Sep 2024,Automotive,1299.92
+17 Sep 2024,Sports and Outdoors,2582.83
+18 Sep 2024,Groceries,22201.92
+18 Sep 2024,Electronics,11609.21
+18 Sep 2024,Clothing and Apparel,11600.57
+18 Sep 2024,Home and Furniture,4335.3
+18 Sep 2024,Toys and Games,1895.92
+18 Sep 2024,Health and Beauty,10139.9
+18 Sep 2024,Automotive,4536.34
+18 Sep 2024,Sports and Outdoors,5097.28
+19 Sep 2024,Groceries,58304.88
+19 Sep 2024,Electronics,14583.76
+19 Sep 2024,Clothing and Apparel,19589.89
+19 Sep 2024,Home and Furniture,10329.74
+19 Sep 2024,Toys and Games,4524.65
+19 Sep 2024,Health and Beauty,6791.82
+19 Sep 2024,Automotive,5980.23
+19 Sep 2024,Sports and Outdoors,2602.32
+20 Sep 2024,Groceries,89445.61
+20 Sep 2024,Electronics,26680.95
+20 Sep 2024,Clothing and Apparel,23050.78
+20 Sep 2024,Home and Furniture,14352.52
+20 Sep 2024,Toys and Games,3503.14
+20 Sep 2024,Health and Beauty,25488.99
+20 Sep 2024,Automotive,8759.14
+20 Sep 2024,Sports and Outdoors,6365.84
+21 Sep 2024,Groceries,77296.26
+21 Sep 2024,Electronics,77607.64
+21 Sep 2024,Clothing and Apparel,19830.84
+21 Sep 2024,Home and Furniture,38925.29
+21 Sep 2024,Toys and Games,13786.69
+21 Sep 2024,Health and Beauty,28315.65
+21 Sep 2024,Automotive,7380.92
+21 Sep 2024,Sports and Outdoors,13619.08
+22 Sep 2024,Groceries,214576.43
+22 Sep 2024,Electronics,32880.61
+22 Sep 2024,Clothing and Apparel,25332.92
+22 Sep 2024,Home and Furniture,17615.03
+22 Sep 2024,Toys and Games,4845.03
+22 Sep 2024,Health and Beauty,17507.31
+22 Sep 2024,Automotive,7161.88
+22 Sep 2024,Sports and Outdoors,5640.62
+23 Sep 2024,Groceries,67585.15
+23 Sep 2024,Electronics,16881.96
+23 Sep 2024,Clothing and Apparel,7090.67
+23 Sep 2024,Home and Furniture,3172.79
+23 Sep 2024,Toys and Games,3163.24
+23 Sep 2024,Health and Beauty,6221.96
+23 Sep 2024,Automotive,1843.35
+23 Sep 2024,Sports and Outdoors,2227.44
+24 Sep 2024,Groceries,38424.84
+24 Sep 2024,Electronics,9021.35
+24 Sep 2024,Clothing and Apparel,6955.95
+24 Sep 2024,Home and Furniture,2727.88
+24 Sep 2024,Toys and Games,1487.39
+24 Sep 2024,Health and Beauty,2802.23
+24 Sep 2024,Automotive,3876.4
+24 Sep 2024,Sports and Outdoors,3514.71
+25 Sep 2024,Groceries,48218.11
+25 Sep 2024,Electronics,12643.67
+25 Sep 2024,Clothing and Apparel,13848.66
+25 Sep 2024,Home and Furniture,8848.86
+25 Sep 2024,Toys and Games,3047.15
+25 Sep 2024,Health and Beauty,3912.93
+25 Sep 2024,Automotive,1398.93
+25 Sep 2024,Sports and Outdoors,2715.49
+26 Sep 2024,Groceries,54241.93
+26 Sep 2024,Electronics,8895.95
+26 Sep 2024,Clothing and Apparel,13325.48
+26 Sep 2024,Home and Furniture,3745.68
+26 Sep 2024,Toys and Games,9392.54
+26 Sep 2024,Health and Beauty,6761.7
+26 Sep 2024,Automotive,3498.78
+26 Sep 2024,Sports and Outdoors,2098.52
+27 Sep 2024,Groceries,84739.93
+27 Sep 2024,Electronics,12130.79
+27 Sep 2024,Clothing and Apparel,14026.5
+27 Sep 2024,Home and Furniture,6368.31
+27 Sep 2024,Toys and Games,4914.19
+27 Sep 2024,Health and Beauty,14361.01
+27 Sep 2024,Automotive,4526.52
+27 Sep 2024,Sports and Outdoors,7275.03
+28 Sep 2024,Groceries,157848.58
+28 Sep 2024,Electronics,44431.4
+28 Sep 2024,Clothing and Apparel,28493.87
+28 Sep 2024,Home and Furniture,5886.47
+28 Sep 2024,Toys and Games,10685.87
+28 Sep 2024,Health and Beauty,11501.75
+28 Sep 2024,Automotive,5733.68
+28 Sep 2024,Sports and Outdoors,7600.39
+29 Sep 2024,Groceries,78004.44
+29 Sep 2024,Electronics,16382.15
+29 Sep 2024,Clothing and Apparel,25718.89
+29 Sep 2024,Home and Furniture,10110.2
+29 Sep 2024,Toys and Games,14140.62
+29 Sep 2024,Health and Beauty,8592.16
+29 Sep 2024,Automotive,5988.75
+29 Sep 2024,Sports and Outdoors,4428.28
+30 Sep 2024,Groceries,33933.05
+30 Sep 2024,Electronics,4345.32
+30 Sep 2024,Clothing and Apparel,9778.92
+30 Sep 2024,Home and Furniture,8062.96
+30 Sep 2024,Toys and Games,9143.42
+30 Sep 2024,Health and Beauty,8661.9
+30 Sep 2024,Automotive,1400.68
+30 Sep 2024,Sports and Outdoors,3303.62
+01 Oct 2024,Groceries,47706.4
+01 Oct 2024,Electronics,6746.85
+01 Oct 2024,Clothing and Apparel,4614.56
+01 Oct 2024,Home and Furniture,4278.58
+01 Oct 2024,Toys and Games,1438.75
+01 Oct 2024,Health and Beauty,3115.7
+01 Oct 2024,Automotive,3548.5
+01 Oct 2024,Sports and Outdoors,894.7
+02 Oct 2024,Groceries,25415.91
+02 Oct 2024,Electronics,5957.11
+02 Oct 2024,Clothing and Apparel,4358.61
+02 Oct 2024,Home and Furniture,5922.33
+02 Oct 2024,Toys and Games,1029.08
+02 Oct 2024,Health and Beauty,9874.63
+02 Oct 2024,Automotive,806.66
+02 Oct 2024,Sports and Outdoors,9831.05
+03 Oct 2024,Groceries,32531.96
+03 Oct 2024,Electronics,9108.36
+03 Oct 2024,Clothing and Apparel,4563.96
+03 Oct 2024,Home and Furniture,9384.16
+03 Oct 2024,Toys and Games,2278.81
+03 Oct 2024,Health and Beauty,3497.48
+03 Oct 2024,Automotive,2185.45
+03 Oct 2024,Sports and Outdoors,1361.31
+04 Oct 2024,Groceries,64825.42
+04 Oct 2024,Electronics,7770.71
+04 Oct 2024,Clothing and Apparel,12375.17
+04 Oct 2024,Home and Furniture,12518.94
+04 Oct 2024,Toys and Games,3250.08
+04 Oct 2024,Health and Beauty,13825.95
+04 Oct 2024,Automotive,2210.75
+04 Oct 2024,Sports and Outdoors,4163.29
+05 Oct 2024,Groceries,224120.81
+05 Oct 2024,Electronics,32520.22
+05 Oct 2024,Clothing and Apparel,22793.29
+05 Oct 2024,Home and Furniture,57820.96
+05 Oct 2024,Toys and Games,7578.15
+05 Oct 2024,Health and Beauty,16212.5
+05 Oct 2024,Automotive,4428.84
+05 Oct 2024,Sports and Outdoors,3374.07
+06 Oct 2024,Groceries,198068.05
+06 Oct 2024,Electronics,29436.17
+06 Oct 2024,Clothing and Apparel,64954.85
+06 Oct 2024,Home and Furniture,5335.32
+06 Oct 2024,Toys and Games,3833.25
+06 Oct 2024,Health and Beauty,13876.59
+06 Oct 2024,Automotive,2706.86
+06 Oct 2024,Sports and Outdoors,6253.87
+07 Oct 2024,Groceries,36800.31
+07 Oct 2024,Electronics,5475.18
+07 Oct 2024,Clothing and Apparel,3856.61
+07 Oct 2024,Home and Furniture,5469.34
+07 Oct 2024,Toys and Games,2573.53
+07 Oct 2024,Health and Beauty,4916.81
+07 Oct 2024,Automotive,2428.76
+07 Oct 2024,Sports and Outdoors,2658.04
+08 Oct 2024,Groceries,29685.7
+08 Oct 2024,Electronics,14321.92
+08 Oct 2024,Clothing and Apparel,12034.43
+08 Oct 2024,Home and Furniture,2865.01
+08 Oct 2024,Toys and Games,2296.65
+08 Oct 2024,Health and Beauty,4705.23
+08 Oct 2024,Automotive,1533.95
+08 Oct 2024,Sports and Outdoors,1635.66
+09 Oct 2024,Groceries,23787.22
+09 Oct 2024,Electronics,4503.82
+09 Oct 2024,Clothing and Apparel,6704.51
+09 Oct 2024,Home and Furniture,7585.1
+09 Oct 2024,Toys and Games,2411.85
+09 Oct 2024,Health and Beauty,6012.21
+09 Oct 2024,Automotive,3265.22
+09 Oct 2024,Sports and Outdoors,2007.21
+10 Oct 2024,Groceries,32408.89
+10 Oct 2024,Electronics,7893.6
+10 Oct 2024,Clothing and Apparel,5008.51
+10 Oct 2024,Home and Furniture,11893.76
+10 Oct 2024,Toys and Games,2765.17
+10 Oct 2024,Health and Beauty,7705.41
+10 Oct 2024,Automotive,1314.13
+10 Oct 2024,Sports and Outdoors,4394.36
+11 Oct 2024,Groceries,135496.93
+11 Oct 2024,Electronics,8955.87
+11 Oct 2024,Clothing and Apparel,18543.09
+11 Oct 2024,Home and Furniture,7753.44
+11 Oct 2024,Toys and Games,3258.47
+11 Oct 2024,Health and Beauty,5476.99
+11 Oct 2024,Automotive,4038.97
+11 Oct 2024,Sports and Outdoors,2586
+12 Oct 2024,Groceries,141168.12
+12 Oct 2024,Electronics,18598.67
+12 Oct 2024,Clothing and Apparel,71898.56
+12 Oct 2024,Home and Furniture,13874.79
+12 Oct 2024,Toys and Games,12789.18
+12 Oct 2024,Health and Beauty,21286.6
+12 Oct 2024,Automotive,5386.53
+12 Oct 2024,Sports and Outdoors,3843.61
+13 Oct 2024,Groceries,57122.83
+13 Oct 2024,Electronics,13904.49
+13 Oct 2024,Clothing and Apparel,25214.33
+13 Oct 2024,Home and Furniture,6337.31
+13 Oct 2024,Toys and Games,6590.99
+13 Oct 2024,Health and Beauty,10710.15
+13 Oct 2024,Automotive,8106.9
+13 Oct 2024,Sports and Outdoors,3203.7
+14 Oct 2024,Groceries,51434.89
+14 Oct 2024,Electronics,16179.82
+14 Oct 2024,Clothing and Apparel,8974.81
+14 Oct 2024,Home and Furniture,4816.94
+14 Oct 2024,Toys and Games,2762.8
+14 Oct 2024,Health and Beauty,2363.8
+14 Oct 2024,Automotive,5261.78
+14 Oct 2024,Sports and Outdoors,3056.72
+15 Oct 2024,Groceries,38275.04
+15 Oct 2024,Electronics,3792.02
+15 Oct 2024,Clothing and Apparel,4506.03
+15 Oct 2024,Home and Furniture,11475.87
+15 Oct 2024,Toys and Games,2334.13
+15 Oct 2024,Health and Beauty,5029.42
+15 Oct 2024,Automotive,2304.33
+15 Oct 2024,Sports and Outdoors,1725.32
+16 Oct 2024,Groceries,34385.58
+16 Oct 2024,Electronics,2028.01
+16 Oct 2024,Clothing and Apparel,6099.67
+16 Oct 2024,Home and Furniture,3712.2
+16 Oct 2024,Toys and Games,1263.85
+16 Oct 2024,Health and Beauty,5816.17
+16 Oct 2024,Automotive,1870.55
+16 Oct 2024,Sports and Outdoors,1265.27
+17 Oct 2024,Groceries,24298.33
+17 Oct 2024,Electronics,22248.25
+17 Oct 2024,Clothing and Apparel,4726.37
+17 Oct 2024,Home and Furniture,2997.33
+17 Oct 2024,Toys and Games,3038.79
+17 Oct 2024,Health and Beauty,1998.88
+17 Oct 2024,Automotive,2689.51
+17 Oct 2024,Sports and Outdoors,4149.22
+18 Oct 2024,Groceries,125778.57
+18 Oct 2024,Electronics,12895.14
+18 Oct 2024,Clothing and Apparel,9416.84
+18 Oct 2024,Home and Furniture,4632.86
+18 Oct 2024,Toys and Games,3947.31
+18 Oct 2024,Health and Beauty,14904.04
+18 Oct 2024,Automotive,2333.73
+18 Oct 2024,Sports and Outdoors,3584.26
+19 Oct 2024,Groceries,234695.07
+19 Oct 2024,Electronics,34907.04
+19 Oct 2024,Clothing and Apparel,49968.58
+19 Oct 2024,Home and Furniture,20132.51
+19 Oct 2024,Toys and Games,29130.6
+19 Oct 2024,Health and Beauty,23536.94
+19 Oct 2024,Automotive,5370.67
+19 Oct 2024,Sports and Outdoors,9183.01
+20 Oct 2024,Groceries,191603.46
+20 Oct 2024,Electronics,11571.77
+20 Oct 2024,Clothing and Apparel,26361.56
+20 Oct 2024,Home and Furniture,18435.06
+20 Oct 2024,Toys and Games,14555.37
+20 Oct 2024,Health and Beauty,26130.31
+20 Oct 2024,Automotive,4662.89
+20 Oct 2024,Sports and Outdoors,11436.23
+21 Oct 2024,Groceries,32710.14
+21 Oct 2024,Electronics,11259.36
+21 Oct 2024,Clothing and Apparel,5980.45
+21 Oct 2024,Home and Furniture,4293.83
+21 Oct 2024,Toys and Games,6288.72
+21 Oct 2024,Health and Beauty,4464.96
+21 Oct 2024,Automotive,1769.8
+21 Oct 2024,Sports and Outdoors,2887.82
+22 Oct 2024,Groceries,57455.45
+22 Oct 2024,Electronics,12559.09
+22 Oct 2024,Clothing and Apparel,7589.79
+22 Oct 2024,Home and Furniture,3514.26
+22 Oct 2024,Toys and Games,1877.08
+22 Oct 2024,Health and Beauty,4711.99
+22 Oct 2024,Automotive,2110.7
+22 Oct 2024,Sports and Outdoors,998.69
+23 Oct 2024,Groceries,57506.33
+23 Oct 2024,Electronics,14614.87
+23 Oct 2024,Clothing and Apparel,8426.48
+23 Oct 2024,Home and Furniture,3044.22
+23 Oct 2024,Toys and Games,1086.45
+23 Oct 2024,Health and Beauty,2990.16
+23 Oct 2024,Automotive,1222.91
+23 Oct 2024,Sports and Outdoors,1720.64
+24 Oct 2024,Groceries,25606.02
+24 Oct 2024,Electronics,15566.89
+24 Oct 2024,Clothing and Apparel,8920.07
+24 Oct 2024,Home and Furniture,8098.21
+24 Oct 2024,Toys and Games,1681.08
+24 Oct 2024,Health and Beauty,3564.64
+24 Oct 2024,Automotive,2705.53
+24 Oct 2024,Sports and Outdoors,1345.48
+25 Oct 2024,Groceries,99836.4
+25 Oct 2024,Electronics,15547.7
+25 Oct 2024,Clothing and Apparel,18492.71
+25 Oct 2024,Home and Furniture,8054.77
+25 Oct 2024,Toys and Games,7335.09
+25 Oct 2024,Health and Beauty,8352.26
+25 Oct 2024,Automotive,3893.68
+25 Oct 2024,Sports and Outdoors,2410.23
+26 Oct 2024,Groceries,174404.19
+26 Oct 2024,Electronics,11277.39
+26 Oct 2024,Clothing and Apparel,35526.64
+26 Oct 2024,Home and Furniture,14110.77
+26 Oct 2024,Toys and Games,5834.23
+26 Oct 2024,Health and Beauty,15597.59
+26 Oct 2024,Automotive,7082.3
+26 Oct 2024,Sports and Outdoors,15470.58
+27 Oct 2024,Groceries,245074.44
+27 Oct 2024,Electronics,24480.64
+27 Oct 2024,Clothing and Apparel,14920.62
+27 Oct 2024,Home and Furniture,8078.71
+27 Oct 2024,Toys and Games,3330.93
+27 Oct 2024,Health and Beauty,16468.83
+27 Oct 2024,Automotive,17090.73
+27 Oct 2024,Sports and Outdoors,8011.68
+28 Oct 2024,Groceries,126185.3
+28 Oct 2024,Electronics,18145.98
+28 Oct 2024,Clothing and Apparel,10038.97
+28 Oct 2024,Home and Furniture,4849.03
+28 Oct 2024,Toys and Games,1541.72
+28 Oct 2024,Health and Beauty,6267.12
+28 Oct 2024,Automotive,5966.41
+28 Oct 2024,Sports and Outdoors,2854.5
+29 Oct 2024,Groceries,48540.35
+29 Oct 2024,Electronics,13979.53
+29 Oct 2024,Clothing and Apparel,5074.15
+29 Oct 2024,Home and Furniture,4446.74
+29 Oct 2024,Toys and Games,4357.32
+29 Oct 2024,Health and Beauty,5692.38
+29 Oct 2024,Automotive,1635.88
+29 Oct 2024,Sports and Outdoors,3106.87
+30 Oct 2024,Groceries,51180.63
+30 Oct 2024,Electronics,3599.67
+30 Oct 2024,Clothing and Apparel,17207.48
+30 Oct 2024,Home and Furniture,4103.85
+30 Oct 2024,Toys and Games,1461.93
+30 Oct 2024,Health and Beauty,19337.78
+30 Oct 2024,Automotive,3410.61
+30 Oct 2024,Sports and Outdoors,1101.69
+31 Oct 2024,Groceries,66410.67
+31 Oct 2024,Electronics,10534.51
+31 Oct 2024,Clothing and Apparel,39257.08
+31 Oct 2024,Home and Furniture,4848.29
+31 Oct 2024,Toys and Games,3453.91
+31 Oct 2024,Health and Beauty,4745.7
+31 Oct 2024,Automotive,1444.69
+31 Oct 2024,Sports and Outdoors,4756.17
+01 Nov 2024,Groceries,377131.82
+01 Nov 2024,Electronics,16909.39
+01 Nov 2024,Clothing and Apparel,26641.57
+01 Nov 2024,Home and Furniture,18863.7
+01 Nov 2024,Toys and Games,19540.57
+01 Nov 2024,Health and Beauty,14773.04
+01 Nov 2024,Automotive,4613.86
+01 Nov 2024,Sports and Outdoors,7168.31
+02 Nov 2024,Groceries,371890.45
+02 Nov 2024,Electronics,61522.9
+02 Nov 2024,Clothing and Apparel,47319.81
+02 Nov 2024,Home and Furniture,21809.56
+02 Nov 2024,Toys and Games,19495.3
+02 Nov 2024,Health and Beauty,33346.87
+02 Nov 2024,Automotive,5652.58
+02 Nov 2024,Sports and Outdoors,18591.41
+03 Nov 2024,Groceries,246596.5
+03 Nov 2024,Electronics,54894.23
+03 Nov 2024,Clothing and Apparel,62022.74
+03 Nov 2024,Home and Furniture,20131.71
+03 Nov 2024,Toys and Games,12031.71
+03 Nov 2024,Health and Beauty,29239.54
+03 Nov 2024,Automotive,9201.35
+03 Nov 2024,Sports and Outdoors,10084.84
+04 Nov 2024,Groceries,125428.61
+04 Nov 2024,Electronics,5990.2
+04 Nov 2024,Clothing and Apparel,8482.16
+04 Nov 2024,Home and Furniture,22808.38
+04 Nov 2024,Toys and Games,3253.79
+04 Nov 2024,Health and Beauty,9603.15
+04 Nov 2024,Automotive,6084.89
+04 Nov 2024,Sports and Outdoors,3037.82
+05 Nov 2024,Groceries,143369.06
+05 Nov 2024,Electronics,9803.13
+05 Nov 2024,Clothing and Apparel,7513.54
+05 Nov 2024,Home and Furniture,5915.69
+05 Nov 2024,Toys and Games,4140.71
+05 Nov 2024,Health and Beauty,11613.31
+05 Nov 2024,Automotive,1506.34
+05 Nov 2024,Sports and Outdoors,1640.79
+06 Nov 2024,Groceries,29894.78
+06 Nov 2024,Electronics,12133.17
+06 Nov 2024,Clothing and Apparel,17440.75
+06 Nov 2024,Home and Furniture,5678.28
+06 Nov 2024,Toys and Games,2863.56
+06 Nov 2024,Health and Beauty,13317.29
+06 Nov 2024,Automotive,2114.41
+06 Nov 2024,Sports and Outdoors,2794.05
+07 Nov 2024,Groceries,80318.77
+07 Nov 2024,Electronics,5345.03
+07 Nov 2024,Clothing and Apparel,11391.71
+07 Nov 2024,Home and Furniture,12398.51
+07 Nov 2024,Toys and Games,4330.32
+07 Nov 2024,Health and Beauty,14178
+07 Nov 2024,Automotive,1873.92
+07 Nov 2024,Sports and Outdoors,2390.44
+08 Nov 2024,Groceries,157429.67
+08 Nov 2024,Electronics,14939.88
+08 Nov 2024,Clothing and Apparel,19932.35
+08 Nov 2024,Home and Furniture,28755.8
+08 Nov 2024,Toys and Games,6303
+08 Nov 2024,Health and Beauty,17839.17
+08 Nov 2024,Automotive,4640.1
+08 Nov 2024,Sports and Outdoors,2831.88
+09 Nov 2024,Groceries,160374.7
+09 Nov 2024,Electronics,64336.16
+09 Nov 2024,Clothing and Apparel,39088.6
+09 Nov 2024,Home and Furniture,22692.25
+09 Nov 2024,Toys and Games,8456.25
+09 Nov 2024,Health and Beauty,32422.07
+09 Nov 2024,Automotive,4613.87
+09 Nov 2024,Sports and Outdoors,6405.27
+10 Nov 2024,Groceries,194032.54
+10 Nov 2024,Electronics,81551.99
+10 Nov 2024,Clothing and Apparel,33190.89
+10 Nov 2024,Home and Furniture,13354.69
+10 Nov 2024,Toys and Games,11153.85
+10 Nov 2024,Health and Beauty,12633.39
+10 Nov 2024,Automotive,8879.09
+10 Nov 2024,Sports and Outdoors,17706.01
+11 Nov 2024,Groceries,97680.49
+11 Nov 2024,Electronics,10122.08
+11 Nov 2024,Clothing and Apparel,22458.07
+11 Nov 2024,Home and Furniture,11980.35
+11 Nov 2024,Toys and Games,3283.05
+11 Nov 2024,Health and Beauty,4167.53
+11 Nov 2024,Automotive,2471.44
+11 Nov 2024,Sports and Outdoors,2819.49
+12 Nov 2024,Groceries,41276.28
+12 Nov 2024,Electronics,10581.54
+12 Nov 2024,Clothing and Apparel,10373.63
+12 Nov 2024,Home and Furniture,9648.58
+12 Nov 2024,Toys and Games,2272.5
+12 Nov 2024,Health and Beauty,10300.16
+12 Nov 2024,Automotive,6660.43
+12 Nov 2024,Sports and Outdoors,6391.5
+13 Nov 2024,Groceries,53283.91
+13 Nov 2024,Electronics,5986.01
+13 Nov 2024,Clothing and Apparel,12284.34
+13 Nov 2024,Home and Furniture,7925.06
+13 Nov 2024,Toys and Games,12722.16
+13 Nov 2024,Health and Beauty,4052.83
+13 Nov 2024,Automotive,4070.27
+13 Nov 2024,Sports and Outdoors,1604.15
+14 Nov 2024,Groceries,53093.33
+14 Nov 2024,Electronics,37743
+14 Nov 2024,Clothing and Apparel,7632.14
+14 Nov 2024,Home and Furniture,14708.12
+14 Nov 2024,Toys and Games,1855.94
+14 Nov 2024,Health and Beauty,14255.76
+14 Nov 2024,Automotive,4007.72
+14 Nov 2024,Sports and Outdoors,6681.76
+15 Nov 2024,Groceries,131791.63
+15 Nov 2024,Electronics,70328.2
+15 Nov 2024,Clothing and Apparel,39143.6
+15 Nov 2024,Home and Furniture,10088.02
+15 Nov 2024,Toys and Games,3718.2
+15 Nov 2024,Health and Beauty,9886.56
+15 Nov 2024,Automotive,4642.32
+15 Nov 2024,Sports and Outdoors,7035.76
+16 Nov 2024,Groceries,203134.67
+16 Nov 2024,Electronics,28421.1
+16 Nov 2024,Clothing and Apparel,24915.09
+16 Nov 2024,Home and Furniture,38797.96
+16 Nov 2024,Toys and Games,29426.08
+16 Nov 2024,Health and Beauty,15274.98
+16 Nov 2024,Automotive,10962.16
+16 Nov 2024,Sports and Outdoors,9880.33
+17 Nov 2024,Groceries,371086.12
+17 Nov 2024,Electronics,29181.21
+17 Nov 2024,Clothing and Apparel,14593.91
+17 Nov 2024,Home and Furniture,27719.17
+17 Nov 2024,Toys and Games,12122.46
+17 Nov 2024,Health and Beauty,18077.11
+17 Nov 2024,Automotive,6921.08
+17 Nov 2024,Sports and Outdoors,7533.95
+18 Nov 2024,Groceries,67596.18
+18 Nov 2024,Electronics,27214.8
+18 Nov 2024,Clothing and Apparel,6993.56
+18 Nov 2024,Home and Furniture,8149.78
+18 Nov 2024,Toys and Games,7202.25
+18 Nov 2024,Health and Beauty,9986.48
+18 Nov 2024,Automotive,6329.78
+18 Nov 2024,Sports and Outdoors,3212.15
+19 Nov 2024,Groceries,48337.22
+19 Nov 2024,Electronics,7372.27
+19 Nov 2024,Clothing and Apparel,8608.58
+19 Nov 2024,Home and Furniture,7466.45
+19 Nov 2024,Toys and Games,5152.89
+19 Nov 2024,Health and Beauty,7161.54
+19 Nov 2024,Automotive,4086.28
+19 Nov 2024,Sports and Outdoors,2689.45
+20 Nov 2024,Groceries,41542.78
+20 Nov 2024,Electronics,11260.62
+20 Nov 2024,Clothing and Apparel,19626.29
+20 Nov 2024,Home and Furniture,3548.85
+20 Nov 2024,Toys and Games,6608.81
+20 Nov 2024,Health and Beauty,11074.46
+20 Nov 2024,Automotive,3026.77
+20 Nov 2024,Sports and Outdoors,4661.28
+21 Nov 2024,Groceries,134405.37
+21 Nov 2024,Electronics,11407.88
+21 Nov 2024,Clothing and Apparel,14418.52
+21 Nov 2024,Home and Furniture,10832.47
+21 Nov 2024,Toys and Games,7319.62
+21 Nov 2024,Health and Beauty,5778.87
+21 Nov 2024,Automotive,4010.23
+21 Nov 2024,Sports and Outdoors,3637.11
+22 Nov 2024,Groceries,722402.93
+22 Nov 2024,Electronics,14425.94
+22 Nov 2024,Clothing and Apparel,13274.86
+22 Nov 2024,Home and Furniture,11669.95
+22 Nov 2024,Toys and Games,5308.09
+22 Nov 2024,Health and Beauty,11035.75
+22 Nov 2024,Automotive,6935.52
+22 Nov 2024,Sports and Outdoors,5740.85
+23 Nov 2024,Groceries,155487.81
+23 Nov 2024,Electronics,32177.51
+23 Nov 2024,Clothing and Apparel,33299.71
+23 Nov 2024,Home and Furniture,23403.2
+23 Nov 2024,Toys and Games,12289.68
+23 Nov 2024,Health and Beauty,39543.93
+23 Nov 2024,Automotive,15066.99
+23 Nov 2024,Sports and Outdoors,6133.92
+24 Nov 2024,Groceries,108712.8
+24 Nov 2024,Electronics,18029.72
+24 Nov 2024,Clothing and Apparel,28898.27
+24 Nov 2024,Home and Furniture,79264.09
+24 Nov 2024,Toys and Games,12165.68
+24 Nov 2024,Health and Beauty,14017.84
+24 Nov 2024,Automotive,5366.58
+24 Nov 2024,Sports and Outdoors,3719.62
+25 Nov 2024,Groceries,92939.14
+25 Nov 2024,Electronics,8968.63
+25 Nov 2024,Clothing and Apparel,13673.26
+25 Nov 2024,Home and Furniture,6652.02
+25 Nov 2024,Toys and Games,10156.97
+25 Nov 2024,Health and Beauty,11477.39
+25 Nov 2024,Automotive,2307.07
+25 Nov 2024,Sports and Outdoors,7367.62
+26 Nov 2024,Groceries,84866.6
+26 Nov 2024,Electronics,8724.68
+26 Nov 2024,Clothing and Apparel,7423.05
+26 Nov 2024,Home and Furniture,8898.81
+26 Nov 2024,Toys and Games,2034.99
+26 Nov 2024,Health and Beauty,5420.14
+26 Nov 2024,Automotive,3008.16
+26 Nov 2024,Sports and Outdoors,8373.09
+27 Nov 2024,Groceries,25474.16
+27 Nov 2024,Electronics,12260.89
+27 Nov 2024,Clothing and Apparel,8547.78
+27 Nov 2024,Home and Furniture,12678.49
+27 Nov 2024,Toys and Games,2501.76
+27 Nov 2024,Health and Beauty,13862.34
+27 Nov 2024,Automotive,8004.14
+27 Nov 2024,Sports and Outdoors,1072.57
+28 Nov 2024,Groceries,101935.11
+28 Nov 2024,Electronics,21525.86
+28 Nov 2024,Clothing and Apparel,8960.4
+28 Nov 2024,Home and Furniture,4133.03
+28 Nov 2024,Toys and Games,5788.36
+28 Nov 2024,Health and Beauty,4687.86
+28 Nov 2024,Automotive,7896.36
+28 Nov 2024,Sports and Outdoors,6320.13
+29 Nov 2024,Groceries,128598.45
+29 Nov 2024,Electronics,16856.73
+29 Nov 2024,Clothing and Apparel,13024.52
+29 Nov 2024,Home and Furniture,15272.46
+29 Nov 2024,Toys and Games,5741.79
+29 Nov 2024,Health and Beauty,21207.21
+29 Nov 2024,Automotive,2327.74
+29 Nov 2024,Sports and Outdoors,3777.08
+30 Nov 2024,Groceries,213646.45
+30 Nov 2024,Electronics,49880.23
+30 Nov 2024,Clothing and Apparel,36103.09
+30 Nov 2024,Home and Furniture,20231.71
+30 Nov 2024,Toys and Games,12833.14
+30 Nov 2024,Health and Beauty,77873.48
+30 Nov 2024,Automotive,15569.81
+30 Nov 2024,Sports and Outdoors,5258.23
+01 Dec 2024,Groceries,203076.56
+01 Dec 2024,Electronics,49652.73
+01 Dec 2024,Clothing and Apparel,19888.03
+01 Dec 2024,Home and Furniture,29425.74
+01 Dec 2024,Toys and Games,5639.01
+01 Dec 2024,Health and Beauty,19691.23
+01 Dec 2024,Automotive,7406.78
+01 Dec 2024,Sports and Outdoors,5101.78
+02 Dec 2024,Groceries,87720.45
+02 Dec 2024,Electronics,13372.85
+02 Dec 2024,Clothing and Apparel,11802.97
+02 Dec 2024,Home and Furniture,13135.47
+02 Dec 2024,Toys and Games,7723.28
+02 Dec 2024,Health and Beauty,7401.57
+02 Dec 2024,Automotive,1894.83
+02 Dec 2024,Sports and Outdoors,5458.23
+03 Dec 2024,Groceries,47751
+03 Dec 2024,Electronics,12924.58
+03 Dec 2024,Clothing and Apparel,17459.8
+03 Dec 2024,Home and Furniture,3274.01
+03 Dec 2024,Toys and Games,1266.67
+03 Dec 2024,Health and Beauty,5625.56
+03 Dec 2024,Automotive,2756.18
+03 Dec 2024,Sports and Outdoors,12989.52
+04 Dec 2024,Groceries,52373.04
+04 Dec 2024,Electronics,4581.28
+04 Dec 2024,Clothing and Apparel,12149.54
+04 Dec 2024,Home and Furniture,5915.73
+04 Dec 2024,Toys and Games,2045.02
+04 Dec 2024,Health and Beauty,3870.81
+04 Dec 2024,Automotive,2093.39
+04 Dec 2024,Sports and Outdoors,5763.37
+05 Dec 2024,Groceries,84793.9
+05 Dec 2024,Electronics,24869.54
+05 Dec 2024,Clothing and Apparel,19343.75
+05 Dec 2024,Home and Furniture,16135.71
+05 Dec 2024,Toys and Games,4975.96
+05 Dec 2024,Health and Beauty,3323.44
+05 Dec 2024,Automotive,3970.63
+05 Dec 2024,Sports and Outdoors,6391.94
+06 Dec 2024,Groceries,113255.78
+06 Dec 2024,Electronics,23601.48
+06 Dec 2024,Clothing and Apparel,7732.15
+06 Dec 2024,Home and Furniture,65296.89
+06 Dec 2024,Toys and Games,5695.06
+06 Dec 2024,Health and Beauty,26031.07
+06 Dec 2024,Automotive,4236.5
+06 Dec 2024,Sports and Outdoors,2772.2
+07 Dec 2024,Groceries,167067.91
+07 Dec 2024,Electronics,19291.9
+07 Dec 2024,Clothing and Apparel,79459.4
+07 Dec 2024,Home and Furniture,31877.55
+07 Dec 2024,Toys and Games,11782.29
+07 Dec 2024,Health and Beauty,11679.8
+07 Dec 2024,Automotive,5876.86
+07 Dec 2024,Sports and Outdoors,13185.72
+08 Dec 2024,Groceries,222353.95
+08 Dec 2024,Electronics,58344.73
+08 Dec 2024,Clothing and Apparel,49433.3
+08 Dec 2024,Home and Furniture,41330.05
+08 Dec 2024,Toys and Games,5703
+08 Dec 2024,Health and Beauty,21677.62
+08 Dec 2024,Automotive,4441.46
+08 Dec 2024,Sports and Outdoors,5093.09
+09 Dec 2024,Groceries,110038.88
+09 Dec 2024,Electronics,24469.97
+09 Dec 2024,Clothing and Apparel,24291.83
+09 Dec 2024,Home and Furniture,7011.32
+09 Dec 2024,Toys and Games,10080.43
+09 Dec 2024,Health and Beauty,11687.35
+09 Dec 2024,Automotive,1633.19
+09 Dec 2024,Sports and Outdoors,3338.19
+10 Dec 2024,Groceries,43204.09
+10 Dec 2024,Electronics,12619.94
+10 Dec 2024,Clothing and Apparel,2336.81
+10 Dec 2024,Home and Furniture,6570.97
+10 Dec 2024,Toys and Games,3728.68
+10 Dec 2024,Health and Beauty,17686.96
+10 Dec 2024,Automotive,4008
+10 Dec 2024,Sports and Outdoors,8316.37
+11 Dec 2024,Groceries,34548.99
+11 Dec 2024,Electronics,9977.19
+11 Dec 2024,Clothing and Apparel,11855.91
+11 Dec 2024,Home and Furniture,17610.54
+11 Dec 2024,Toys and Games,3722.45
+11 Dec 2024,Health and Beauty,8435.62
+11 Dec 2024,Automotive,3696.75
+11 Dec 2024,Sports and Outdoors,1466.29
+12 Dec 2024,Groceries,65718.51
+12 Dec 2024,Electronics,17519.66
+12 Dec 2024,Clothing and Apparel,12110.52
+12 Dec 2024,Home and Furniture,13975.81
+12 Dec 2024,Toys and Games,5766.76
+12 Dec 2024,Health and Beauty,3540.48
+12 Dec 2024,Automotive,9372.34
+12 Dec 2024,Sports and Outdoors,3006.75
+13 Dec 2024,Groceries,93926.14
+13 Dec 2024,Electronics,34701.74
+13 Dec 2024,Clothing and Apparel,29878.71
+13 Dec 2024,Home and Furniture,9242.75
+13 Dec 2024,Toys and Games,15850.93
+13 Dec 2024,Health and Beauty,10920.08
+13 Dec 2024,Automotive,8348.47
+13 Dec 2024,Sports and Outdoors,10572.72
+14 Dec 2024,Groceries,260085.46
+14 Dec 2024,Electronics,47570.03
+14 Dec 2024,Clothing and Apparel,25745.96
+14 Dec 2024,Home and Furniture,33087.34
+14 Dec 2024,Toys and Games,25393.74
+14 Dec 2024,Health and Beauty,50813.35
+14 Dec 2024,Automotive,9203.16
+14 Dec 2024,Sports and Outdoors,5920.08
+15 Dec 2024,Groceries,484080.86
+15 Dec 2024,Electronics,79566.36
+15 Dec 2024,Clothing and Apparel,16023.78
+15 Dec 2024,Home and Furniture,45776.67
+15 Dec 2024,Toys and Games,4923.01
+15 Dec 2024,Health and Beauty,31277.11
+15 Dec 2024,Automotive,15255.78
+15 Dec 2024,Sports and Outdoors,11549.65
+16 Dec 2024,Groceries,49258.9
+16 Dec 2024,Electronics,25646.91
+16 Dec 2024,Clothing and Apparel,13974.87
+16 Dec 2024,Home and Furniture,10409.14
+16 Dec 2024,Toys and Games,4125.59
+16 Dec 2024,Health and Beauty,17081.22
+16 Dec 2024,Automotive,5543.9
+16 Dec 2024,Sports and Outdoors,1942.26
+17 Dec 2024,Groceries,55554.5
+17 Dec 2024,Electronics,36487.27
+17 Dec 2024,Clothing and Apparel,4363.28
+17 Dec 2024,Home and Furniture,11031.1
+17 Dec 2024,Toys and Games,2842.22
+17 Dec 2024,Health and Beauty,11671.58
+17 Dec 2024,Automotive,5623.96
+17 Dec 2024,Sports and Outdoors,11708.63
+18 Dec 2024,Groceries,117450.18
+18 Dec 2024,Electronics,20508.29
+18 Dec 2024,Clothing and Apparel,9912.09
+18 Dec 2024,Home and Furniture,3474.05
+18 Dec 2024,Toys and Games,3418.5
+18 Dec 2024,Health and Beauty,7368.49
+18 Dec 2024,Automotive,3046.74
+18 Dec 2024,Sports and Outdoors,1785.49
+19 Dec 2024,Groceries,68831.65
+19 Dec 2024,Electronics,22238.02
+19 Dec 2024,Clothing and Apparel,9546.36
+19 Dec 2024,Home and Furniture,2782.37
+19 Dec 2024,Toys and Games,7172.99
+19 Dec 2024,Health and Beauty,9204.61
+19 Dec 2024,Automotive,3630.08
+19 Dec 2024,Sports and Outdoors,3395.68
+20 Dec 2024,Groceries,136131.81
+20 Dec 2024,Electronics,24154.84
+20 Dec 2024,Clothing and Apparel,36795.87
+20 Dec 2024,Home and Furniture,5553.61
+20 Dec 2024,Toys and Games,3836.27
+20 Dec 2024,Health and Beauty,6695.29
+20 Dec 2024,Automotive,6584.57
+20 Dec 2024,Sports and Outdoors,7956.1
+21 Dec 2024,Groceries,74778.73
+21 Dec 2024,Electronics,80729.88
+21 Dec 2024,Clothing and Apparel,28158.82
+21 Dec 2024,Home and Furniture,56361.62
+21 Dec 2024,Toys and Games,19023.4
+21 Dec 2024,Health and Beauty,38820.14
+21 Dec 2024,Automotive,8728.82
+21 Dec 2024,Sports and Outdoors,8648.93
+22 Dec 2024,Groceries,153461.65
+22 Dec 2024,Electronics,60407.87
+22 Dec 2024,Clothing and Apparel,34519.19
+22 Dec 2024,Home and Furniture,28596.22
+22 Dec 2024,Toys and Games,4623.09
+22 Dec 2024,Health and Beauty,13926.08
+22 Dec 2024,Automotive,9765.85
+22 Dec 2024,Sports and Outdoors,11101.72
+23 Dec 2024,Groceries,110103.78
+23 Dec 2024,Electronics,12154.58
+23 Dec 2024,Clothing and Apparel,4193.35
+23 Dec 2024,Home and Furniture,15235.93
+23 Dec 2024,Toys and Games,5586.6
+23 Dec 2024,Health and Beauty,19759.77
+23 Dec 2024,Automotive,8221.04
+23 Dec 2024,Sports and Outdoors,3117.5
+24 Dec 2024,Groceries,28898.57
+24 Dec 2024,Electronics,28052.55
+24 Dec 2024,Clothing and Apparel,5852.91
+24 Dec 2024,Home and Furniture,8033.96
+24 Dec 2024,Toys and Games,4240.19
+24 Dec 2024,Health and Beauty,5915.95
+24 Dec 2024,Automotive,2484.62
+24 Dec 2024,Sports and Outdoors,4103.34
+25 Dec 2024,Groceries,56917.44
+25 Dec 2024,Electronics,10712.53
+25 Dec 2024,Clothing and Apparel,6729.47
+25 Dec 2024,Home and Furniture,10177.83
+25 Dec 2024,Toys and Games,4125.64
+25 Dec 2024,Health and Beauty,8583.16
+25 Dec 2024,Automotive,3309.31
+25 Dec 2024,Sports and Outdoors,3419.53
+26 Dec 2024,Groceries,70026.14
+26 Dec 2024,Electronics,13014.73
+26 Dec 2024,Clothing and Apparel,35613.37
+26 Dec 2024,Home and Furniture,26296.65
+26 Dec 2024,Toys and Games,3282.27
+26 Dec 2024,Health and Beauty,3491.99
+26 Dec 2024,Automotive,4237.23
+26 Dec 2024,Sports and Outdoors,2374.52
+27 Dec 2024,Groceries,195356.73
+27 Dec 2024,Electronics,14592.74
+27 Dec 2024,Clothing and Apparel,18106.92
+27 Dec 2024,Home and Furniture,16813.06
+27 Dec 2024,Toys and Games,3795.72
+27 Dec 2024,Health and Beauty,15324.34
+27 Dec 2024,Automotive,3316.42
+27 Dec 2024,Sports and Outdoors,6888.96
+28 Dec 2024,Groceries,262939.75
+28 Dec 2024,Electronics,62841.11
+28 Dec 2024,Clothing and Apparel,36819.04
+28 Dec 2024,Home and Furniture,50387.97
+28 Dec 2024,Toys and Games,12356.19
+28 Dec 2024,Health and Beauty,19106.54
+28 Dec 2024,Automotive,33812.14
+28 Dec 2024,Sports and Outdoors,26335.71
+29 Dec 2024,Groceries,128971.82
+29 Dec 2024,Electronics,21769.48
+29 Dec 2024,Clothing and Apparel,36835.38
+29 Dec 2024,Home and Furniture,32004.51
+29 Dec 2024,Toys and Games,11832.61
+29 Dec 2024,Health and Beauty,20867.83
+29 Dec 2024,Automotive,13774.26
+29 Dec 2024,Sports and Outdoors,6243.54
+30 Dec 2024,Groceries,39296.99
+30 Dec 2024,Electronics,6198.97
+30 Dec 2024,Clothing and Apparel,5529.36
+30 Dec 2024,Home and Furniture,6059.94
+30 Dec 2024,Toys and Games,4961.1
+30 Dec 2024,Health and Beauty,32489.75
+30 Dec 2024,Automotive,6718.06
+30 Dec 2024,Sports and Outdoors,5681.88
+31 Dec 2024,Groceries,13955.71
+31 Dec 2024,Electronics,9273.74
+31 Dec 2024,Clothing and Apparel,11731.6
+31 Dec 2024,Home and Furniture,6314.53
+31 Dec 2024,Toys and Games,2483.72
+31 Dec 2024,Health and Beauty,12537.13
+31 Dec 2024,Automotive,4303.97
+31 Dec 2024,Sports and Outdoors,4008.4
