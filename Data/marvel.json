@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Robert Downey Jr.",
+    "net_worth": 300000000,
+    "gender": "male",
+    "nationality": "us",
+    "occupation": [
+      "actor",
+      "film_producer",
+      "screenwriter",
+      "singer-songwriter",
+      "comedian"
+    ],
+    "height": 1.74,
+    "birthday": "1965-04-04",
+    "academy_award_nominations": 3,
+    "academy_awards_won": 1,
+    "number_of_roles": 93,
+    "marvel_movies": [
+      "Iron Man",
+      "Iron Man 2",
+      "The Avengers",
+      "Iron Man 3",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+      "Spider-Man: Homecoming",
+      "Avengers: Infinity War",
+      "Avengers: Endgame"
+    ],
+    "marvel_total_screen_time": 356
+  },
+  {
+    "name": "Chris Evans",
+    "net_worth": 80000000,
+    "gender": "male",
+    "nationality": "us",
+    "occupation": [
+      "actor",
+      "voice_actor",
+      "film_director",
+      "film_producer"
+    ],
+    "height": 1.84,
+    "birthday": "1981-06-13",
+    "number_of_roles": 64,
+    "marvel_movies": [
+      "Captain America: The First Avenger",
+      "The Avengers",
+      "Captain America: The Winter Soldier",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+      "Avengers: Infinity War",
+      "Avengers: Endgame"
+    ],
+    "marvel_total_screen_time": 242
+  },
+  {
+    "name": "Mark Ruffalo",
+    "net_worth": 35000000,
+    "gender": "male",
+    "nationality": "us",
+    "occupation": [
+      "actor",
+      "film_producer",
+      "film_director",
+      "screenwriter"
+    ],
+    "height": 1.73,
+    "birthday": "1967-11-22",
+    "academy_award_nominations": 4,
+    "academy_awards_won": 0,
+    "number_of_roles": 81,
+    "marvel_movies": [
+      "The Avengers",
+      "Avengers: Age of Ultron",
+      "Thor: Ragnarok",
+      "Avengers: Infinity War",
+      "Avengers: Endgame"
+    ],
+    "marvel_total_screen_time": 83
+  },
+  {
+    "name": "Chris Hemsworth",
+    "net_worth": 130000000,
+    "gender": "male",
+    "nationality": "au",
+    "occupation": [
+      "actor"
+    ],
+    "height": 1.9,
+    "birthday": "1983-08-11",
+    "number_of_roles": 51,
+    "marvel_movies": [
+      "Thor",
+      "The Avengers",
+      "Thor: The Dark World",
+      "Avengers: Age of Ultron",
+      "Doctor Strange",
+      "Thor: Ragnarok",
+      "Avengers: Infinity War",
+      "Avengers: Endgame",
+      "Thor: Love and Thunder"
+    ],
+    "marvel_total_screen_time": 290
+  },
+  {
+    "name": "Scarlett Johansson",
+    "net_worth": 165000000,
+    "gender": "female",
+    "nationality": "us",
+    "occupation": [
+      "actor",
+      "singer",
+      "model",
+      "voice_actor"
+    ],
+    "height": 1.6,
+    "birthday": "1984-11-22",
+    "academy_award_nominations": 2,
+    "academy_awards_won": 0,
+    "number_of_roles": 82,
+    "marvel_movies": [
+      "Iron Man 2",
+      "The Avengers",
+      "Captain America: The Winter Soldier",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+      "Avengers: Infinity War",
+      "Captain Marvel",
+      "Avengers: Endgame",
+      "Black Widow"
+    ],
+    "marvel_total_screen_time": 175
+  },
+  {
+    "name": "Jeremy Renner",
+    "net_worth": 80000000,
+    "gender": "male",
+    "nationality": "us",
+    "occupation": [
+      "actor",
+      "musician",
+      "singer-songwriter",
+      "film_producer",
+      "businessperson",
+      "voice_actor"
+    ],
+    "height": 1.78,
+    "birthday": "1971-01-07",
+    "academy_award_nominations": 2,
+    "academy_awards_won": 0,
+    "number_of_roles": 62,
+    "marvel_movies": [
+      "Thor",
+      "The Avengers",
+      "Avengers: Age of Ultron",
+      "Captain America: Civil War",
+      "Avengers: Endgame",
+      "Hawkeye"
+    ],
+    "marvel_total_screen_time": 145
+  }
+]
