@@ -1,6 +1,7 @@
 [
   {
     "name": "Robert Downey Jr.",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/iron_man.png?raw=true",
     "got_avengers_tattoo": true,
     "died_in_endgame": true,
     "net_worth": 300000000,
@@ -51,6 +52,7 @@
   },
   {
     "name": "Chris Evans",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/captain_america.png?raw=true",
     "got_avengers_tattoo": true,
     "died_in_endgame": false,
     "net_worth": 80000000,
@@ -78,6 +80,7 @@
   },
   {
     "name": "Mark Ruffalo",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/hulk.png?raw=true",
     "got_avengers_tattoo": false,
     "died_in_endgame": false,
     "net_worth": 35000000,
@@ -129,6 +132,7 @@
   },
   {
     "name": "Chris Hemsworth",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/thor.png?raw=true",
     "got_avengers_tattoo": true,
     "died_in_endgame": false,
     "net_worth": 130000000,
@@ -155,6 +159,7 @@
   },
   {
     "name": "Scarlett Johansson",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/black_widow.jpg?raw=true",
     "got_avengers_tattoo": true,
     "died_in_endgame": true,
     "net_worth": 165000000,
@@ -198,6 +203,7 @@
   },
   {
     "name": "Jeremy Renner",
+    "character_image_url": "https://github.com/dilernia/STA418-518/blob/main/marvel_images/hawkeye.png?raw=true",
     "got_avengers_tattoo": true,
     "died_in_endgame": false,
     "net_worth": 80000000,
