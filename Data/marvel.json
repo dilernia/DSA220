@@ -86,6 +86,7 @@
     "net_worth": 35000000,
     "gender": "male",
     "nationality": "us",
+    "follows_on_twitter": ["Jeremy Renner", "Chris Hemsworth", "Robert Downey Jr."],
     "occupation": [
       "actor",
       "film_producer",
@@ -144,6 +145,7 @@
     "height": 1.9,
     "birthday": "1983-08-11",
     "number_of_roles": 51,
+    "follows_on_twitter": ["Jeremy Renner", "Mark Ruffalo", "Robert Downey Jr."],
     "marvel_movies": [
       "Thor",
       "The Avengers",
@@ -209,6 +211,7 @@
     "net_worth": 80000000,
     "gender": "male",
     "nationality": "us",
+    "follows_on_twitter": ["Mark Ruffalo", "Chris Hemsworth", "Robert Downey Jr."],
     "occupation": [
       "actor",
       "musician",
