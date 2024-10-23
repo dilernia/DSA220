@@ -24,9 +24,9 @@ library(tidycensus)
 dataDictionary <- function(myData, descripts) {
 tibble(Variable = colnames(myData),
        Type = map_chr(myData, .f = function(x){typeof(x)[1]}),
-       Description = descripts) %>% 
-  flextable::flextable() %>% 
-  flextable::autofit() %>% 
+       Description = descripts) |> 
+  flextable::flextable() |> 
+  flextable::autofit() |> 
     flextable::fit_to_width(6)
 }
 
@@ -39,7 +39,7 @@ At the end of the semester, you will apply your knowledge to analyze data of you
 
 # Report
 
-An analysis report detailing your data, methods, results, and conclusions is part of the final group project. The report, including the R Markdown file and produced output is **due (submitted via Blackboard) by 11:59pm on Monday, December 11th**. A grading rubric which should be closely followed will be made available later in the semester. Please include comments throughout your R code so it is easier for me to read your code. If completing the final project in a group, an additional section must be included in the report detailing the contributions of each group member.
+An analysis report detailing your data, methods, results, and conclusions is part of the final group project. The report, including the R Markdown file and produced output is **due (submitted via Blackboard) by 11:59pm on Monday, April 22nd**. A grading rubric which should be closely followed will be made available later in the semester. Please include comments throughout your R code so it is easier for me to read your code. If completing the final project in a group, an additional section must be included in the report detailing the contributions of each group member.
 
 The analysis report will consist of a report summarizing your results using R Markdown. When selecting a data set from the candidate data sets below, keep in mind that your analysis report must at minimum include:
 
@@ -52,8 +52,6 @@ The analysis report will consist of a report summarizing your results using R Ma
 - Merging / joining at least two tables of data together to produce the results tables or visualizations
 
 - At least three unique `stringr` functions are used to manipulate a string in a reasonably meaningful way (e.g., using `str_to_title(str_to_lower(str_to_upper("My plot title")))` is not a reasonably meaningful way to use three `stringr` functions.)
-
-- At least one Monte Carlo simulation for conducting statistical inference of your data
 
 - At least one permutation testing procedure implemented for conducting meaningful inference of your data
 
@@ -92,14 +90,23 @@ untar(tarfile = filePath,
 }
 
 # Importing data
-gunViolence <- data.table::fread(dataFile) %>% as_tibble()
+gunViolence <- data.table::fread(dataFile) |> as_tibble()
 
 # Saving to external file
 write_csv(gunViolence, "gunViolence.csv")
 } else {
-  gunViolence <- data.table::fread(file = "gunViolenceData\\gunViolenceGeo.csv") %>% 
+  gunViolence <- data.table::fread(file = "gunViolenceData\\gunViolenceGeo.csv") |> 
     as_tibble()
 }
+```
+
+```{r}
+#| include: false
+#| eval: true
+
+# Importing new gun violence data
+gun_violence <- readxl::read_excel("gunViolenceData/Gun Violence Archive - GVSU - Andrew DiLernia - Incidents and Participants - 20140101-20231231.xlsx",
+    skip = 5)
 ```
 
 ```{r fetchGunGeo, include = FALSE, eval = FALSE}
@@ -110,32 +117,16 @@ write_csv(gunViolence, "gunViolence.csv")
 # https://stackoverflow.com/questions/13316185/r-convert-zipcode-or-lat-long-to-county
 library(tidygeocoder)
 
-gunViolenceFull <- gunViolence %>% 
-  dplyr::rename(lat = latitude, long = longitude) %>% 
-  left_join(gunViolence %>%
-              dplyr::rename(lat = latitude, long = longitude) %>% 
+gunViolenceFull <- gunViolence |> 
+  dplyr::rename(lat = latitude, long = longitude) |> 
+  left_join(gunViolence |>
+              dplyr::rename(lat = latitude, long = longitude) |> 
   reverse_geocode(lat = lat, long = long, method = 'osm', unique_only = TRUE, return_coords = TRUE,
-                  full_results = FALSE) %>% 
+                  full_results = FALSE) |> 
     dplyr::rename(address_full = address))
 
 # Saving
 write_csv(gunViolenceFull, file = "gunViolenceFull.csv")
-```
-
-```{r extractCounty, include = FALSE, eval = FALSE}
-library(tidyverse)
-library(sf)
-
-# Extracting county info from addresses (not an easy task!)
-countyInfo <- gunViolence %>% 
-  separate(col = address_full, remove = FALSE, sep = ",", into = paste0("addr_info_", 1:24)) %>%
-  dplyr::select(address_full, starts_with("addr_info_")) %>% 
-  mutate(ID = 1:n()) %>% 
-  pivot_longer(cols = starts_with("addr_info_"), names_to = "Component", values_to = "Value") %>%
-  filter(str_detect(Value, pattern = "County|county")) %>% 
-  group_by(ID) %>% 
-  slice_tail(n = 1) %>% 
-  ungroup()
 ```
 
 ### Description
@@ -148,23 +139,19 @@ Data was obtained from the GitHub repo <https://github.com/jamesqo/gun-violence-
 
 *Gun Violence Archive (GVA) is a not for profit corporation formed in 2013 to provide free online public access to accurate information about gun-related violence in the United States. GVA will collect and check for accuracy, comprehensive information about gun-related violence in the U.S. and then post and disseminate it online.*
 
-### Attributes
+Although there are possible limitations in its comprehensiveness, [research](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2805517) supports the utility of the data provided by the Gun Violence Archive for public health research and quantifying the amount of gun violence occurring throughout the United States.
 
-**Number of observations**: `r nrow(gunViolence)`
-
-**Number of variables**: `r ncol(gunViolence)`
-
-**Data Dictionary**:
+### Data Dictionary
 
 ```{r gunDataDict}
 # Adding footnote to certain variables
-gunViolence <- gunViolence %>% 
+gunViolence <- gunViolence |> 
   rename_with(.data = gunViolence, 
               .cols = any_of(c("gun_stolen", "gun_type",
                                "incident_characteristics",
                         "participant_age",
                         "participant_age_group",
-                        "participant_gender",
+                        "participant_sex",
                         "participant_name",
                         "participant_relationship",
                         "participant_status",
@@ -173,7 +160,7 @@ gunViolence <- gunViolence %>%
 
 # Creating data dictionary
 dataDictionary(gunViolence, 
-               descripts = c("geographic region ID",
+               descripts = c("geographic region ID with the first 2 digits being the state Federal Information Processing Standard (FIPS) code \nand the last 3 digits the county FIPS code",
                  "gunviolencearchive.org ID for incident",
 "date of occurrence",
 "state",
@@ -195,7 +182,7 @@ dataDictionary(gunViolence,
 "additional notes about the incident",
 "participant age",
 "description of participant age group, one of 'Adult 18+', 'Teen 12-17', or 'Child 0-11'",
-"participant gender, one of 'Male' or 'Female'",
+"participant sex, one of 'Male' or 'Female'",
 "participant name",
 "relationship of participant to other participants",
 "outcome, one of 'Arrested', 'Killed', 'Injured', or 'Unharmed'",
@@ -204,13 +191,13 @@ dataDictionary(gunViolence,
 "state house district",
 "state senate district",
 "full address"
-)) %>% 
+)) |> 
   flextable::add_footer_lines(value = "*Observations for these variables can have multiple characteristics separated by ||, with characteristic indices starting at 0.")
 ```
 
 ## 2. United States Census Data: County-Level
 
-```{r fullCensus, include = FALSE}
+```{r allCensus, include = FALSE}
 library(tidycensus)
 library(tidyverse)
 
@@ -221,8 +208,8 @@ census_api_key("db3ee0519df8339885a3010ca2ea9e2f28f54e40",
 # All census variables
 censusVars <- load_variables(2019, "acs5", cache = TRUE)
 
-# Variables to query
-queries <- tibble(Variable = c("NAME", 
+# Full set of variables to query for states
+queries_state <- tibble(Variable = c("NAME", 
                                "B01003_001", 
                                "B17001_002", 
                                "B17001_001",
@@ -305,45 +292,59 @@ queries <- tibble(Variable = c("NAME",
                            "Total number of females",
                            "Denominator for sex",
                            "Median monthly housing costs for homeowners in dollars",
-                           "Median monthly rent costs for renters in dollars")) %>% 
+                           "Median monthly rent costs for renters in dollars")) |> 
   left_join(censusVars,
             by = c("Variable" = "name"))
 
-minYear <- 2008
-maxYear <- 2021
+# Smaller set of variables to query for counties
+queries_county <- queries_state |> dplyr::filter(Variable %in% c("NAME", 
+                               "B01003_001", 
+                               "B17001_002", 
+                               "B17001_001",
+                               "B19013_001", 
+                               "B01001_002", 
+                               "B01001_026", 
+                               "B01001_001",
+                               "B25088_001",
+                               "B25064_001"))
 
-if(file.exists(paste0("census_data", minYear, "-", maxYear, ".csv")) == FALSE) {
+# Function for fetching 5-year or 1-year ACS census data
+fetch_census <- function(geoType = "county", queries, minYear = 2009, maxYear = 2021) {
+if(file.exists(paste0("census_data_", geoType, "_", minYear, "-", maxYear, ".csv")) == FALSE) {
 # Get data for all counties in the United States for each year
-county_data <- map_dfr(.x = (minYear:maxYear)[which(minYear:maxYear != 2020)],
+census_data_small <- map_dfr(.x = (minYear:maxYear)[which(minYear:maxYear != 2020)],
                        .f = function(year) {
-                           get_acs(geography = "county", 
-                                   survey = "acs1",
+                           get_acs(geography = geoType, 
+                                   survey = ifelse(geoType == "county",
+                                                   "acs5", "acs1"),
                                    variables = queries$Variable, 
-                                   year = year) %>% 
+                                   year = year) |> 
                            mutate(year = year)
                        })
 
-state_data <- map_dfr(.x = (minYear:maxYear)[which(minYear:maxYear != 2020)],
-                       .f = function(year) {
-                           get_acs(geography = "state", 
-                                   survey = "acs1",
-                                   variables = queries$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)   
-                       })
-
 # Merging
-full_data <- county_data %>% 
-  left_join(queries, by = c("variable" = "Variable")) %>% 
+small_data <- census_data_small |> 
+  left_join(queries, by = c("variable" = "Variable")) |> 
   dplyr::rename(value = estimate, 
-                county_state = NAME) %>% 
-  janitor::clean_names() %>% 
+                county_state = NAME) |> 
+  janitor::clean_names() |> 
   dplyr::select(-moe, -label, -geography)
 
 # Pivoting
-wide_census <- full_data %>% pivot_wider(id_cols = c(geoid, county_state, year),
+if(geoType == "county") {
+wide_small_census <- small_data |> 
+  pivot_wider(id_cols = c(geoid, county_state, year),
                                          names_from = name, 
-                                         values_from = value) %>% 
+                                         values_from = value) |> 
+  mutate(prop_female = number_female / sex_denominator,
+         prop_male = number_male / sex_denominator,
+         prop_poverty = poverty_number / poverty_denominator) |> 
+  dplyr::select(geoid:year, population,
+                median_income:median_monthly_home_cost, starts_with("prop"))
+} else {
+  wide_small_census <- small_data |> pivot_wider(id_cols = c(geoid, county_state, year),
+                                         names_from = name, 
+                                         values_from = value) |> 
   mutate(prop_female = number_female / sex_denominator,
          prop_male = number_male / sex_denominator,
          prop_white = number_white / race_denominator,
@@ -362,127 +363,37 @@ wide_census <- full_data %>% pivot_wider(id_cols = c(geoid, county_state, year),
          prop_masters = number_masters / education_denominator,
          prop_professional = number_professional / education_denominator,
          prop_doctoral = number_doctoral / education_denominator,
-         prop_poverty = poverty_number / poverty_denominator) %>% 
+         prop_poverty = poverty_number / poverty_denominator) |> 
   dplyr::select(geoid:year, population,
                 median_income:median_monthly_home_cost, starts_with("prop"))
+}
 
 # Saving
-write_csv(wide_census, file = paste0("census_data_", 
-                                     min(wide_census$year), "-", max(wide_census$year), ".csv"))
-} else {
-  wide_census <- read_csv(paste0("census_data_", minYear, "-", maxYear, ".csv"))
+write_csv(wide_small_census, file = paste0("census_data_", 
+                                     geoType, "_", minYear, "-", maxYear, ".csv"))
 }
-```
-
-```{r smallCensus, include = FALSE}
-library(tidycensus)
-library(tidyverse)
-
-# Define API key for Census Bureau
-census_api_key("db3ee0519df8339885a3010ca2ea9e2f28f54e40",
-               install = TRUE, overwrite = TRUE)
-
-# All census variables
-censusVars <- load_variables(2019, "acs5", cache = TRUE)
-
-# Variables to query
-queriesSmall <- tibble(Variable = c("NAME", 
-                               "B01003_001", 
-                               "B17001_002", 
-                               "B17001_001",
-                               "B19013_001", 
-                               "B01001_002", 
-                               "B01001_026", 
-                               "B01001_001",
-                               "B25088_001",
-                               "B25064_001"),
-                  Name = c("county_state", 
-                           "population", 
-                           "poverty_number", 
-                           "poverty_denominator",
-                           "median_income",
-                           "number_male", 
-                           "number_female", 
-                           "sex_denominator",
-                           "median_monthly_home_cost",
-                           "median_monthly_rent_cost"),
-                  Description = c("Region", 
-                           "Total population. This variable represents the total number of people living in an area, including both males and females of all ages.",
-                           "Population below poverty level. This variable represents the number of people living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size.",
-                           "Denominator for poverty",
-                           "Median household income. This variable represents the middle value of household incomes in an area, with half of households earning more and half earning less.",
-                           "Total number of males",
-                           "Total number of females",
-                           "Denominator for sex",
-                           "Median monthly housing costs for homeowners in dollars",
-                           "Median monthly rent costs for renters in dollars")) %>% 
-  left_join(censusVars,
-            by = c("Variable" = "name"))
-
-minYear <- 2009
-maxYear <- 2021
-
-if(file.exists(paste0("census_data_small_", minYear, "-", maxYear, ".csv")) == FALSE) {
-# Get data for all counties in the United States for each year
-county_data_small <- map_dfr(.x = minYear:maxYear,
-                       .f = function(year) {
-                           get_acs(geography = "county", 
-                                   survey = "acs5",
-                                   variables = queriesSmall$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)
-                       })
-
-state_data_small <- map_dfr(.x = minYear:maxYear,
-                       .f = function(year) {
-                           get_acs(geography = "state", 
-                                   survey = "acs5",
-                                   variables = queriesSmall$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)
-                       })
-
-# Merging
-small_data <- county_data_small %>% 
-  left_join(queriesSmall, by = c("variable" = "Variable")) %>% 
-  dplyr::rename(value = estimate, 
-                county_state = NAME) %>% 
-  janitor::clean_names() %>% 
-  dplyr::select(-moe, -label, -geography)
-
-# Pivoting
-wide_small_census <- small_data %>% 
-  pivot_wider(id_cols = c(geoid, county_state, year),
-                                         names_from = name, 
-                                         values_from = value) %>% 
-  mutate(prop_female = number_female / sex_denominator,
-         prop_male = number_male / sex_denominator,
-         prop_poverty = poverty_number / poverty_denominator) %>% 
-  dplyr::select(geoid:year, population,
-                median_income:median_monthly_home_cost, starts_with("prop"))
-
-# Saving
-write_csv(wide_small_census, file = paste0("census_data_small_", 
-                                     min(wide_small_census$year), "-", max(wide_small_census$year), ".csv"))
-} else {
-  wide_small_census <- read_csv(paste0("census_data_small_", minYear, "-", maxYear, ".csv"))
 }
+
+# Fetching county-level 5-year ACS census data
+fetch_census(geoType = "county", queries = queries_county,
+             minYear = 2009)
+
+# Fetching state-level 1-year ACS census data
+fetch_census(geoType = "state", queries = queries_state,
+             minYear = 2008)
 
 # Importing expanded data
-wide_census <- read_csv(paste0("census_data_", 2008, "-", maxYear, ".csv"))
+wide_census_county <- read_csv(paste0("census_data_", 
+                                     "county", "_", 2009, "-", 2021, ".csv"))
 
-# Combining detailed census data
-full_census <- bind_rows(wide_census, wide_small_census) %>% 
-  distinct(geoid, year, .keep_all = TRUE)
-
-# Saving
-write_csv(full_census, file = paste0("census_data_full_", 
-                                     min(full_census$year), "-", max(full_census$year), ".csv"))
+# Importing expanded data
+wide_census_state <- read_csv(paste0("census_data_", 
+                                     "state", "_", 2008, "-", 2021, ".csv"))
 ```
 
 ### Description
 
-Estimates from the United States American Community Survey (ACS) at the county level for the years 2008 through 2021 based on an annual sample size of approximately 3.5 million addresses including data on population, income, poverty rates, and demographic characteristics, excluding the year 2020 as this data is unavailable. The data is contained in [census_data_full_2008-2021.csv](https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/census_data_full_2008-2021.csv).
+Estimates from the United States American Community Survey (ACS) at the county level for the years 2009 through 2021 based on an annual sample size of approximately 3.5 million addresses including data on population and demographic characteristics, excluding the year 2020 as this data is unavailable. The data is contained in [census_data_county_2009-2021.csv](https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/census_data_county_2009-2021.csv).
 
 Additional data on United States counties can be found [here](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/urban-area-record-layouts.html), including areas of each county, a table proving an approximate linking between zip codes and counties, and other information.
 
@@ -494,18 +405,12 @@ For those seeking a more faithful interpretation of the estimates though, the ce
 
 Data was obtained via the `tidycensus` R package and the [United States Census website](https://www.census.gov/).
 
-### Attributes
+### Data Dictionary
 
-**Number of observations**: `r nrow(full_census)`
-
-**Number of variables**: `r ncol(full_census)`
-
-**Data Dictionary**:
-
-```{r censusDataDict}
+```{r censusDataDictCounty}
 # Creating data dictionary
-dataDictionary(full_census, 
-               descripts = c("geographic region ID",
+dataDictionary(wide_census_county, 
+               descripts = c("geographic region ID with the first 2 digits being the state Federal Information Processing Standard (FIPS) code \nand the last 3 digits the county FIPS code",
                              "geographic region",
 "year",
 "population",
@@ -514,22 +419,6 @@ dataDictionary(full_census,
 "median monthly rent costs for renters in dollars",
 "proportion of people who are female",
 "proportion of people who are male",
-"proportion of people who are white alone",
-                           "proportion of people who are black or African American alone",
-                           "proportion of people who are American Indian and Alaska Native alone",
-                           "proportion of people who are Asian alone",
-                           "proportion of people who are Native Hawaiian and Other Pacific Islander alone",
-                           "proportion of people who are some other race alone",
-                           "proportion of people who are two or more races",
-"proportion of people 25 and older whose highest education-level is high school",
-"proportion of people 25 and older whose highest education-level is a GED",
-"proportion of people 25 and older whose highest education-level is some, but less than 1 year of college",
-"proportion of people 25 and older whose highest education-level is greater than 1 year of college but no degree",
-"proportion of people 25 and older whose highest education-level is an Associates degree",
-"proportion of people 25 and older whose highest education-level is a Bachelors degree",
-"proportion of people 25 and older whose highest education-level is a Masters degree",
-"proportion of people 25 and older whose highest education-level is a Professional degree",
-"proportion of people 25 and older whose highest education-level is a Doctoral degree",
 "proportion of people 25 and older living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size."
 ))
 ```
@@ -584,16 +473,16 @@ utils::unzip("cb_2018_us_county_500k.zip",
 county_shape <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
 
 # Merge shape and census data
-ggMapData <- county_shape %>% 
-  full_join(full_census, by = c("GEOID" = "geoid")) %>% 
+ggMapData <- county_shape |> 
+  full_join(full_census, by = c("GEOID" = "geoid")) |> 
   dplyr::filter(year == 2021)
 
 # Fixing issue with Alaska and Hawaii
-ggMapDataFix <- ggMapData %>% 
+ggMapDataFix <- ggMapData |> 
   tigris::shift_geometry()
 
 # Plot it
-povertyGG <- ggMapDataFix %>% 
+povertyGG <- ggMapDataFix |> 
   ggplot(aes(fill = prop_poverty)) +
   geom_sf() +
   scale_fill_gradient(low = "white", high = "dodgerblue") +
@@ -636,25 +525,25 @@ county_shape <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
 gunViolenceFull <- read_csv("gunViolenceData/gunViolenceFull.csv")
 
 # Converting to sf object for merging
-sf_gun <- gunViolenceFull %>% 
-  dplyr::filter(!is.na(long*lat)) %>% 
-  mutate(year = lubridate::year(date)) %>% 
+sf_gun <- gunViolenceFull |> 
+  dplyr::filter(!is.na(long*lat)) |> 
+  mutate(year = lubridate::year(date)) |> 
   st_as_sf(coords = c("long", "lat"))
 
 # Creating sf data for gun violence
-gunMapData <- county_shape %>% 
-  full_join(full_census, by = c("GEOID" = "geoid")) %>% 
+gun_map_data <- county_shape |> 
+  full_join(full_census, by = c("GEOID" = "geoid")) |> 
   dplyr::filter(year == 2016)
 
 # Set coordinate reference system (CRS) of sf_gun to match counties
-st_crs(sf_gun) <- st_crs(gunMapData)
+st_crs(sf_gun) <- st_crs(gun_map_data)
 
 # Merging with sf data
-gunViolenceGeo <- sf_gun %>% 
-  st_join(gunMapData) %>% as_tibble() %>% 
-  dplyr::select(GEOID, incident_id) %>% 
-  dplyr::rename(geoid = GEOID) %>% 
-  distinct() %>% 
+gunViolenceGeo <- sf_gun |> 
+  st_join(gun_map_data) |> as_tibble() |> 
+  dplyr::select(GEOID, incident_id) |> 
+  dplyr::rename(geoid = GEOID) |> 
+  distinct() |> 
   full_join(gunViolenceFull)
 
 # Saving with geoid now included
@@ -662,19 +551,19 @@ write_csv(gunViolenceGeo,
           file = "gunViolenceData/gunViolenceGeo.csv")
 
 # Subsetting sf_gun data for plotting
-sf_gun_2016 <- gunMapData %>% 
-  dplyr::filter(year == 2016) %>% 
-  distinct() %>% 
+sf_gun_2016 <- gun_map_data |> 
+  dplyr::filter(year == 2016) |> 
+  distinct() |> 
   full_join(
-  gunViolenceGeo %>% 
-  dplyr::filter(lubridate::year(date) == 2016) %>% 
-  count(geoid) %>% 
-  dplyr::rename(n_incidents = n), by = c("GEOID" = "geoid")) %>% 
-  mutate(hundredthousand_incidents_per_capita = n_incidents / population * 100000) %>% 
+  gunViolenceGeo |> 
+  dplyr::filter(lubridate::year(date) == 2016) |> 
+  count(geoid) |> 
+  dplyr::rename(n_incidents = n), by = c("GEOID" = "geoid")) |> 
+  mutate(hundredthousand_incidents_per_capita = n_incidents / population * 100000) |> 
     tigris::shift_geometry()
 
 # Creating choropleth map
-gunGG <- sf_gun_2016 %>% 
+gunGG <- sf_gun_2016 |> 
   ggplot(aes(fill = hundredthousand_incidents_per_capita)) +
   geom_sf() +
   scale_fill_gradient(low = "white", high = "dodgerblue") +
@@ -684,542 +573,10 @@ gunGG <- sf_gun_2016 %>%
 gunGG
 ```
 
-Note that there are several categories of variables.
-
-1. Non-proportion demographics / characteristics: `geoid`, `county_state`, `year`, `population`, and `median_income`.
-
-2. Variables describing proportions: 
-
-  a. **Gender**; `prop_female` and `prop_male`
-  
-  b. **Race**; `prop_white`, `prop_black`, `prop_native`, `prop_asian`, `prop_hawaiin_islander`. `prop_other_race`, and `prop_multi_racial`
-  
-  c. **Education**; `prop_highschool`, `prop_GED`, `prop_some_college`, `prop_college_no_degree`, `prop_associates`, `prop_bachelors`, `prop_masters`, `prop_professional`, `prop_doctoral`
-  
-  d. **Poverty**; `prop_poverty`
-
-The Gender, Race, and Poverty categories are comprehensively listed here, in that every possible subcategory from the census is included. There are many other Education subcategories that are not included though, e.g., `prop_kindergarten` for those whose highest education-level was kindergarten, `prop_grade1` for those whose highest education-level was first grade, and so on. Therefore, one could sum `prop_highschool` through `prop_doctoral` to obtain the proportion of adults 25 years and older who have finished at least high school, and calculate one minus this to calculate the proportion of adults 25 years and older who have not finished high school.
-
-## 3. United States Census Data: State-Level
-
-```{r fullCensus, include = FALSE}
-library(tidycensus)
-library(tidyverse)
-
-# Define API key for Census Bureau
-census_api_key("db3ee0519df8339885a3010ca2ea9e2f28f54e40",
-               install = TRUE, overwrite = TRUE)
-
-# All census variables
-censusVars <- load_variables(2019, "acs5", cache = TRUE)
-
-# Variables to query
-queries <- tibble(Variable = c("NAME", 
-                               "B01003_001", 
-                               "B17001_002", 
-                               "B17001_001",
-                               "B19013_001", 
-                               "B15003_017",
-                               "B15003_018", 
-                               "B15003_019",
-                               "B15003_020", 
-                               "B15003_021",
-                               "B15003_022", 
-                               "B15003_023",
-                               "B15003_024", 
-                               "B15003_025",
-                               "B15003_001",
-                               "B02001_002", 
-                               "B02001_003", 
-                               "B02001_004", 
-                               "B02001_005", 
-                               "B02001_006", 
-                               "B02001_007", 
-                               "B02001_008", 
-                               "B02001_001", 
-                               "B01001_002", 
-                               "B01001_026", 
-                               "B01001_001",
-                               "B25088_001",
-                               "B25064_001"),
-                  Name = c("county_state", 
-                           "population", 
-                           "poverty_number", 
-                           "poverty_denominator",
-                           "median_income",
-                           "number_highschool",
-                           "number_GED",
-                           "number_some_college",
-                           "number_college_no_degree",
-                           "number_associates",
-                           "number_bachelors",
-                           "number_masters",
-                           "number_professional",
-                           "number_doctoral",
-                           "education_denominator",
-                           "number_white", 
-                           "number_black", 
-                           "number_native",
-                           "number_asian",
-                           "number_hawaiin_islander",
-                           "number_other_race",
-                           "number_multi_racial",
-                           "race_denominator",
-                           "number_male", 
-                           "number_female", 
-                           "sex_denominator",
-                           "median_monthly_home_cost",
-                           "median_monthly_rent_cost"),
-                  Description = c("Region", 
-                           "Total population. This variable represents the total number of people living in an area, including both males and females of all ages.",
-                           "Population below poverty level. This variable represents the number of people living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size.",
-                           "Denominator for poverty",
-                           "Median household income. This variable represents the middle value of household incomes in an area, with half of households earning more and half earning less.",
-                           "The number of people aged 25 or older who have completed high school (including equivalency)",
-                           "The number of people aged 25 or older who have achieved a GED or equivalent credential",
-                           "The number of people aged 25 or older who have completed some college (<1 year)",
-                           "The number of people aged 25 or older who have completed some college, but no degree (>1 year)", 
-                           "The number of people aged 25 or older who have attained an Associates degree",
-                           "The number of people aged 25 or older who have attained a Bachelors degree",
-                           "The number of people aged 25 or older who have attained a Masters degree",
-                           "The number of people aged 25 or older who have attained a Professional degree",
-                           "The number of people aged 25 or older who have attained a Doctoral degree",
-                           "Denominator for educational attainment",
-                           "Number of people who are white alone",
-                           "Number of people who are black or African American alone",
-                           "Number of people who are American Indian and Alaska Native alone",
-                           "Number of people who are Asian alone",
-                           "Number of people who are Native Hawaiian and Other Pacific Islander alone",
-                           "Number of people who are some other race alone",
-                           "Number of people who are two or more races",
-                           "Denominator for race",
-                           "Total number of males",
-                           "Total number of females",
-                           "Denominator for sex",
-                           "Median monthly housing costs for homeowners in dollars",
-                           "Median monthly rent costs for renters in dollars")) %>% 
-  left_join(censusVars,
-            by = c("Variable" = "name"))
-
-minYear <- 2008
-maxYear <- 2021
-
-if(file.exists(paste0("census_data", minYear, "-", maxYear, ".csv")) == FALSE) {
-# Get data for all counties in the United States for each year
-county_data <- map_dfr(.x = (minYear:maxYear)[which(minYear:maxYear != 2020)],
-                       .f = function(year) {
-                           get_acs(geography = "county", 
-                                   survey = "acs1",
-                                   variables = queries$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)
-                       })
-
-state_data <- map_dfr(.x = (minYear:maxYear)[which(minYear:maxYear != 2020)],
-                       .f = function(year) {
-                           get_acs(geography = "state", 
-                                   survey = "acs1",
-                                   variables = queries$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)   
-                       })
-
-# Merging
-full_data <- county_data %>% 
-  left_join(queries, by = c("variable" = "Variable")) %>% 
-  dplyr::rename(value = estimate, 
-                county_state = NAME) %>% 
-  janitor::clean_names() %>% 
-  dplyr::select(-moe, -label, -geography)
-
-# Pivoting
-wide_census <- full_data %>% pivot_wider(id_cols = c(geoid, county_state, year),
-                                         names_from = name, 
-                                         values_from = value) %>% 
-  mutate(prop_female = number_female / sex_denominator,
-         prop_male = number_male / sex_denominator,
-         prop_white = number_white / race_denominator,
-         prop_black = number_black / race_denominator,
-         prop_native = number_native / race_denominator,
-         prop_asian = number_asian / race_denominator,
-         prop_hawaiin_islander = number_hawaiin_islander / race_denominator,
-         prop_other_race = number_other_race / race_denominator,
-         prop_multi_racial = number_multi_racial / race_denominator,
-         prop_highschool = number_highschool / education_denominator,
-         prop_GED = number_GED / education_denominator,
-         prop_some_college = number_some_college / education_denominator,
-         prop_college_no_degree = number_college_no_degree / education_denominator,
-         prop_associates =  number_associates / education_denominator,
-         prop_bachelors = number_bachelors / education_denominator,
-         prop_masters = number_masters / education_denominator,
-         prop_professional = number_professional / education_denominator,
-         prop_doctoral = number_doctoral / education_denominator,
-         prop_poverty = poverty_number / poverty_denominator) %>% 
-  dplyr::select(geoid:year, population,
-                median_income:median_monthly_home_cost, starts_with("prop"))
-
-# Saving
-write_csv(wide_census, file = paste0("census_data_", 
-                                     min(wide_census$year), "-", max(wide_census$year), ".csv"))
-} else {
-  wide_census <- read_csv(paste0("census_data_", minYear, "-", maxYear, ".csv"))
-}
-```
-
-```{r smallCensus, include = FALSE}
-library(tidycensus)
-library(tidyverse)
-
-# Define API key for Census Bureau
-census_api_key("db3ee0519df8339885a3010ca2ea9e2f28f54e40",
-               install = TRUE, overwrite = TRUE)
-
-# All census variables
-censusVars <- load_variables(2019, "acs5", cache = TRUE)
-
-# Variables to query
-queriesSmall <- tibble(Variable = c("NAME", 
-                               "B01003_001", 
-                               "B17001_002", 
-                               "B17001_001",
-                               "B19013_001", 
-                               "B01001_002", 
-                               "B01001_026", 
-                               "B01001_001",
-                               "B25088_001",
-                               "B25064_001"),
-                  Name = c("county_state", 
-                           "population", 
-                           "poverty_number", 
-                           "poverty_denominator",
-                           "median_income",
-                           "number_male", 
-                           "number_female", 
-                           "sex_denominator",
-                           "median_monthly_home_cost",
-                           "median_monthly_rent_cost"),
-                  Description = c("Region", 
-                           "Total population. This variable represents the total number of people living in an area, including both males and females of all ages.",
-                           "Population below poverty level. This variable represents the number of people living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size.",
-                           "Denominator for poverty",
-                           "Median household income. This variable represents the middle value of household incomes in an area, with half of households earning more and half earning less.",
-                           "Total number of males",
-                           "Total number of females",
-                           "Denominator for sex",
-                           "Median monthly housing costs for homeowners in dollars",
-                           "Median monthly rent costs for renters in dollars")) %>% 
-  left_join(censusVars,
-            by = c("Variable" = "name"))
-
-minYear <- 2009
-maxYear <- 2021
-
-if(file.exists(paste0("census_data_small_", minYear, "-", maxYear, ".csv")) == FALSE) {
-# Get data for all counties in the United States for each year
-county_data_small <- map_dfr(.x = minYear:maxYear,
-                       .f = function(year) {
-                           get_acs(geography = "county", 
-                                   survey = "acs5",
-                                   variables = queriesSmall$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)
-                       })
-
-state_data_small <- map_dfr(.x = minYear:maxYear,
-                       .f = function(year) {
-                           get_acs(geography = "state", 
-                                   survey = "acs5",
-                                   variables = queriesSmall$Variable, 
-                                   year = year) %>% 
-                           mutate(year = year)
-                       })
-
-# Merging
-small_data <- county_data_small %>% 
-  left_join(queriesSmall, by = c("variable" = "Variable")) %>% 
-  dplyr::rename(value = estimate, 
-                county_state = NAME) %>% 
-  janitor::clean_names() %>% 
-  dplyr::select(-moe, -label, -geography)
-
-# Pivoting
-wide_small_census <- small_data %>% 
-  pivot_wider(id_cols = c(geoid, county_state, year),
-                                         names_from = name, 
-                                         values_from = value) %>% 
-  mutate(prop_female = number_female / sex_denominator,
-         prop_male = number_male / sex_denominator,
-         prop_poverty = poverty_number / poverty_denominator) %>% 
-  dplyr::select(geoid:year, population,
-                median_income:median_monthly_home_cost, starts_with("prop"))
-
-# Saving
-write_csv(wide_small_census, file = paste0("census_data_small_", 
-                                     min(wide_small_census$year), "-", max(wide_small_census$year), ".csv"))
-} else {
-  wide_small_census <- read_csv(paste0("census_data_small_", minYear, "-", maxYear, ".csv"))
-}
-
-# Importing expanded data
-wide_census <- read_csv(paste0("census_data_", 2008, "-", maxYear, ".csv"))
-
-# Combining detailed census data
-full_census <- bind_rows(wide_census, wide_small_census) %>% 
-  distinct(geoid, year, .keep_all = TRUE)
-
-# Saving
-write_csv(full_census, file = paste0("census_data_full_", 
-                                     min(full_census$year), "-", max(full_census$year), ".csv"))
-```
-
-### Description
-
-Estimates from the United States American Community Survey (ACS) at the county level for the years 2008 through 2021 based on an annual sample size of approximately 3.5 million addresses including data on population, income, poverty rates, and demographic characteristics, excluding the year 2020 as this data is unavailable. The data is contained in [census_data_full_2008-2021.csv](https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/census_data_full_2008-2021.csv).
-
-Additional data on United States counties can be found [here](https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/urban-area-record-layouts.html), including areas of each county, a table proving an approximate linking between zip codes and counties, and other information.
-
-Note that estimates are from the 5-year American Community Survey (ACS), which relies on rolling [period estimates](https://www.census.gov/newsroom/blogs/random-samplings/2022/03/period-estimates-american-community-survey.html) for county-level information. As a result, these 5-year estimates should be interpreted with caution when comparing across years. To simplify the report for the final project though, interpreting the estimates as if they just correspond to the year listed in the data set is recommended.
-
-For those seeking a more faithful interpretation of the estimates though, the census website provides a brief explanation: "The 5-year ACS estimates do not represent a specific point in time during the collection period, but rather a pooling of the data collected during the entire period." In other words, the 5-year estimates often approximate the midpoint of the 5-year period. For example, estimates with the year 2021 are based on data from the years 2017 through 2021 and approximately correspond to the midpoint year of 2019. Due to the pooling of data across multiple years, a consequence is that rolling-period estimates are smoothed across time. That is, 5-year estimates ending in 2019 will be based on nearly the same data as 5-year estimates ending in 2018. See the [United States Census Bureau website](https://www.census.gov/newsroom/blogs/random-samplings/2022/03/period-estimates-american-community-survey.html) for more details.
-
-### Source
-
-Data was obtained via the `tidycensus` R package and the [United States Census website](https://www.census.gov/).
-
-### Attributes
-
-**Number of observations**: `r nrow(full_census)`
-
-**Number of variables**: `r ncol(full_census)`
-
-**Data Dictionary**:
-
-```{r censusDataDict}
-# Creating data dictionary
-dataDictionary(full_census, 
-               descripts = c("geographic region ID",
-                             "geographic region",
-"year",
-"population",
-"median income in dollars",
-"median monthly housing costs for homeowners in dollars",
-"median monthly rent costs for renters in dollars",
-"proportion of people who are female",
-"proportion of people who are male",
-"proportion of people who are white alone",
-                           "proportion of people who are black or African American alone",
-                           "proportion of people who are American Indian and Alaska Native alone",
-                           "proportion of people who are Asian alone",
-                           "proportion of people who are Native Hawaiian and Other Pacific Islander alone",
-                           "proportion of people who are some other race alone",
-                           "proportion of people who are two or more races",
-"proportion of people 25 and older whose highest education-level is high school",
-"proportion of people 25 and older whose highest education-level is a GED",
-"proportion of people 25 and older whose highest education-level is some, but less than 1 year of college",
-"proportion of people 25 and older whose highest education-level is greater than 1 year of college but no degree",
-"proportion of people 25 and older whose highest education-level is an Associates degree",
-"proportion of people 25 and older whose highest education-level is a Bachelors degree",
-"proportion of people 25 and older whose highest education-level is a Masters degree",
-"proportion of people 25 and older whose highest education-level is a Professional degree",
-"proportion of people 25 and older whose highest education-level is a Doctoral degree",
-"proportion of people 25 and older living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size."
-))
-```
-
-```{r fetchBLS, eval = FALSE, include = FALSE}
-library(httr)
-library(jsonlite)
-library(tidyverse)
-library(blsAPI)
-
-bls_url <- "https://api.bls.gov/publicAPI/v2/timeseries/data/"
-series_id <- "CUUR0000SA0"
-api_key <- "7a41684c97044383869283ac853d060d"
-
-blsData <- laus_get_data(
-  location.vector = state.name,
-                         start.year = 2008, 
-                         end.year = 2021,
-                         measure.vector = c("unemployment rate"),
-                         api.version = 2, bls.key = api_key)
-
-write_csv(bls_df, "bls_cpi_data.csv")
-```
-
-```{r choroplethCensus, eval = FALSE, include = FALSE}
-library(tidyverse)
-library(stringr)
-library(lubridate)
-library(ggpubr)
-library(leaflet)
-library(sf)
-library(tigris)
-
-# Importing full census data
-full_census <- read_csv(file = "https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/census_data_full_2008-2021.csv")
-
-# Downloading county-level shape files from US Census Bureau
-if(!file.exists("cb_2018_us_county_500k.zip")) {
-download.file(url = "https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_county_500k.zip",
-              destfile = "cb_2018_us_county_500k.zip")
-}
-
-if(!dir.exists("GeoFiles")) {
-  dir.create("GeoFiles/")
-}
-
-# Unzipping files
-utils::unzip("cb_2018_us_county_500k.zip",
-             exdir = "GeoFiles")
-
-# Loading the shapefiles
-county_shape <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
-
-# Merge shape and census data
-ggMapData <- county_shape %>% 
-  full_join(full_census, by = c("GEOID" = "geoid")) %>% 
-  dplyr::filter(year == 2021)
-
-# Fixing issue with Alaska and Hawaii
-ggMapDataFix <- ggMapData %>% 
-  tigris::shift_geometry()
-
-# Plot it
-povertyGG <- ggMapDataFix %>% 
-  ggplot(aes(fill = prop_poverty)) +
-  geom_sf() +
-  scale_fill_gradient(low = "white", high = "dodgerblue") +
-  labs(title = "County-level poverty rates, 2021", fill = "Poverty rate") +
-  theme_void()
-
-povertyGG
-```
-
-```{r gunAddGeoID, eval = FALSE, include = FALSE}
-library(tidyverse)
-library(stringr)
-library(lubridate)
-library(ggpubr)
-library(leaflet)
-library(sf)
-library(tigris)
-
-# Importing full census data
-full_census <- read_csv(file = "census_data_full_2008-2021.csv")
-
-# Downloading county-level shape files from US Census Bureau
-if(!file.exists("cb_2018_us_county_500k.zip")) {
-download.file(url = "https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_county_500k.zip",
-              destfile = "cb_2018_us_county_500k.zip")
-}
-
-if(!dir.exists("GeoFiles")) {
-  dir.create("GeoFiles/")
-}
-
-# Unzipping files
-utils::unzip("cb_2018_us_county_500k.zip",
-             exdir = "GeoFiles")
-
-# Loading the shapefiles
-county_shape <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
-
-# Importing full gun violence data
-gunViolenceFull <- read_csv("gunViolenceData/gunViolenceFull.csv")
-
-# Converting to sf object for merging
-sf_gun <- gunViolenceFull %>% 
-  dplyr::filter(!is.na(long*lat)) %>% 
-  mutate(year = lubridate::year(date)) %>% 
-  st_as_sf(coords = c("long", "lat"))
-
-# Creating sf data for gun violence
-gunMapData <- county_shape %>% 
-  full_join(full_census, by = c("GEOID" = "geoid")) %>% 
-  dplyr::filter(year == 2016)
-
-# Set coordinate reference system (CRS) of sf_gun to match counties
-st_crs(sf_gun) <- st_crs(gunMapData)
-
-# Merging with sf data
-gunViolenceGeo <- sf_gun %>% 
-  st_join(gunMapData) %>% as_tibble() %>% 
-  dplyr::select(GEOID, incident_id) %>% 
-  dplyr::rename(geoid = GEOID) %>% 
-  distinct() %>% 
-  full_join(gunViolenceFull)
-
-# Saving with geoid now included
-write_csv(gunViolenceGeo, 
-          file = "gunViolenceData/gunViolenceGeo.csv")
-
-# Subsetting sf_gun data for plotting
-sf_gun_2016 <- gunMapData %>% 
-  dplyr::filter(year == 2016) %>% 
-  distinct() %>% 
-  full_join(
-  gunViolenceGeo %>% 
-  dplyr::filter(lubridate::year(date) == 2016) %>% 
-  count(geoid) %>% 
-  dplyr::rename(n_incidents = n), by = c("GEOID" = "geoid")) %>% 
-  mutate(hundredthousand_incidents_per_capita = n_incidents / population * 100000) %>% 
-    tigris::shift_geometry()
-
-# Creating choropleth map
-gunGG <- sf_gun_2016 %>% 
-  ggplot(aes(fill = hundredthousand_incidents_per_capita)) +
-  geom_sf() +
-  scale_fill_gradient(low = "white", high = "dodgerblue") +
-  labs(title = "County-level gun violence incidents per capita, 2016", fill = "Incidents per 100,000 people") +
-  theme_void()
-
-gunGG
-```
-
-Note that there are several categories of variables.
-
-1. Non-proportion demographics / characteristics: `geoid`, `county_state`, `year`, `population`, and `median_income`.
-
-2. Variables describing proportions: 
-
-  a. **Gender**; `prop_female` and `prop_male`
-  
-  b. **Race**; `prop_white`, `prop_black`, `prop_native`, `prop_asian`, `prop_hawaiin_islander`. `prop_other_race`, and `prop_multi_racial`
-  
-  c. **Education**; `prop_highschool`, `prop_GED`, `prop_some_college`, `prop_college_no_degree`, `prop_associates`, `prop_bachelors`, `prop_masters`, `prop_professional`, `prop_doctoral`
-  
-  d. **Poverty**; `prop_poverty`
-
-The Gender, Race, and Poverty categories are comprehensively listed here, in that every possible subcategory from the census is included. There are many other Education subcategories that are not included though, e.g., `prop_kindergarten` for those whose highest education-level was kindergarten, `prop_grade1` for those whose highest education-level was first grade, and so on. Therefore, one could sum `prop_highschool` through `prop_doctoral` to obtain the proportion of adults 25 years and older who have finished at least high school, and calculate one minus this to calculate the proportion of adults 25 years and older who have not finished high school.
-
-## 3. Fast Food Restaurants Data
-
-```{r, eval = FALSE, include = FALSE}
-# Importing data with geoid now included
-fastFoodGeo <- read_csv("fastFoodData/fastFoodGeo.csv")
-```
-
-```{r fetchFoodGeo, include = FALSE, eval = FALSE}
+```{r gun_add_geo_new, eval = FALSE, include = FALSE}
 #| include: false
 #| eval: false
 
-# Adding county & state info following
-# https://stackoverflow.com/questions/13316185/r-convert-zipcode-or-lat-long-to-county
-library(tidygeocoder)
-
-fastFoodFull <- fastFood %>% 
-  dplyr::rename(lat = latitude, long = longitude) %>% 
-  left_join(fastFood %>%
-              dplyr::rename(lat = latitude, long = longitude) %>% 
-  reverse_geocode(lat = lat, long = long, method = 'osm', unique_only = TRUE, return_coords = TRUE,
-                  full_results = FALSE) %>% 
-    dplyr::rename(address_full = address))
-
-# Saving
-write_csv(fastFoodFull, file = "fastFoodData/fastFoodFull.csv")
-```
-
-```{r addFoodGeoID, eval = FALSE, include = FALSE}
 library(tidyverse)
 library(stringr)
 library(lubridate)
@@ -1227,6 +584,12 @@ library(ggpubr)
 library(leaflet)
 library(sf)
 library(tigris)
+
+# Importing new gun violence data
+gun_violence <- readxl::read_excel("gunViolenceData/Gun Violence Archive - GVSU - Andrew DiLernia - Incidents and Participants - 20140101-20231231.xlsx",
+    skip = 5) |> 
+  janitor::clean_names() |> 
+  dplyr::rename(number_suspects_killed = number_suspect_killed)
 
 # Importing full census data
 full_census <- read_csv(file = "census_data_full_2008-2021.csv")
@@ -1248,89 +611,139 @@ utils::unzip("cb_2018_us_county_500k.zip",
 # Loading the shapefiles
 county_shape <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
 
-# Importing the data
-fastFood <- read_csv("fastFoodData/fastFoodFull.csv")
-
 # Converting to sf object for merging
-sf_food <- fastFood %>% 
-  dplyr::filter(!is.na(long*lat)) %>%
-  st_as_sf(coords = c("long", "lat"))
+sf_gun <- gun_violence |> 
+  dplyr::filter(!is.na(longitude), !is.na(latitude)) |> 
+  mutate(year = lubridate::year(date)) |> 
+  st_as_sf(coords = c("longitude", "latitude"))
 
-# Creating sf data for distribution of restaurants
-foodMapData <- county_shape %>% 
-  full_join(full_census, by = c("GEOID" = "geoid")) %>% 
+# Creating sf data for gun violence
+gun_map_data <- county_shape |> 
+  full_join(full_census, by = c("GEOID" = "geoid")) |> 
   dplyr::filter(year == 2016)
 
-# Set coordinate reference system (CRS) of sf_food to match counties
-st_crs(sf_food) <- st_crs(foodMapData)
+# Set coordinate reference system (CRS) of sf_gun to match counties
+st_crs(sf_gun) <- st_crs(gun_map_data)
 
+gun_violence_geo_file <- "gunViolenceData/gun_violence_geo.csv"
+
+if(file.exists(gun_violence_geo_file) == FALSE) {
 # Merging with sf data
-fastFoodGeo <- sf_food %>% 
-  st_join(foodMapData) %>% as_tibble() %>% 
-  dplyr::select(GEOID, keys) %>% 
-  dplyr::rename(geoid = GEOID) %>% 
-  distinct() %>% 
-  full_join(fastFood)
+gun_violence_geo <- sf_gun |> 
+  st_join(gun_map_data) |> as_tibble() |> 
+  dplyr::select(GEOID, incident_id) |> 
+  dplyr::rename(geoid = GEOID) |> 
+  distinct() |> 
+  full_join(gun_violence)
 
 # Saving with geoid now included
-write_csv(fastFoodGeo, 
-          file = "fastFoodData/fastFoodGeo.csv")
+write_csv(gun_violence_geo, 
+          file = gun_violence_geo_file)
+} else {
+  # Importing data
+  gun_violence_geo <- read_csv(gun_violence_geo_file)
+}
 
-# Subsetting sf_food data for plotting
-sf_food_2016 <- foodMapData %>% 
-  dplyr::filter(year == 2016) %>% 
-  distinct() %>% 
+# Subsetting sf_gun data for plotting
+sf_gun_2016 <- gun_map_data |> 
+  dplyr::filter(year == 2016) |> 
+  distinct() |> 
   full_join(
-  fastFoodGeo %>%
-  count(geoid) %>% 
-  dplyr::rename(n_restaurants = n), by = c("GEOID" = "geoid")) %>% 
-  mutate(restaurants_per_capita = n_restaurants / population*100000) %>% 
+  gun_violence_geo |> 
+  dplyr::filter(lubridate::year(date) == 2016) |> 
+  count(geoid) |> 
+  dplyr::rename(n_incidents = n), by = c("GEOID" = "geoid")) |> 
+  mutate(hundredthousand_incidents_per_capita = n_incidents / population * 100000) |> 
     tigris::shift_geometry()
 
 # Creating choropleth map
-foodGG <- sf_food_2016 %>% 
-  ggplot(aes(fill = restaurants_per_capita)) +
+gunGG <- sf_gun_2016 |> 
+  ggplot(aes(fill = hundredthousand_incidents_per_capita)) +
   geom_sf() +
   scale_fill_gradient(low = "white", high = "dodgerblue") +
-  labs(title = "County-level restaurants per capita", fill = "Restaurants per 100,000 people") +
+  labs(title = "County-level gun violence incidents per capita, 2016", fill = "Incidents per 100,000 people") +
   theme_void()
 
-foodGG
+gunGG
 ```
+
+Note that there are several categories of variables.
+
+1. Non-proportion demographics / characteristics: `geoid`, `county_state`, `year`, `population`, and `median_income`.
+
+2. Variables describing proportions: 
+
+  a. **Sex**; `prop_female` and `prop_male`
+  
+  b. **Poverty**; `prop_poverty`
+
+The Sex and Poverty categories are comprehensively listed here, in that every possible subcategory from the census is included.
+
+## 3. United States Census Data: State-Level
 
 ### Description
 
-This is a list of 10,000 fast food restaurants provided by [Datafiniti's Business Database](https://datafiniti.co/products/business-data/). The dataset includes the restaurant's address, city, latitude and longitude coordinates, name, and other characteristics. The data is contained in [fastFoodGeo.csv](https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/fastFoodGeo.csv).
+Estimates from the United States American Community Survey (ACS) at the state level for the years 2008 through 2021 based on an annual sample size of approximately 3.5 million addresses including data on population, income, poverty rates, and demographic characteristics, excluding the year 2020 as this data is unavailable. The data is contained in [census_data_state_2008-2021.csv](https://raw.githubusercontent.com/dilernia/STA418-518/main/Data/census_data_state_2008-2021.csv).
+
+Note that estimates are from the 1-year American Community Survey (ACS), which do not rely on rolling [period estimates](https://www.census.gov/newsroom/blogs/random-samplings/2022/03/period-estimates-american-community-survey.html).
 
 ### Source
 
-Data was obtained from the [Kaggle website](https://www.kaggle.com/datasets/datafiniti/fast-food-restaurants).
+Data was obtained via the `tidycensus` R package and the [United States Census website](https://www.census.gov/).
 
-### Attributes
+### Data Dictionary
 
-**Number of observations**: `r nrow(fastFoodGeo)`
-
-**Number of variables**: `r ncol(fastFoodGeo)`
-
-**Data Dictionary**:
-
-```{r}
+```{r censusDataDict}
 # Creating data dictionary
-dataDictionary(fastFoodGeo, 
-               descripts = c("geographic region ID",
-                             "address",
-"city",
-"country",
-"id",
-"latitude",
-"longitude",
-"chain name",
-                           "zip code",
-                           "state / province",
-                           "website",
-"full address"
+dataDictionary(wide_census_state, 
+               descripts = c("geographic region ID with the first 2 digits being the state Federal Information Processing Standard (FIPS) code \nand the last 3 digits the county FIPS code",
+                             "geographic region",
+"year",
+"population",
+"median income in dollars",
+"median monthly rent costs for renters in dollars",
+"median monthly housing costs for homeowners in dollars",
+"proportion of people who are female",
+"proportion of people who are male",
+"proportion of people who are white alone",
+                           "proportion of people who are black or African American alone",
+                           "proportion of people who are American Indian and Alaska Native alone",
+                           "proportion of people who are Asian alone",
+                           "proportion of people who are Native Hawaiian and Other Pacific Islander alone",
+                           "proportion of people who are some other race alone",
+                           "proportion of people who are two or more races",
+"proportion of people 25 and older whose highest education-level is high school",
+"proportion of people 25 and older whose highest education-level is a GED",
+"proportion of people 25 and older whose highest education-level is some, but less than 1 year of college",
+"proportion of people 25 and older whose highest education-level is greater than 1 year of college but no degree",
+"proportion of people 25 and older whose highest education-level is an Associates degree",
+"proportion of people 25 and older whose highest education-level is a Bachelors degree",
+"proportion of people 25 and older whose highest education-level is a Masters degree",
+"proportion of people 25 and older whose highest education-level is a Professional degree",
+"proportion of people 25 and older whose highest education-level is a Doctoral degree",
+"proportion of people 25 and older living in poverty, defined by the Census Bureau as having an income below the poverty threshold for their family size."
 ))
 ```
+
+Note that there are several categories of variables.
+
+1. Non-proportion demographics / characteristics: `geoid`, `county_state`, `year`, `population`, and `median_income`.
+
+2. Variables describing proportions: 
+
+  a. **Sex**; `prop_female` and `prop_male`
+  
+  b. **Race**; `prop_white`, `prop_black`, `prop_native`, `prop_asian`, `prop_hawaiin_islander`. `prop_other_race`, and `prop_multi_racial`
+  
+  c. **Education**; `prop_highschool`, `prop_GED`, `prop_some_college`, `prop_college_no_degree`, `prop_associates`, `prop_bachelors`, `prop_masters`, `prop_professional`, `prop_doctoral`
+  
+  d. **Poverty**; `prop_poverty`
+
+The Sex, Race, and Poverty categories are comprehensively listed here, in that every possible subcategory from the census is included. This of course does not imply that these are the only categories that people fall into but that these are the only categories that the U.S. Census Bureau records for participants.
+
+From the U.S. Census Bureau regarding the Sex category, "The American Community Survey includes a question that intends to capture current sex; there are no questions about gender, sexual orientation, or sex at birth." The Census Bureau provides more information about this category [here](https://www.census.gov/acs/www/about/why-we-ask-each-question/sex/): <https://www.census.gov/acs/www/about/why-we-ask-each-question/sex/>.
+
+There are many other Education subcategories that are not included, e.g., `prop_kindergarten` for those whose highest education-level was kindergarten, `prop_grade1` for those whose highest education-level was first grade, and so on. Therefore, one could sum `prop_highschool` through `prop_doctoral` to obtain the proportion of adults 25 years and older who have finished at least high school, and calculate one minus this to calculate the proportion of adults 25 years and older who have not finished high school.
 
 ## 4. Presidential Elections Data: State-Level
 
@@ -1347,20 +760,28 @@ This data contains constituency state-level returns for elections to the U.S. pr
 
 Data was obtained from the [Massachusetts Institute of Technology website](https://electionlab.mit.edu/data). A citation for the data set is below.
 
-1. MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V6, UNF:6:4KoNz9KgTkXy0ZBxJ9ZkOw== [fileUNF]
+- MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V6, UNF:6:4KoNz9KgTkXy0ZBxJ9ZkOw== [fileUNF]
 
-### Attributes
-
-**Number of observations**: `r nrow(state_pres)`
-
-**Number of variables**: `r ncol(state_pres)`
-
-**Data Dictionary**:
+### Data Dictionary
 
 ```{r}
 # Creating data dictionary
 dataDictionary(state_pres, 
-               descripts = c('election year', 'state name', 'state postal code abbreviation', 'state fips code', 'state census code', 'state Inter-university Consortium for Political and Social Research code', 'name of the public office to which the candidate is seeking election', 'candidate name', "full name of the candidate's political party", 'candidate is a write-in (TRUE or FALSE) ', 'number of votes for candidate', 'total votes cast in the election', 'version', 'notes', 'just the major parties, with others marked as "other"'))
+               descripts = c('election year', 
+                             'state name', 
+                             'state postal code abbreviation', 
+                             'state FIPS code', 
+                             'state census code', 
+                             'state Inter-university Consortium for Political and Social Research code', 
+                             'name of the public office to which the candidate is seeking election', 
+                             'candidate name', 
+                             "full name of the candidate's political party", 
+                             'candidate is a write-in (TRUE or FALSE) ', 
+                             'number of votes for candidate', 
+                             'total votes cast in the election', 
+                             'version', 
+                             'notes', 
+                             'just the major parties, with others marked as "other"'))
 ```
 
 ## 5. Presidential Elections Data: County-Level
@@ -1378,20 +799,24 @@ This data contains constituency county-level returns for elections to the U.S. p
 
 Data was obtained from the [Massachusetts Institute of Technology website](https://electionlab.mit.edu/data). A citation for the data set is below.
 
-1. MIT Election Data and Science Lab, 2018, "County Presidential Election Returns 2000-2020", https://doi.org/10.7910/DVN/VOQCHQ, Harvard Dataverse, V11, UNF:6:HaZ8GWG8D2abLleXN3uEig== [fileUNF]
+- MIT Election Data and Science Lab, 2018, "County Presidential Election Returns 2000-2020", https://doi.org/10.7910/DVN/VOQCHQ, Harvard Dataverse, V11, UNF:6:HaZ8GWG8D2abLleXN3uEig== [fileUNF]
 
-### Attributes
-
-**Number of observations**: `r nrow(county_pres)`
-
-**Number of variables**: `r ncol(county_pres)`
-
-**Data Dictionary**:
+### Data Dictionary
 
 ```{r}
 # Creating data dictionary
 dataDictionary(county_pres, 
-               descripts = c('year of election', 'state name', 'state postal code abbreviation', 'county name', 'county fips code', 'name of the public office to which the candidate is seeking election', 'candidate name', 'party', 'number of votes for candidate', 'total votes cast in the election', 'version', 'mode'))
+               descripts = c('year of election', 
+                             'state name', 
+                             'state postal code abbreviation', 
+                             'county name', 'county FIPS code', 
+                             'name of the public office to which the candidate is seeking election', 
+                             'candidate name', 
+                             'party', 
+                             'number of votes for candidate', 
+                             'total votes cast in the election', 
+                             'version', 
+                             'mode'))
 ```
 
 ```{r, eval = FALSE, include = FALSE}
@@ -1401,3 +826,351 @@ knitr::purl(input = "Final-Project.Rmd",
             documentation = 0)
 ```
 
+## 6. Michigan PFAS Data
+
+```{r, eval = TRUE, include = FALSE}
+library(tidyverse)
+library(naniar)
+library(janitor)
+library(sf)
+
+# Create function to add geoid variable given longitude and latitude for county-level data
+add_geoid <- function(my_data) {
+  # Create sf object to help add geoid column
+my_data_sf <- my_data |> 
+st_as_sf(coords = c("longitude", "latitude"))
+
+# Set coordinate reference system (CRS) to match counties data
+counties <- st_read("GeoFiles//cb_2018_us_county_500k.shp")
+st_crs(my_data_sf) <- st_crs(counties)
+
+ret_data <- my_data_sf |> 
+  st_join(counties) |> 
+    mutate(longitude = st_coordinates(geometry)[, 1],
+           latitude = st_coordinates(geometry)[, 2]) |> 
+  st_drop_geometry() |> 
+  as_tibble() |> 
+  dplyr::select(GEOID, longitude, latitude) |> 
+  dplyr::rename(geoid = GEOID) |> 
+  distinct() |> 
+  right_join(my_data)
+
+return(ret_data)
+}
+```
+
+```{r, eval = TRUE, include = FALSE}
+# Importing data on PFAS levels in surface water in Michigan
+analyte_info <- read_csv("PFAS/PFAS_Surface_Water_Sampling.csv") |> 
+              dplyr::select(-c(X:Latitude, GlobalID, OBJECTID,
+                               ends_with("Flag")))
+
+surface_water <- read_csv("PFAS/PFAS_Surface_Water_Sampling.csv") |> 
+  clean_names() |> 
+  dplyr::select(-ends_with("_flag")) |> 
+  dplyr::select(-c(cas307244_pf_hx_a:cas919005144_adona_rl)) |> 
+  bind_cols(analyte_info)
+
+# Importing data on surface water data dictionary
+surface_water_dictionary <- read_csv("PFAS/surface_water_data_dictionary.csv")
+
+# Creating long version of surface water data
+surface_water_long <- surface_water |> 
+  dplyr::rename(object_id = objectid) |> 
+  dplyr::select(longitude, latitude, object_id, everything(), 
+                -c(x:y), -ends_with("Flag"), -global_id) |> 
+  pivot_longer(cols = colnames(analyte_info), 
+               names_to = "analyte", 
+               values_to = "analyte_value") |> 
+  dplyr::select(-matrix, -unit, -object_id) |> 
+  add_geoid()
+
+# Saving to external CSV
+write_csv(surface_water_long, file = "PFAS/pfas_surface_water_long.csv")
+```
+
+```{r, eval = TRUE, include = FALSE}
+# Importing shape file data for public water supply PFAS levels data
+public_water_shape <- st_read("PFAS/Public_Water_Supply_Sampling_Hexbins_and_Results/Public_Water_Supply_Sampling_Hexbins.shp") |> 
+  mutate(centroid = st_centroid(geometry),
+         longitude = st_coordinates(centroid)[, 1],
+         latitude = st_coordinates(centroid)[, 2]) |> 
+  dplyr::select(HexID, longitude, latitude) |> 
+  st_drop_geometry() |> 
+  as_tibble()
+
+# Importing data on public water supply PFAS levels
+public_water <- read_csv("PFAS/Public_Water_Supply_Sampling_Hexbins_and_Results.csv")
+
+# Adding geoid, longitude, and latitude information to public water data
+# and cleaning variable names
+public_water_wide <- public_water |> 
+  left_join(public_water_shape, by = "HexID") |> 
+  dplyr::select(-ends_with(c("Result", "Flags"))) |> 
+  clean_names() |> 
+  dplyr::rename(object_id = objectid) |> 
+  dplyr::select(object_id:sys_loc_code, longitude, latitude, everything()) |> 
+  bind_cols(dplyr::select(public_water, ends_with("Result"))) |> 
+  add_geoid()
+
+# Pivoting public water data from wide to long format
+public_water_long <- public_water_wide |> 
+  pivot_longer(cols = c(ends_with(c("Result"))), 
+               names_to = "analyte", 
+               values_to = "analyte_value") |> 
+  mutate(analyte = gsub(analyte, pattern = "Result", replacement = "")) |> 
+  dplyr::select(-c(hex_id, 
+                   wssn, loc_name:sys_loc_code, 
+                   phase_code:task_type,
+                   treatment_status:sys_sample_code,
+                   lab_number:lab_sdg, 
+                   object_id, position_source,
+                   analytical_method,
+                   sampling_results_count)) |> 
+  mutate(system_type = fct_recode(system_type,
+                               "Non-Community Water Supply (Adult Foster Care Provider)" = "ADFSTC",
+                               "Non-Community Water Supply (Children's Camp)" = "CHLCMP",
+                               "Non-Community Water Supply (Child Care Provider)" = "DAYCARE",
+                               "Non-Community Water Supply (Industry)" = "INDUS",
+                               "Non-Community Water Supply (Medical Care Provider)" = "MEDCAR",
+                               "Non-Community Water Supply (Hotel or Motel)" = "MOTEL",
+                               "Community Water Supply (for example Municipal Supply, Apartment, Nursing Home, Prison, etc.)" = "MUN",
+                               "Office Building" = "OFFICE",
+                               "Park" = "PARK",
+                               "Residential" = "RESD",
+                               "School" = "SCH",
+                               "Tribal Lands" = "TRB"))
+
+
+# Saving to external CSV
+write_csv(public_water_long, file = "PFAS/pfas_public_water_long.csv")
+```
+
+### Description
+
+From the state of Michigan's website:
+
+*PFAS are a large group of man-made chemicals that include perfluorooctanoic acid (PFOA) and perfluorooctanesulfonic acid (PFOS). PFAS have been used globally during the past century in manufacturing, firefighting and thousands of common household and other consumer products. These chemicals are persistent in the environment and in the human body – meaning they don’t break down and they can accumulate over time. In recent years, experts have become increasingly concerned by the potential effects of high concentrations of PFAS on human health.*
+
+PFAS contamination in West Michigan has unfortunately made [headlines](https://www.wzzm13.com/article/news/local/judge-approves-54m-settlement-kent-co-residents-wolverine-3m-pfas-case/69-091ea42c-125a-4341-8ea0-238fdac4d06e), reminiscent of other environmental advocacy efforts like that of renowned whistleblower [Erin Brockovich](https://en.wikipedia.org/wiki/Erin_Brockovich).
+
+There are two PFAS-related data sets available for the final project contained in a single zipped file on [GitHub](https://github.com/dilernia/STA418-518/blob/main/Data/pfas_data.zip) <https://github.com/dilernia/STA418-518/blob/main/Data/pfas_data.zip>:
+
+1. **Surface water sampling data** (PFAS concentrations in surface water samples) 🏞
+
+2. **Public water supply sampling data** (PFAS concentrations in municipal drinking water samples) 💧🫗
+
+The original data dictionary for the full surface water data is available at <https://gis-egle.hub.arcgis.com/datasets/egle::pfas-surface-water-sampling/about>.
+
+A non-comprehensive laboratory PFAS analyte list (showing for example that PFTeDA is Perfluorotetradecanoic acid) for analyzing data collected by Michigan’s Departments of Environment, Great Lakes, and Energy, Health and Human Services, Agriculture and Rural Development, and Natural Resources can be found [here](https://www.michigan.gov/pfasresponse/-/media/Project/Websites/PFAS-Response/Sampling-Guidance/Minimum-Laboratory-Analyte-List.pdf?rev=a35aba56ec5a4922b986f01e25c1a19d&hash=04E6F164AA5F5CD29B83B39983341345): <https://www.michigan.gov/pfasresponse/-/media/Project/Websites/PFAS-Response/Sampling-Guidance/Minimum-Laboratory-Analyte-List.pdf?rev=a35aba56ec5a4922b986f01e25c1a19d&hash=04E6F164AA5F5CD29B83B39983341345>.
+
+### Source
+
+Data was obtained from the state of Michigan website <https://gis-egle.hub.arcgis.com/search?q=pfasgis>.
+
+### Data Dictionary
+
+#### Surface water sampling data
+
+```{r}
+# Creating data dictionary
+clean_surface_water_dictionary <- surface_water_dictionary |> 
+  dplyr::rename(Variable = `Field Name`) |> 
+  mutate(Variable = case_when(!str_starts(Variable, pattern = "CA") ~ make_clean_names(Variable),
+                              TRUE ~ Variable)) |> 
+  dplyr::filter(Variable %in% colnames(surface_water_long)) |> 
+  bind_rows(tibble(Variable = c("geoid",
+                                "analyte",
+                                "analyte_value"),
+                   Description = c("geographic region ID with the first 2 digits being the state Federal Information Processing Standard (FIPS) code \nand the last 3 digits the county FIPS code",
+                                   "PFAS analyte",
+                                   "The analyte concentration in the sample measured in parts per trillion (ppt or ng/L)"))) |> 
+  mutate(Variable = factor(Variable, levels = colnames(surface_water_long))) |> 
+  arrange(Variable)
+
+# Printing data dictionary
+clean_surface_water_dictionary |> 
+  flextable::flextable() |> 
+  flextable::autofit() |> 
+    flextable::fit_to_width(6)
+```
+
+```{r, include = TRUE, echo = FALSE}
+# Aggregating PFAS values for most recent measurement of each site
+surface_water_total <- surface_water_long |> 
+  dplyr::mutate(watershed = case_when(watershed == "Huron" ~ "Lake Huron",
+                                      TRUE ~ watershed)) |> 
+  group_by(geoid, longitude, latitude, site_code, location_code, watershed, waterbody) |> 
+  slice_max(collection_date, n = 1) |> 
+  group_by(geoid, longitude, latitude, collection_date, site_code, location_code, watershed, waterbody) |> 
+  summarize(total_analytes = sum(analyte_value, na.rm = TRUE)) |> 
+  ungroup()
+
+# Ten highest PFAS locations
+surface_water_total |> 
+  slice_max(total_analytes, n = 10)
+
+# Side-by-side box plots of total PFAS levels by Great Lake
+surface_water_total |> 
+  dplyr::filter(str_detect(watershed, pattern = "Huron|Lake"), 
+                !str_detect(watershed, pattern = "Clair|Lone")) |> 
+    ggplot(aes(y = fct_reorder(watershed, total_analytes, .fun = max),
+               x = total_analytes)) +
+    geom_boxplot() + 
+    labs(title = "PFAS levels measured in the Great Lakes",
+         x = "Total analyte level (ppt)",
+         y = "") +
+    ggthemes::theme_few()
+
+# Distribution of PFAS levels measured in Kent County
+surface_water_total |> 
+  dplyr::mutate(county_fips = str_sub(geoid, start = 3, end = 5)) |> 
+  dplyr::filter(county_fips == "081") |> 
+ggplot(aes(x = total_analytes)) +
+    geom_histogram(color = "black", fill = "dodgerblue") + 
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+    labs(title = "PFAS levels measured in Kent County",
+         x = "Total analyte level (ppt)",
+         y = "Frequency") +
+    ggthemes::theme_few()
+
+# Occurrences of different analytes
+analyte_summary <- surface_water_long |> 
+    dplyr::mutate(watershed = case_when(watershed == "Huron" ~ "Lake Huron",
+                                        TRUE ~ watershed)) |> 
+    group_by(geoid, longitude, latitude, site_code, location_code, watershed, waterbody) |> 
+    slice_max(collection_date, n = 1) |> 
+    ungroup() |> 
+    dplyr::filter(analyte_value > 0) |> 
+    group_by(analyte) |> 
+    summarize(min = min(analyte_value), 
+              Q1 = quantile(analyte_value, probs = 0.25),
+              median = quantile(analyte_value, probs = 0.5),
+              Q2 = quantile(analyte_value, probs = 0.75),
+              max = max(analyte_value), 
+              total = sum(analyte_value),
+              n_detected = n()) |> 
+  arrange(desc(total))
+
+# Ten highest analytes
+analyte_summary |> 
+  slice_max(total, n = 10)
+
+# Number of unique analytes detected by Great Lake
+surface_water_long |> 
+    dplyr::mutate(watershed = case_when(watershed == "Huron" ~ "Lake Huron",
+                                        TRUE ~ watershed)) |> 
+  dplyr::filter(str_detect(watershed, pattern = "Huron|Lake"), 
+                !str_detect(watershed, pattern = "Clair|Lone"),
+                analyte_value > 0) |> 
+  count(watershed, analyte) |> 
+  count(watershed)
+```
+
+
+#### Public water supply sampling data
+
+From the [EGLE website](https://www.michigan.gov/egle/maps-data/mpart-pfas-gis):
+
+*The public water supply results include information from both the State of Michigan funded drinking water Per- and Polyfluoroalkyl Substances (PFAS) sampling effort, and ongoing PFAS compliance monitoring of public water supplies in Michigan. It includes, but is not limited to, sample location, sample date, and sample results...*
+
+*The combined public water supply results data is representative of the PFAS sampling locations, with each location having multiple samples taken, dates for each sample, and the analytical results for each sample.*
+
+```{r}
+# Creating data dictionary
+clean_public_water_dictionary <- surface_water_dictionary |> 
+  dplyr::rename(Variable = `Field Name`) |> 
+  mutate(Variable = case_when(!str_starts(Variable, pattern = "CA") ~ make_clean_names(Variable),
+                              TRUE ~ Variable)) |> 
+  dplyr::filter(Variable %in% colnames(public_water_long)) |> 
+  bind_rows(tibble(Variable = c("geoid",
+                                "system_name",
+                                "system_type",
+                                "sample_date",
+                                "lab_name_code",
+                                "analyte",
+                                "analyte_value"),
+                   Description = c("geographic region ID with the first 2 digits being the state Federal Information Processing Standard (FIPS) code \nand the last 3 digits the county FIPS code",
+                                   "Name of water supply system",
+                                   "Type of water supply system",
+                                   "The date that the sample was collected",
+                                   "Code for processing lab",
+                                   "PFAS analyte",
+                                   "The analyte concentration in the sample measured in parts per trillion (ppt or ng/L)"))) |> 
+  mutate(Variable = factor(Variable, levels = colnames(public_water_long))) |> 
+  arrange(Variable)
+
+# Printing data dictionary
+clean_public_water_dictionary |> 
+  flextable::flextable() |> 
+  flextable::autofit() |> 
+    flextable::fit_to_width(6)
+```
+
+```{r, eval = FALSE, include = FALSE}
+#  Take input file, extracts the R code in it according to a list of patterns, evaluates the code and writes the output in another file.
+knitr::purl(input = "Final-Project.Rmd",
+            output = "Final-Project.R",
+            documentation = 0)
+```
+
+## 7. Other Data Sets
+
+Use of the previously listed data sets for the final project is encouraged. However, it is possible to use other external data sets in tandem with the ones provided, but all data sets must be approved in advance for use in the final project.
+
+A common source of additional data that students have used in previous semesters is data on Google search trends obtained via the [`gtrendsR`](https://cran.r-project.org/web/packages/gtrendsR/gtrendsR.pdf) package. A [blog post](https://catbirdanalytics.wordpress.com/2021/08/29/google-trends-r-leverage-gtrendsr-package-for-more-powerful-analytics/) demonstrating the utility of the `gtrendsR` package provides an overview of its most commonly used functions. Note that if you are using this package, visualizations must be created using the `ggplot2` package to count for the final project.
+
+A small example of how to use the package is below.
+
+```{r, echo = TRUE, cache = TRUE}
+library(gtrendsR)
+
+# Fetching data from Google trends API
+gt_sports_results <- gtrends(keyword = c("NHL", "NBA", "MLB", "NFL", "MLS"),
+        geo = "US",
+        time = "2019-01-01 2021-01-01",
+        gprop = "web")
+
+# Plotting search interest over time
+gt_sports_results$interest_over_time |> 
+  ggplot(aes(x = date, y = hits, 
+             color = keyword)) + 
+  geom_line() +
+  scale_color_viridis_d() +
+  labs(title = "Google search trends",
+       x = "Date",
+       y = "Standardized search rate",
+       color = "Search term",
+       caption = "Data source: gtrendsR package") +
+  ggthemes::theme_few() +
+  theme(legend.position = "bottom")
+```
+
+We can obtain data on Google search trends for other geographic areas than the entire United States as well. For example, we can compare Google search trends for the topic `'grey duck'` (notice that a search term comprised of multiple words must be enclosed in single quotes) across Minnesota, Michigan, and Florida.
+
+```{r, echo = TRUE, cache = TRUE}
+library(gtrendsR)
+
+# Fetching data from Google trends API
+gt_greyduck_results <- gtrends(keyword = c("'grey duck'"),
+        geo = c("US-MN", "US-MI", "US-FL"),
+        time = "2019-01-01 2019-12-01",
+        gprop = "web")
+
+# Plotting search interest over time
+gt_greyduck_results$interest_over_time |> 
+  ggplot(aes(x = date, y = hits, 
+             color = geo)) + 
+  geom_line() +
+  ggthemes::scale_color_colorblind() +
+  labs(title = "Google search trends",
+       subtitle = "Search term: grey duck",
+       x = "Date",
+       y = "Standardized search rate",
+       color = "State",
+       caption = "Data source: gtrendsR package") +
+  ggthemes::theme_few() +
+  theme(legend.position = "bottom")
+```
+
+For data on Google search trends at the city-level, see this [StackOverflow post](https://stackoverflow.com/questions/50318748/gtrendsr-geo-msa-area-code).
