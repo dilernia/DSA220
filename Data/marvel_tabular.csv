@@ -1,7 +1,7 @@
-name,character_image_url,got_avengers_tattoo,died_in_endgame,net_worth,gender,nationality,height,birthday,number_of_roles,marvel_total_screen_time
-Robert Downey Jr.,https://github.com/dilernia/STA418-518/blob/main/marvel_images/iron_man.png?raw=true,TRUE,TRUE,300000000,male,us,1.74,1965-04-04,93,356
-Chris Evans,https://github.com/dilernia/STA418-518/blob/main/marvel_images/captain_america.png?raw=true,TRUE,FALSE,80000000,male,us,1.84,1981-06-13,64,242
-Mark Ruffalo,https://github.com/dilernia/STA418-518/blob/main/marvel_images/hulk.png?raw=true,FALSE,FALSE,35000000,male,us,1.73,1967-11-22,81,83
-Chris Hemsworth,https://github.com/dilernia/STA418-518/blob/main/marvel_images/thor.png?raw=true,TRUE,FALSE,130000000,male,au,1.9,1983-08-11,51,290
-Scarlett Johansson,https://github.com/dilernia/STA418-518/blob/main/marvel_images/black_widow.png?raw=true,TRUE,TRUE,165000000,female,us,1.6,1984-11-22,82,175
-Jeremy Renner,https://github.com/dilernia/STA418-518/blob/main/marvel_images/hawkeye.png?raw=true,TRUE,FALSE,80000000,male,us,1.78,1971-01-07,62,145
+name,got_avengers_tattoo,died_in_endgame,net_worth,gender,nationality,height,birthday,number_of_roles,marvel_total_screen_time
+Robert Downey Jr.,TRUE,TRUE,300000000,male,us,1.74,1965-04-04,93,356
+Chris Evans,TRUE,FALSE,80000000,male,us,1.84,1981-06-13,64,242
+Mark Ruffalo,FALSE,FALSE,35000000,male,us,1.73,1967-11-22,81,83
+Chris Hemsworth,TRUE,FALSE,130000000,male,au,1.9,1983-08-11,51,290
+Scarlett Johansson,TRUE,TRUE,165000000,female,us,1.6,1984-11-22,82,175
+Jeremy Renner,TRUE,FALSE,80000000,male,us,1.78,1971-01-07,62,145
