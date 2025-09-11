@@ -3730,6 +3730,8 @@ Tip
 <li><p>What type of data collection method is employed in this scenario?</p></li>
 <li><p>What is the control group in this scenario, if there is one?</p></li>
 <li><p>What is the main outcome or attribute of interest in this scenario?</p></li>
+<li><p>Being as specific as possible, what is the type of each variable in <a href="#tbl-AB-data" class="quarto-xref">Table 1</a>?</p></li>
+<li><p>Which data format would be best for storing all data available from this scenario (e.g., XML, CSV, or JSON)?</p></li>
 </ol>
 </div>
 </div>
@@ -4231,6 +4233,8 @@ Tip
 <li><p>What type of data collection method is employed in this scenario?</p></li>
 <li><p>What is the control group in this scenario, if there is one?</p></li>
 <li><p>What is the main outcome or attribute of interest in this scenario?</p></li>
+<li><p>Being as specific as possible, what is the type of each variable in <a href="#tbl-trial-data" class="quarto-xref">Table 2</a>?</p></li>
+<li><p>Which data format would be best for storing all data available from this scenario (e.g., XML, CSV, or JSON)?</p></li>
 </ol>
 </div>
 </div>
@@ -5191,7 +5195,10 @@ Tip
 <ol start="2" type="a">
 <li><p>What is the control group in this scenario, if there is one?</p></li>
 <li><p>What is the main outcome or attribute of interest in this scenario?</p></li>
+<li><p>Being as specific as possible, what is the type of each variable in <a href="#tbl-conjoint-data" class="quarto-xref">Table 4</a>?</p></li>
+<li><p>Which data format would be best for storing all data available from this scenario (e.g., XML, CSV, or JSON)?</p></li>
 </ol>
+<p>What if participants were shown combinations of different features, e.g., one participant is asked about price and range while another participant is asked about heated seats and price?</p>
 </div>
 </div>
 </section>
@@ -6152,310 +6159,324 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>b. What is the control group in this scenario<span class="op">,</span> if there is one?</span>
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>c. What is the main outcome or attribute of interest in this scenario?</span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>### Clinical Trial for a New Parkinson&#39;s Drug 🔬💊 {<span class="pp">#sec-example-trial</span>}</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Scenario<span class="op">**</span><span class="in">:</span> A pharmaceutical company has developed a new drug<span class="op">,</span> &quot;Neuroquil&quot;<span class="op">,</span> designed to slow the progression of motor symptoms in patients in the United States with Parkinson&#39;s disease. They implement a clinical trial to assess the drug&#39;s efficacy and safety.</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>d. Being as specific as possible<span class="op">,</span> what is the type of each variable in <span class="im">@tbl-AB-data</span>?</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>e. Which data format would be best for storing <span class="an">all</span> data available from this scenario <span class="fu">(</span><span class="dv">e</span>.<span class="dv">g</span>., <span class="dv">XML</span>, <span class="dv">CSV</span>, <span class="kw">or</span> <span class="dv">JSON</span><span class="fu">)</span>?</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Methodology<span class="op">**</span><span class="in">:</span> Researchers enroll a large group of participants with Parkinson&#39;s disease and randomly assigned them to receive either a monthly dose of Neuroquil or the treatment constituting the current best standard of care <span class="in">(</span>SOC<span class="in">)</span>. The SOC was administered in a formulation that was indistinguishable from Neuroquil to ensure both participants and investigators remained blinded and unbiased.</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>### Clinical Trial for a New Parkinson<span class="st">&#39;s Drug 🔬💊 {#sec-example-trial}</span></span>
 <span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Data Collection<span class="op">**</span><span class="in">:</span> Clinical data are collected from all participants at regular intervals <span class="in">(</span>e<span class="fu">.g</span>.<span class="op">,</span> at baseline and 6 months<span class="in">)</span><span class="op">,</span> including neurological assessment scores using a standardized scale like the Unified Parkinson&#39;s Disease Rating Scale <span class="in">(</span>UPDRS<span class="in">)</span> to measure motor function<span class="op">,</span> patient-reported logs of symptoms and quality of life<span class="op">,</span> and records of any side effects or adverse events. Higher UPDRS scores indicate greater impairment.</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Analysis<span class="op">**</span><span class="in">:</span> At the end of the trial<span class="op">,</span> researchers compare the average improvement in UPDRS scores between the Neuroquil group and the SOC group using appropriate statistical methods such as linear regression. A holistic approach to evaluating the new drug is used<span class="op">,</span> collectively considering all data on efficacy and safety from the trial.</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>- **Scenario**: A pharmaceutical company has developed a new drug, <span class="st">&quot;Neuroquil&quot;</span>, designed to slow the progression of motor symptoms in patients in the United States with Parkinson<span class="st">&#39;s disease. They implement a clinical trial to assess the drug&#39;</span>s efficacy <span class="kw">and</span> safety.</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>- **Methodology**: Researchers enroll a large group of participants with Parkinson<span class="st">&#39;s disease and randomly assigned them to receive either a monthly dose of Neuroquil or the treatment constituting the current best standard of care (SOC). The SOC was administered in a formulation that was indistinguishable from Neuroquil to ensure both participants and investigators remained blinded and unbiased.</span></span>
 <span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>set<span class="fu">.seed</span><span class="in">(</span>1994<span class="in">)</span></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a># Define the number of participants in the trial</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>n_participants &lt;- 300</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a># Define the treatment groups</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>treatment_groups &lt;- c<span class="in">(</span>&quot;Neuroquil&quot;<span class="op">,</span> &quot;SOC&quot;<span class="in">)</span></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a># Simulate participant data</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>trial_data &lt;- tibble<span class="in">(</span>treatment_group = sample<span class="in">(</span>treatment_groups<span class="op">,</span> n_participants<span class="op">,</span> </span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>                                              replace = TRUE<span class="op">,</span> prob = c<span class="in">(</span>0<span class="fu">.5</span><span class="op">,</span> 0<span class="fu">.5</span><span class="in">))</span><span class="op">,</span></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>                     age = sapply<span class="in">(</span>rpois<span class="in">(</span>n_participants<span class="op">,</span> lambda = 60<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>                                 FUN = function<span class="in">(</span>x<span class="in">)</span><span class="er">{</span>min(c(x<span class="op">,</span> 80))})) <span class="op">|&gt;</span> </span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>  mutate<span class="in">(</span>updrs_baseline = ceiling<span class="in">(</span>sapply<span class="in">(</span>rpois<span class="in">(</span>n_participants<span class="op">,</span> lambda = 20<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>                                 FUN = function<span class="in">(</span>x<span class="in">)</span><span class="er">{</span>min(c(x<span class="op">,</span> 199))}) <span class="op">+</span> <span class="in">(</span>2<span class="op">*</span><span class="in">(</span>age - 60<span class="in">))</span>)<span class="op">,</span></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>         updrs_6_months = round<span class="in">(</span>case_when<span class="in">(</span>treatment_group == &quot;SOC&quot; <span class="op">~</span> rnorm<span class="in">(</span>n_participants<span class="op">,</span> </span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>                                       mean = 2<span class="fu">.5</span><span class="op">,</span> sd = 2<span class="in">)</span> <span class="op">+</span> updrs_baseline<span class="op">,</span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>                                          treatment_group == &quot;Neuroquil&quot; <span class="op">~</span> rnorm<span class="in">(</span>n_participants<span class="op">,</span> </span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>                                             mean = -1<span class="fu">.5</span><span class="op">,</span> sd = 2<span class="in">)</span> <span class="op">+</span> updrs_baseline<span class="in">))</span><span class="op">,</span></span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>         updrs_improvement = updrs_baseline - updrs_6_months)</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-trial-data</span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example data from clinical trial&quot;</span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a># Displaying some rows</span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>trial_data <span class="op">|&gt;</span> </span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>  slice_sample<span class="in">(</span>n = 5<span class="in">)</span> <span class="op">|&gt;</span> </span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>  mutate<span class="in">(</span>participant_id = 1<span class="in">:n()</span><span class="op">,</span> <span class="fu">.before</span> = everything<span class="in">())</span> <span class="op">|&gt;</span> </span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>  gt<span class="in">()</span></span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> fig-align<span class="in">:</span> center</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>ggplot<span class="in">(</span>trial_data<span class="op">,</span> aes<span class="in">(</span>x = updrs_improvement<span class="op">,</span> y = treatment_group<span class="op">,</span></span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>                       fill = treatment_group<span class="in">))</span> <span class="op">+</span></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>  geom_boxplot<span class="in">()</span> <span class="op">+</span></span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>  scale_fill_manual<span class="in">(</span>values = c<span class="in">(</span>&quot;SOC&quot; = &quot;<span class="pp">#F0E442</span>&quot;<span class="op">,</span> &quot;Neuroquil&quot; = &quot;<span class="pp">#0072B2</span>&quot;<span class="in">))</span> <span class="op">+</span></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>  labs<span class="in">(</span>title = &quot;Unified Parkinson&#39;s Disease Rating Scale <span class="in">(</span>UPDRS<span class="in">)</span> Improvement&quot;<span class="op">,</span></span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>    x = &quot;UPDRS Improvement Score&quot;<span class="op">,</span></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>    y = &quot;&quot;<span class="in">)</span> <span class="op">+</span></span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  theme_bw<span class="in">()</span> <span class="op">+</span></span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  theme<span class="in">(</span>legend<span class="fu">.position</span> = &quot;none&quot;<span class="in">)</span></span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>a. What type of data collection method is employed in this scenario?</span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>b. What is the control group in this scenario<span class="op">,</span> if there is one?</span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>c. What is the main outcome or attribute of interest in this scenario?</span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>### Desirable Features for EV Product Design 🔋📊 {<span class="pp">#sec-example-EV</span>}</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Scenario<span class="op">**</span><span class="in">:</span> An automaker wants to explore a new electric vehicle&#39;s <span class="in">(</span>EV<span class="in">)</span> design<span class="op">,</span> balancing desirable features against a competitive price. An aim is understanding which features customers in the United States value most considering there are often tradeoffs<span class="op">,</span> such as battery range and cost. This type of analysis is called a <span class="op">*</span>conjoint analysis<span class="op">*,</span> &quot;..<span class="fu">.a</span> form of statistical analysis that firms use in market research to understand how customers value different components or features of their products or services&quot; <span class="ex">[</span><span class="op">^</span><span class="ss">1</span><span class="ex">]</span>.</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">1</span><span class="ex">]</span><span class="in">:</span> Stobierski<span class="op">,</span> T. <span class="in">(</span>2020<span class="op">,</span> December 18<span class="in">)</span>. <span class="op">*</span>What Is Conjoint Analysis? A Guide for Marketers<span class="op">*</span>. Harvard Business School Online. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//online.hbs.edu/blog/post/what-is-conjoint-analysis</span></span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Methodology<span class="op">**</span><span class="in">:</span> To emulate real-world customer decisions<span class="op">,</span> participants were randomly selected from all key segments of the target population<span class="op">,</span> ensuring the final sample was representative of the target population in regards to important characteristics. These individuals were then presented with a series of choices between different<span class="op">,</span> fully-formed vehicles each with a unique combination of attributes.</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>- **Data Collection**: Clinical data are collected from <span class="an">all</span> participants at regular intervals <span class="fu">(</span><span class="dv">e</span>.<span class="dv">g</span>., <span class="dv">at baseline </span><span class="kw">and</span> <span class="dv">6</span> <span class="dv">months</span><span class="fu">)</span>, including neurological assessment scores using a standardized scale like the Unified Parkinson<span class="st">&#39;s Disease Rating Scale (UPDRS) to measure motor function, patient-reported logs of symptoms and quality of life, and records of any side effects or adverse events. Higher UPDRS scores indicate greater impairment.</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>- **Analysis**: At the end of the trial, researchers compare the average improvement in UPDRS scores between the Neuroquil group <span class="kw">and</span> the SOC group using appropriate statistical methods such as linear regression. A holistic approach to evaluating the new drug is used, collectively considering <span class="an">all</span> data on efficacy <span class="kw">and</span> safety from the trial.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>#| echo: false</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>#| message: false</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>#| warning: false</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>set.seed<span class="fu">(</span><span class="dv">1994</span><span class="fu">)</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a># Define the number of participants in the trial</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>n_participants &lt;- 300</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a># Define the treatment groups</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>treatment_groups &lt;- c<span class="fu">(</span><span class="st">&quot;Neuroquil&quot;</span><span class="op">,</span> <span class="st">&quot;SOC&quot;</span><span class="fu">)</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a># Simulate participant data</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>trial_data &lt;- tibble<span class="fu">(</span><span class="dv">treatment_group </span>= sample<span class="fu">(</span><span class="dv">treatment_groups</span><span class="op">,</span> <span class="dv">n_participants</span><span class="op">,</span> </span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>                                              <span class="dv">replace</span> = <span class="dv">TRUE</span><span class="op">,</span> <span class="dv">prob </span>= c<span class="fu">(</span><span class="dv">0.5</span><span class="op">,</span> <span class="dv">0.5</span><span class="fu">))</span><span class="op">,</span></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>                     <span class="dv">age </span>= sapply<span class="fu">(</span>rpois<span class="fu">(</span><span class="dv">n_participants</span><span class="op">,</span> <span class="dv">lambda </span>= <span class="dv">60</span><span class="fu">)</span><span class="op">,</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>                                 <span class="dv">FUN </span>= function<span class="fu">(</span><span class="dv">x</span><span class="fu">)</span><span class="er">{</span>min(c(x<span class="op">,</span> 80))})) <span class="op">|&gt;</span> </span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>  mutate<span class="in">(</span>updrs_baseline = ceiling<span class="in">(</span>sapply<span class="in">(</span>rpois<span class="in">(</span>n_participants<span class="op">,</span> lambda = 20<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>                                 FUN = function<span class="in">(</span>x<span class="in">)</span><span class="er">{</span>min(c(x<span class="op">,</span> 199))}) <span class="op">+</span> <span class="in">(</span>2<span class="op">*</span><span class="in">(</span>age - 60<span class="in">))</span>)<span class="op">,</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>         updrs_6_months = round<span class="in">(</span>case_when<span class="in">(</span>treatment_group == &quot;SOC&quot; <span class="op">~</span> rnorm<span class="in">(</span>n_participants<span class="op">,</span> </span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>                                       mean = 2<span class="fu">.5</span><span class="op">,</span> sd = 2<span class="in">)</span> <span class="op">+</span> updrs_baseline<span class="op">,</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>                                          treatment_group == &quot;Neuroquil&quot; <span class="op">~</span> rnorm<span class="in">(</span>n_participants<span class="op">,</span> </span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>                                             mean = -1<span class="fu">.5</span><span class="op">,</span> sd = 2<span class="in">)</span> <span class="op">+</span> updrs_baseline<span class="in">))</span><span class="op">,</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>         updrs_improvement = updrs_baseline - updrs_6_months)</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-trial-data</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example data from clinical trial&quot;</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a># Displaying some rows</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>trial_data <span class="op">|&gt;</span> </span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>  slice_sample<span class="in">(</span>n = 5<span class="in">)</span> <span class="op">|&gt;</span> </span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>  mutate<span class="in">(</span>participant_id = 1<span class="in">:n()</span><span class="op">,</span> <span class="fu">.before</span> = everything<span class="in">())</span> <span class="op">|&gt;</span> </span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  gt<span class="in">()</span></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> fig-align<span class="in">:</span> center</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>ggplot<span class="in">(</span>trial_data<span class="op">,</span> aes<span class="in">(</span>x = updrs_improvement<span class="op">,</span> y = treatment_group<span class="op">,</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>                       fill = treatment_group<span class="in">))</span> <span class="op">+</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  geom_boxplot<span class="in">()</span> <span class="op">+</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  scale_fill_manual<span class="in">(</span>values = c<span class="in">(</span>&quot;SOC&quot; = &quot;<span class="pp">#F0E442</span>&quot;<span class="op">,</span> &quot;Neuroquil&quot; = &quot;<span class="pp">#0072B2</span>&quot;<span class="in">))</span> <span class="op">+</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  labs<span class="in">(</span>title = &quot;Unified Parkinson&#39;s Disease Rating Scale <span class="in">(</span>UPDRS<span class="in">)</span> Improvement&quot;<span class="op">,</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    x = &quot;UPDRS Improvement Score&quot;<span class="op">,</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    y = &quot;&quot;<span class="in">)</span> <span class="op">+</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>  theme_bw<span class="in">()</span> <span class="op">+</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>  theme<span class="in">(</span>legend<span class="fu">.position</span> = &quot;none&quot;<span class="in">)</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>a. What type of data collection method is employed in this scenario?</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>b. What is the control group in this scenario<span class="op">,</span> if there is one?</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>c. What is the main outcome or attribute of interest in this scenario?</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>d. Being as specific as possible<span class="op">,</span> what is the type of each variable in <span class="im">@tbl-trial-data</span>?</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>e. Which data format would be best for storing <span class="an">all</span> data available from this scenario <span class="fu">(</span><span class="dv">e</span>.<span class="dv">g</span>., <span class="dv">XML</span>, <span class="dv">CSV</span>, <span class="kw">or</span> <span class="dv">JSON</span><span class="fu">)</span>?</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-vehicle-choices</span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example choices presented to a participant&quot;</span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a># Create a tibble with the vehicle information</span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>vehicle_data &lt;- tibble<span class="in">(</span>Vehicle = c<span class="in">(</span>&quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>                       Type = c<span class="in">(</span>&quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>                       Range = c<span class="in">(</span>300<span class="op">,</span> 400<span class="op">,</span> 300<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>                       Charging = c<span class="in">(</span>&quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>                       Price = c<span class="in">(</span>42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="in">))</span></span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a># Display table nicely</span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>gt<span class="in">(</span>vehicle_data<span class="in">)</span> <span class="op">|&gt;</span> </span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>    fmt_currency<span class="in">(</span>columns = Price<span class="op">,</span></span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>                 currency = &quot;USD&quot;<span class="op">,</span></span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>                 decimals = 0<span class="in">)</span> <span class="op">|&gt;</span></span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>    fmt_number<span class="in">(</span>columns = Range<span class="op">,</span></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>               pattern = &quot;<span class="er">{</span>x} miles&quot;<span class="op">,</span></span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>               decimals = 0)</span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Data Collection<span class="op">**</span><span class="in">:</span> This preference data is collected from participants via an online questionnaire.</span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Analysis<span class="op">**</span><span class="in">:</span> The <span class="op">**</span>part-worth utility<span class="op">**</span> for each attribute<span class="op">,</span> a numerical score representing its value to the customer<span class="op">,</span> is calculated. These scores reveal the relative importance of features <span class="in">(</span>e<span class="fu">.g</span>.<span class="op">,</span> price vs. range<span class="in">)</span> and are used to assess market viability and future development directions of a new vehicle. Logistic regression would be one possible method for calculating part-worth utility.</span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-conjoint-data</span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example data for conjoint analysis&quot;</span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a># Creating a tibble with the data structured in a &quot;long format&quot; without dummy variables</span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>questionnaire_data_long &lt;- tibble<span class="in">(</span></span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>  participant_id = c<span class="in">(</span>1<span class="op">,</span> 1<span class="op">,</span> 1<span class="op">,</span> 2<span class="op">,</span> 2<span class="op">,</span> 2<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>  vehicle = c<span class="in">(</span>&quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="op">,</span> &quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>  participant_preference = c<span class="in">(</span>0<span class="op">,</span> 1<span class="op">,</span> 0<span class="op">,</span> 0<span class="op">,</span> 0<span class="op">,</span> 1<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>  type = c<span class="in">(</span>&quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="op">,</span> &quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>  range = c<span class="in">(</span>300<span class="op">,</span> 400<span class="op">,</span> 300<span class="op">,</span> 300<span class="op">,</span> 400<span class="op">,</span> 300<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>  charging = c<span class="in">(</span>&quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="in">)</span><span class="op">,</span></span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>  price = c<span class="in">(</span>42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="op">,</span> 42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="in">)</span></span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a># Display the tibble with nice formatting using the gt package</span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>questionnaire_data_long <span class="op">|&gt;</span></span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>  gt<span class="in">()</span> <span class="op">|&gt;</span></span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>  fmt_currency<span class="in">(</span>columns = price<span class="op">,</span></span>
-<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>               currency = &quot;USD&quot;<span class="op">,</span></span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>               decimals = 0<span class="in">)</span> <span class="op">|&gt;</span></span>
-<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a>  fmt_number<span class="in">(</span>columns = range<span class="op">,</span></span>
-<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>             pattern = &quot;<span class="er">{</span>x} miles&quot;<span class="op">,</span></span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>             decimals = 0)</span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>a. What type of data collection method is employed in this scenario?</span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="op">***</span>Note<span class="op">**</span><span class="in">:</span> While the study has experimental elements<span class="op">,</span> its primary goal is to measure and understand existing preferences and values<span class="op">,</span> not to test the effect of an intervention on a behavioral outcome.<span class="op">*</span></span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>b. What is the control group in this scenario<span class="op">,</span> if there is one?</span>
-<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>c. What is the main outcome or attribute of interest in this scenario?</span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a># Survey Design and Implementation</span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>Proper survey design is important to obtain accurate and reliable data. The design process begins with clearly defined research objectives<span class="op">,</span> including a well-defined target population<span class="op">,</span> to facilitate development of relevant and effective questions.</span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Survey Structure<span class="op">**</span><span class="in">:</span> Surveys should start with simple questions and move to more complex ones gradually. Typically<span class="op">,</span> this reduces the chances of non-response to questions and can improve the accuracy of responses.</span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>## Survey Questions</span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Closed-Ended Questions<span class="op">**</span><span class="in">:</span> Provide predetermined answers<span class="op">,</span> making them easier to quantify and analyze.</span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Open-Ended Questions<span class="op">**</span><span class="in">:</span> Allow respondents to provide detailed<span class="op">,</span> in-depth answers<span class="op">,</span> offering qualitative insights.</span>
-<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Avoiding Bias<span class="op">**</span><span class="in">:</span> Questions should be neutral to avoid influencing responses.</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>### Desirable Features for EV Product Design 🔋📊 {<span class="pp">#sec-example-EV</span>}</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Scenario<span class="op">**</span><span class="in">:</span> An automaker wants to explore a new electric vehicle&#39;s <span class="in">(</span>EV<span class="in">)</span> design<span class="op">,</span> balancing desirable features against a competitive price. An aim is understanding which features customers in the United States value most considering there are often tradeoffs<span class="op">,</span> such as battery range and cost. This type of analysis is called a <span class="op">*</span>conjoint analysis<span class="op">*,</span> &quot;..<span class="fu">.a</span> form of statistical analysis that firms use in market research to understand how customers value different components or features of their products or services&quot; <span class="ex">[</span><span class="op">^</span><span class="ss">1</span><span class="ex">]</span>.</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">1</span><span class="ex">]</span><span class="in">:</span> Stobierski<span class="op">,</span> T. <span class="in">(</span>2020<span class="op">,</span> December 18<span class="in">)</span>. <span class="op">*</span>What Is Conjoint Analysis? A Guide for Marketers<span class="op">*</span>. Harvard Business School Online. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//online.hbs.edu/blog/post/what-is-conjoint-analysis</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Methodology<span class="op">**</span><span class="in">:</span> To emulate real-world customer decisions<span class="op">,</span> participants were randomly selected from all key segments of the target population<span class="op">,</span> ensuring the final sample was representative of the target population in regards to important characteristics. These individuals were then presented with a series of choices between different<span class="op">,</span> fully-formed vehicles each with a unique combination of attributes.</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-vehicle-choices</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example choices presented to a participant&quot;</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a># Create a tibble with the vehicle information</span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>vehicle_data &lt;- tibble<span class="in">(</span>Vehicle = c<span class="in">(</span>&quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>                       Type = c<span class="in">(</span>&quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>                       Range = c<span class="in">(</span>300<span class="op">,</span> 400<span class="op">,</span> 300<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>                       Charging = c<span class="in">(</span>&quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>                       Price = c<span class="in">(</span>42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="in">))</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a># Display table nicely</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>gt<span class="in">(</span>vehicle_data<span class="in">)</span> <span class="op">|&gt;</span> </span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>    fmt_currency<span class="in">(</span>columns = Price<span class="op">,</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>                 currency = &quot;USD&quot;<span class="op">,</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>                 decimals = 0<span class="in">)</span> <span class="op">|&gt;</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>    fmt_number<span class="in">(</span>columns = Range<span class="op">,</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>               pattern = &quot;<span class="er">{</span>x} miles&quot;<span class="op">,</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>               decimals = 0)</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Data Collection<span class="op">**</span><span class="in">:</span> This preference data is collected from participants via an online questionnaire.</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Analysis<span class="op">**</span><span class="in">:</span> The <span class="op">**</span>part-worth utility<span class="op">**</span> for each attribute<span class="op">,</span> a numerical score representing its value to the customer<span class="op">,</span> is calculated. These scores reveal the relative importance of features <span class="in">(</span>e<span class="fu">.g</span>.<span class="op">,</span> price vs. range<span class="in">)</span> and are used to assess market viability and future development directions of a new vehicle. Logistic regression would be one possible method for calculating part-worth utility.</span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> label<span class="in">:</span> tbl-conjoint-data</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> tbl-cap<span class="in">:</span> &quot;Example data for conjoint analysis&quot;</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> echo<span class="in">:</span> false</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> message<span class="in">:</span> false</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>#<span class="op">|</span> warning<span class="in">:</span> false</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a># Creating a tibble with the data structured in a &quot;long format&quot; without dummy variables</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>questionnaire_data_long &lt;- tibble<span class="in">(</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>  participant_id = c<span class="in">(</span>1<span class="op">,</span> 1<span class="op">,</span> 1<span class="op">,</span> 2<span class="op">,</span> 2<span class="op">,</span> 2<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>  vehicle = c<span class="in">(</span>&quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="op">,</span> &quot;Vehicle A&quot;<span class="op">,</span> &quot;Vehicle B&quot;<span class="op">,</span> &quot;Vehicle C&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>  participant_preference = c<span class="in">(</span>0<span class="op">,</span> 1<span class="op">,</span> 0<span class="op">,</span> 0<span class="op">,</span> 0<span class="op">,</span> 1<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>  type = c<span class="in">(</span>&quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="op">,</span> &quot;SUV&quot;<span class="op">,</span> &quot;Mid-size car&quot;<span class="op">,</span> &quot;SUV&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>  range = c<span class="in">(</span>300<span class="op">,</span> 400<span class="op">,</span> 300<span class="op">,</span> 300<span class="op">,</span> 400<span class="op">,</span> 300<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>  charging = c<span class="in">(</span>&quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Standard Charging&quot;<span class="op">,</span> &quot;Ultra-Fast Charging&quot;<span class="in">)</span><span class="op">,</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>  price = c<span class="in">(</span>42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="op">,</span> 42000<span class="op">,</span> 45000<span class="op">,</span> 46000<span class="in">)</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a># Display the tibble with nice formatting using the gt package</span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>questionnaire_data_long <span class="op">|&gt;</span></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>  gt<span class="in">()</span> <span class="op">|&gt;</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>  fmt_currency<span class="in">(</span>columns = price<span class="op">,</span></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>               currency = &quot;USD&quot;<span class="op">,</span></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>               decimals = 0<span class="in">)</span> <span class="op">|&gt;</span></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>  fmt_number<span class="in">(</span>columns = range<span class="op">,</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>             pattern = &quot;<span class="er">{</span>x} miles&quot;<span class="op">,</span></span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>             decimals = 0)</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>a. What type of data collection method is employed in this scenario?</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="op">***</span>Note<span class="op">**</span><span class="in">:</span> While the study has experimental elements<span class="op">,</span> its primary goal is to measure and understand existing preferences and values<span class="op">,</span> not to test the effect of an intervention on a behavioral outcome.<span class="op">*</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>b. What is the control group in this scenario<span class="op">,</span> if there is one?</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>c. What is the main outcome or attribute of interest in this scenario?</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>d. Being as specific as possible<span class="op">,</span> what is the type of each variable in <span class="im">@tbl-conjoint-data</span>?</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>e. Which data format would be best for storing <span class="an">all</span> data available from this scenario <span class="fu">(</span><span class="dv">e</span>.<span class="dv">g</span>., <span class="dv">XML</span>, <span class="dv">CSV</span>, <span class="kw">or</span> <span class="dv">JSON</span><span class="fu">)</span>? </span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>What if participants were shown combinations of different features, e.g., one participant is asked about price <span class="kw">and</span> range while another participant is asked about heated seats <span class="kw">and</span> price?</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Avoiding Double-Barreled Questions<span class="op">**</span><span class="in">:</span> A double-barreled question asks about two separate issues in a single question<span class="op">,</span> making it difficult to ascertain which part the participant is responding to.</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a># Survey Design <span class="kw">and</span> Implementation</span>
 <span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>Why should surveys typically start with closed-ended as opposed to open-ended questions?</span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>Proper survey design is important to obtain accurate <span class="kw">and</span> reliable data. The design process begins with clearly defined research objectives, including a well-defined target population, to facilitate development of relevant <span class="kw">and</span> effective questions.</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>- **Survey Structure**: Surveys should start with simple questions <span class="kw">and</span> move to more complex ones gradually. Typically, this reduces the chances of non-response to questions <span class="kw">and</span> can improve the accuracy of responses.</span>
 <span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>### Example</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>## Survey Questions</span>
 <span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>Data science is the engine behind recommendation algorithms on platforms like Netflix<span class="op">,</span> Instagram<span class="op">,</span> and YouTube. Consider the survey questions below for Netflix. 📺🍿</span>
-<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Biased Question<span class="op">**</span><span class="in">:</span> &quot;Do you agree that our recommendation algorithm consistently helps you discover new shows you love?&quot;</span>
-<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>Why is this question biased?</span>
-<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>- **Closed-Ended Questions**: Provide predetermined answers, making them easier to quantify <span class="kw">and</span> analyze.</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>- **Open-Ended Questions**: Allow respondents to provide detailed, in-depth answers, offering qualitative insights.</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>- **Avoiding Bias**: Questions should be neutral to avoid influencing responses.</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>- **Avoiding Double-Barreled Questions**: A double-barreled question asks about two separate issues in a single question, making it difficult to ascertain which part the participant is responding to.</span>
 <span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Neutral Question<span class="op">**</span><span class="in">:</span> &quot;How do you typically discover new shows to watch on our platform? Please select all that apply.&quot;</span>
-<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="in">(</span>Options might include<span class="in">:</span> From the &#39;Recommended for You&#39; section<span class="op">,</span> Searching for specific titles<span class="op">,</span> Browse by genre<span class="op">,</span> Suggestions from friends<span class="op">,</span> etc.<span class="in">)</span></span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>::: {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>Why should surveys typically start with closed-ended as opposed to open-ended questions?</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
 <span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>Why is the neutral question better?</span>
-<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>### Example</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>Data science is the engine behind recommendation algorithms on platforms like Netflix<span class="op">,</span> Instagram<span class="op">,</span> and YouTube. Consider the survey questions below for Netflix. 📺🍿</span>
 <span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>What could be improved about the following survey question from Netflix?</span>
-<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>How would you rate the quality of Netflix&#39;s original content and the speed of its streaming service?<span class="op">*</span></span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Biased Question<span class="op">**</span><span class="in">:</span> &quot;Do you agree that our recommendation algorithm consistently helps you discover new shows you love?&quot;</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>Why is this question biased?</span>
 <span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
 <span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>## Sampling Techniques</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Neutral Question<span class="op">**</span><span class="in">:</span> &quot;How do you typically discover new shows to watch on our platform? Please select all that apply.&quot;</span>
 <span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>Sampling is the process of selecting a subset of a population to make inferences about the population. The most appropriate sampling technique depends on the research objectives<span class="op">,</span> the target population<span class="op">,</span> and the nature of the problem. All sampling images are from &lt;https<span class="in">:</span><span class="er">//www.qualtrics.com/&gt;.</span></span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="in">(</span>Options might include<span class="in">:</span> From the &#39;Recommended for You&#39; section<span class="op">,</span> Searching for specific titles<span class="op">,</span> Browse by genre<span class="op">,</span> Suggestions from friends<span class="op">,</span> etc.<span class="in">)</span></span>
 <span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>&lt;p align=&quot;center&quot;<span class="op">&gt;</span></span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>&lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/population-sample.png&quot; width=&quot;40%&quot;&gt;</span></span>
-<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>&lt;/p<span class="op">&gt;</span></span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>Why is the neutral question better?</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
 <span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>### Potential Errors in Surveys</span>
-<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>All sampling techniques are susceptible to the error and biases below<span class="op">,</span> but to varying degrees.</span>
-<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Sampling Error<span class="op">**</span><span class="in">:</span> The inherent difference between the results from a sample and the actual values of the entire population. It is caused by chance<span class="op">,</span> but larger sample sizes can reduce the expected sampling error.</span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a>What could be improved about the following survey question from Netflix?</span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>How would you rate the quality of Netflix&#39;s original content and the speed of its streaming service?<span class="op">*</span></span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
 <span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Sampling Bias<span class="op">**</span><span class="in">:</span> Occurs when the selected sample does not accurately represent the target population<span class="op">,</span> leading to skewed conclusions. This can happen if certain groups are over- or underrepresented. Larger sample sizes do not always alleviate issues with sampling bias.</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>## Sampling Techniques</span>
 <span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Measurement Error<span class="op">**</span><span class="in">:</span> Inaccuracies in data that arise during collection<span class="op">,</span> recording<span class="op">,</span> or analysis. These can be random or systematic.</span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>Sampling is the process of selecting a subset of a population to make inferences about the population. The most appropriate sampling technique depends on the research objectives<span class="op">,</span> the target population<span class="op">,</span> and the nature of the problem. All sampling images are from &lt;https<span class="in">:</span><span class="er">//www.qualtrics.com/&gt;.</span></span>
 <span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>There are two main types of sampling<span class="in">:</span> probability sampling and non-probability sampling techniques <span class="ex">[</span><span class="op">^</span><span class="ss">2</span><span class="ex">]</span>.</span>
-<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">2</span><span class="ex">]</span><span class="in">:</span> Webster<span class="op">,</span> W. <span class="in">(</span>2025<span class="in">)</span>. Sampling methods<span class="op">,</span> types <span class="op">&amp;</span> techniques. Qualtrics. Retrieved August 7<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//www.qualtrics.com/experience-management/research/sampling-methods/</span></span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>&lt;p align=&quot;center&quot;<span class="op">&gt;</span></span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a>&lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/population-sample.png&quot; width=&quot;40%&quot;&gt;</span></span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>&lt;/p<span class="op">&gt;</span></span>
 <span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>### Probability Techniques</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>### Potential Errors in Surveys</span>
 <span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Probability sampling techniques<span class="op">**</span> use randomness to ensure that every individual in the population has a non-zero chance of being selected. Probability sampling techniques are typically more costly to obtain<span class="op">,</span> but they tend to yield a sample that is more representative of the target population than non-probability sampling techniques.</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>All sampling techniques are susceptible to the error and biases below<span class="op">,</span> but to varying degrees.</span>
 <span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>Some of the most common probability sampling techniques are below.</span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Sampling Error<span class="op">**</span><span class="in">:</span> The inherent difference between the results from a sample and the actual values of the entire population. It is caused by chance<span class="op">,</span> but larger sample sizes can reduce the expected sampling error.</span>
 <span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> Technique <span class="op">|</span> Illustration <span class="op">|</span></span>
-<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="in">:---</span> <span class="op">|</span> <span class="in">:---</span> <span class="op">|</span></span>
-<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Simple Random Sampling<span class="op">**</span><span class="in">:</span> Every individual of the target population has an equal chance of being selected. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/simple-random-sample.png&quot; alt=&quot;An illustration of simple random sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Stratified Sampling<span class="op">**</span><span class="in">:</span> The population is divided into subgroups <span class="in">(</span>strata<span class="in">)</span> based on shared characteristics<span class="op">,</span> and a random sample is taken from each stratum. This ensures that distributions of key demographics in the sample are reflective of the target population. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/stratified-sample.png&quot; alt=&quot;An illustration of stratified sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Cluster Sampling<span class="op">**</span><span class="in">:</span> The population is divided into clusters <span class="in">(</span>like cities or schools<span class="in">)</span><span class="op">,</span> and a random sample of <span class="op">*</span>entire clusters<span class="op">*</span> is selected for the study. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/cluster-sample.png&quot; alt=&quot;An illustration of cluster sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Systematic Sampling<span class="op">**</span><span class="in">:</span> A random starting point is chosen<span class="op">,</span> and then every <span class="op">*</span>k<span class="op">*</span>th member of the population is selected. Despite being a probability sampling technique<span class="op">,</span> it can be prone to sampling bias if the list has a periodic pattern. For example<span class="op">,</span> if a list of houses is ordered by street and every 10th house is a corner lot<span class="op">,</span> selecting every 10th house would result in a sample of only corner-lot houses. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/systematic-sample.png&quot; alt=&quot;An illustration of systematic sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>### Non-Probability Techniques</span>
-<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Non-Probability sampling techniques<span class="op">**</span> do not implicitly use randomness<span class="op">,</span> typically meaning that every individual in the population does not have an equal chance of being selected. Non-probability sampling techniques are more prone to sampling bias. However<span class="op">,</span> they are typically less costly to obtain and can yield larger sample sizes than probability-based techniques.</span>
-<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a>Some of the most common non-probability sampling techniques are below.</span>
-<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> Technique <span class="op">|</span> Illustration <span class="op">|</span></span>
-<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="in">:---</span> <span class="op">|</span> <span class="in">:---</span> <span class="op">|</span></span>
-<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Convenience Sampling<span class="op">**</span><span class="in">:</span> Participants are selected based on their availability and ease of access. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/convenience-sample.png&quot; alt=&quot;An illustration of convenience sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Snowball Sampling<span class="op">**</span><span class="in">:</span> Initial participants refer other potential participants<span class="op">,</span> which is useful for reaching hard-to-access populations. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/snowball-sample.png&quot; alt=&quot;An illustration of snowball sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Quota Sampling<span class="op">**</span><span class="in">:</span> Researchers select participants to meet predetermined quotas for certain demographic characteristics<span class="op">,</span> but do not use random sampling. Typically this will yield less sampling bias than convenience samples<span class="op">,</span> but is still prone to sampling bias since participants are not randomly selected. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/quota-sample.png&quot; alt=&quot;An illustration of quota sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
-<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>a. Which sampling technique was used in the A/B testing example in <span class="im">@sec-example-AB</span>?</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Sampling Bias<span class="op">**</span><span class="in">:</span> Occurs when the selected sample does not accurately represent the target population<span class="op">,</span> leading to skewed conclusions. This can happen if certain groups are over- or underrepresented. Larger sample sizes do not always alleviate issues with sampling bias.</span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>- <span class="op">**</span>Measurement Error<span class="op">**</span><span class="in">:</span> Inaccuracies in data that arise during collection<span class="op">,</span> recording<span class="op">,</span> or analysis. These can be random or systematic.</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a>There are two main types of sampling<span class="in">:</span> probability sampling and non-probability sampling techniques <span class="ex">[</span><span class="op">^</span><span class="ss">2</span><span class="ex">]</span>.</span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">2</span><span class="ex">]</span><span class="in">:</span> Webster<span class="op">,</span> W. <span class="in">(</span>2025<span class="in">)</span>. Sampling methods<span class="op">,</span> types <span class="op">&amp;</span> techniques. Qualtrics. Retrieved August 7<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//www.qualtrics.com/experience-management/research/sampling-methods/</span></span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a>### Probability Techniques</span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Probability sampling techniques<span class="op">**</span> use randomness to ensure that every individual in the population has a non-zero chance of being selected. Probability sampling techniques are typically more costly to obtain<span class="op">,</span> but they tend to yield a sample that is more representative of the target population than non-probability sampling techniques.</span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a>Some of the most common probability sampling techniques are below.</span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> Technique <span class="op">|</span> Illustration <span class="op">|</span></span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="in">:---</span> <span class="op">|</span> <span class="in">:---</span> <span class="op">|</span></span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Simple Random Sampling<span class="op">**</span><span class="in">:</span> Every individual of the target population has an equal chance of being selected. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/simple-random-sample.png&quot; alt=&quot;An illustration of simple random sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Stratified Sampling<span class="op">**</span><span class="in">:</span> The population is divided into subgroups <span class="in">(</span>strata<span class="in">)</span> based on shared characteristics<span class="op">,</span> and a random sample is taken from each stratum. This ensures that distributions of key demographics in the sample are reflective of the target population. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/stratified-sample.png&quot; alt=&quot;An illustration of stratified sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Cluster Sampling<span class="op">**</span><span class="in">:</span> The population is divided into clusters <span class="in">(</span>like cities or schools<span class="in">)</span><span class="op">,</span> and a random sample of <span class="op">*</span>entire clusters<span class="op">*</span> is selected for the study. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/cluster-sample.png&quot; alt=&quot;An illustration of cluster sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Systematic Sampling<span class="op">**</span><span class="in">:</span> A random starting point is chosen<span class="op">,</span> and then every <span class="op">*</span>k<span class="op">*</span>th member of the population is selected. Despite being a probability sampling technique<span class="op">,</span> it can be prone to sampling bias if the list has a periodic pattern. For example<span class="op">,</span> if a list of houses is ordered by street and every 10th house is a corner lot<span class="op">,</span> selecting every 10th house would result in a sample of only corner-lot houses. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/systematic-sample.png&quot; alt=&quot;An illustration of systematic sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>### Non-Probability Techniques</span>
 <span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a>b. Which sampling technique was used in the clinical trial example in @sec-example-trial?</span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>Non-Probability sampling techniques<span class="op">**</span> do not implicitly use randomness<span class="op">,</span> typically meaning that every individual in the population does not have an equal chance of being selected. Non-probability sampling techniques are more prone to sampling bias. However<span class="op">,</span> they are typically less costly to obtain and can yield larger sample sizes than probability-based techniques.</span>
 <span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a>c. Which sampling technique was used in the EV example in @sec-example-EV?</span>
-<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a>::: {<span class="fu">.callout-tip</span>}</span>
-<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a>What are the pros and cons of the sampling technique likely employed for each scenario?</span>
-<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
-<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a># Data Privacy Laws</span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a>Some of the most common non-probability sampling techniques are below.</span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> Technique <span class="op">|</span> Illustration <span class="op">|</span></span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="in">:---</span> <span class="op">|</span> <span class="in">:---</span> <span class="op">|</span></span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Convenience Sampling<span class="op">**</span><span class="in">:</span> Participants are selected based on their availability and ease of access. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/convenience-sample.png&quot; alt=&quot;An illustration of convenience sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Snowball Sampling<span class="op">**</span><span class="in">:</span> Initial participants refer other potential participants<span class="op">,</span> which is useful for reaching hard-to-access populations. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/snowball-sample.png&quot; alt=&quot;An illustration of snowball sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> <span class="op">**</span>Quota Sampling<span class="op">**</span><span class="in">:</span> Researchers select participants to meet predetermined quotas for certain demographic characteristics<span class="op">,</span> but do not use random sampling. Typically this will yield less sampling bias than convenience samples<span class="op">,</span> but is still prone to sampling bias since participants are not randomly selected. <span class="op">|</span> &lt;img src=&quot;https<span class="in">:</span><span class="er">//raw.githubusercontent.com/dilernia/DSA220/refs/heads/main/images/quota-sample.png&quot; alt=&quot;An illustration of quota sampling.&quot; width=&quot;60%&quot;&gt; |</span></span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a>There are several landmark data privacy laws that provide a framework for protecting and properly handling personal information. Note that none of the content below constitutes legal advice.</span>
-<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a>## California Consumer Privacy Act</span>
-<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a>The California Consumer Privacy Act <span class="in">(</span><span class="ex">[</span><span class="ss">CCPA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//oag.ca.gov/privacy/ccpa)) is a state law that gives California residents more control over their personal information by granting them the rights to know, delete, and opt-out of the sale of their data held by businesses.[^3]</span></span>
-<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">3</span><span class="ex">]</span><span class="in">:</span> State of California Department of Justice. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. California Consumer Privacy Act <span class="in">(</span>CCPA<span class="in">)</span>. Retrieved August 7<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//oag.ca.gov/privacy/ccpa</span></span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a>a. Which sampling technique was used in the A/B testing example in <span class="im">@sec-example-AB</span>?</span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>b. Which sampling technique was used in the clinical trial example in @sec-example-trial?</span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a>c. Which sampling technique was used in the EV example in @sec-example-EV?</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>## General Data Protection Regulation</span>
-<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a>The General Data Protection Regulation <span class="in">(</span><span class="ex">[</span><span class="ss">GDPR</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//gdpr.eu/what-is-gdpr/)) is a European Union law designed to give individuals control over their personal data by setting unified rules for how organizations collect, process, and protect that data.[^4]</span></span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>::: {<span class="fu">.callout-tip</span>}</span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a>What are the pros and cons of the sampling technique likely employed for each scenario?</span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
 <span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">4</span><span class="ex">]</span><span class="in">:</span> Wolford<span class="op">,</span> B. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. What is GDPR<span class="op">,</span> the EU&#39;s new data protection law? GDPR<span class="fu">.eu</span>. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//gdpr.eu/what-is-gdpr/</span></span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a># Data Privacy Laws</span>
 <span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a>## Health Insurance Portability and Accountability Act</span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a>There are several landmark data privacy laws that provide a framework for protecting and properly handling personal information. Note that none of the content below constitutes legal advice.</span>
 <span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>For data scientists working with healthcare data in the United States<span class="op">,</span> the Health Insurance Portability and Accountability Act <span class="in">(</span><span class="ex">[</span><span class="ss">HIPAA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//www.hhs.gov/hipaa/for-professionals/index.html)) is an important regulation regarding handling of protected health information.[^5] A primary goal of HIPAA is to protect patient health information from being disclosed without the patient&#39;s consent or knowledge.</span></span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>## California Consumer Privacy Act</span>
 <span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">5</span><span class="ex">]</span><span class="in">:</span> U<span class="fu">.S</span>. Department of Health <span class="op">&amp;</span> Human Services. <span class="in">(</span>2024<span class="op">,</span> July 19<span class="in">)</span>. HIPAA for Professionals. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//www.hhs.gov/hipaa/for-professionals/index.html</span></span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a>The California Consumer Privacy Act <span class="in">(</span><span class="ex">[</span><span class="ss">CCPA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//oag.ca.gov/privacy/ccpa)) is a state law that gives California residents more control over their personal information by granting them the rights to know, delete, and opt-out of the sale of their data held by businesses.[^3]</span></span>
 <span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>## Family Educational Rights and Privacy Act</span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">3</span><span class="ex">]</span><span class="in">:</span> State of California Department of Justice. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. California Consumer Privacy Act <span class="in">(</span>CCPA<span class="in">)</span>. Retrieved August 7<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//oag.ca.gov/privacy/ccpa</span></span>
 <span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a>The Family Educational Rights and Privacy Act <span class="in">(</span><span class="ex">[</span><span class="ss">FERPA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//studentprivacy.ed.gov/faq/what-ferpa)) is a federal law that affords parents the right to have access to their children’s education records, to seek to have the records amended, and to have some control over the disclosure of these records.[^6] Often, when a student turns 18 or enrolls in a postsecondary institution like a university, these rights transfer from the parents to the student.</span></span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a>## General Data Protection Regulation</span>
 <span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">6</span><span class="ex">]</span><span class="in">:</span> U<span class="fu">.S</span>. Department of Education. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. What is FERPA? Student Privacy Policy Office. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//studentprivacy.ed.gov/faq/what-ferpa</span></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a>The General Data Protection Regulation <span class="in">(</span><span class="ex">[</span><span class="ss">GDPR</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//gdpr.eu/what-is-gdpr/)) is a European Union law designed to give individuals control over their personal data by setting unified rules for how organizations collect, process, and protect that data.[^4]</span></span>
 <span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a>## Best Practices</span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">4</span><span class="ex">]</span><span class="in">:</span> Wolford<span class="op">,</span> B. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. What is GDPR<span class="op">,</span> the EU&#39;s new data protection law? GDPR<span class="fu">.eu</span>. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//gdpr.eu/what-is-gdpr/</span></span>
 <span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>Generally<span class="op">,</span> there are several best practices when handling personal information that should be followed. These include but are not limited to<span class="in">:</span></span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>## Health Insurance Portability and Accountability Act</span>
 <span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a>- Obtaining explicit<span class="op">,</span> informed consent before collecting any personal data.  </span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a>For data scientists working with healthcare data in the United States<span class="op">,</span> the Health Insurance Portability and Accountability Act <span class="in">(</span><span class="ex">[</span><span class="ss">HIPAA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//www.hhs.gov/hipaa/for-professionals/index.html)) is an important regulation regarding handling of protected health information.[^5] A primary goal of HIPAA is to protect patient health information from being disclosed without the patient&#39;s consent or knowledge.</span></span>
 <span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a>- Providing clear<span class="op">,</span> accessible privacy notices detailing what data is collected<span class="op">,</span> how it’s used<span class="op">,</span> and how long it’s retained.  </span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">5</span><span class="ex">]</span><span class="in">:</span> U<span class="fu">.S</span>. Department of Health <span class="op">&amp;</span> Human Services. <span class="in">(</span>2024<span class="op">,</span> July 19<span class="in">)</span>. HIPAA for Professionals. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//www.hhs.gov/hipaa/for-professionals/index.html</span></span>
 <span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a>- Implementing processes for data access<span class="op">,</span> correction<span class="op">,</span> and deletion requests.  </span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a>## Family Educational Rights and Privacy Act</span>
 <span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a>- Conducting periodic privacy impact assessments to identify and mitigate emerging risks.  </span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a>The Family Educational Rights and Privacy Act <span class="in">(</span><span class="ex">[</span><span class="ss">FERPA</span><span class="ex">]</span><span class="in">(</span>https<span class="in">:</span><span class="er">//studentprivacy.ed.gov/faq/what-ferpa)) is a federal law that affords parents the right to have access to their children’s education records, to seek to have the records amended, and to have some control over the disclosure of these records.[^6] Often, when a student turns 18 or enrolls in a postsecondary institution like a university, these rights transfer from the parents to the student.</span></span>
 <span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> <span class="er">{</span><span class="fu">.callout-tip</span>}</span>
-<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>a. Which landmark data privacy law<span class="in">(</span>s<span class="in">)</span> would apply to the A/B testing example in <span class="im">@sec-example-AB</span>?</span>
-<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a>b. Which landmark data privacy law<span class="fu">(</span><span class="dv">s</span><span class="fu">)</span> would apply to the clinical trial example in @sec-example-trial?</span>
-<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a>c. Which landmark data privacy law<span class="fu">(</span><span class="dv">s</span><span class="fu">)</span> would apply to the EV example in @sec-example-EV?</span>
-<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a><span class="ex">[</span><span class="op">^</span><span class="ss">6</span><span class="ex">]</span><span class="in">:</span> U<span class="fu">.S</span>. Department of Education. <span class="in">(</span>n<span class="fu">.d</span>.<span class="in">)</span>. What is FERPA? Student Privacy Policy Office. Retrieved August 5<span class="op">,</span> 2025<span class="op">,</span> from https<span class="in">:</span><span class="er">//studentprivacy.ed.gov/faq/what-ferpa</span></span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a>## Best Practices</span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a>Generally<span class="op">,</span> there are several best practices when handling personal information that should be followed. These include but are not limited to<span class="in">:</span></span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a>- Obtaining explicit<span class="op">,</span> informed consent before collecting any personal data.  </span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a>- Providing clear<span class="op">,</span> accessible privacy notices detailing what data is collected<span class="op">,</span> how it’s used<span class="op">,</span> and how long it’s retained.  </span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a>- Implementing processes for data access<span class="op">,</span> correction<span class="op">,</span> and deletion requests.  </span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a>- Conducting periodic privacy impact assessments to identify and mitigate emerging risks.  </span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span> <span class="er">{</span><span class="fu">.callout-tip</span>}</span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a>a. Which landmark data privacy law<span class="in">(</span>s<span class="in">)</span> would apply to the A/B testing example in <span class="im">@sec-example-AB</span>?</span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a>b. Which landmark data privacy law<span class="fu">(</span><span class="dv">s</span><span class="fu">)</span> would apply to the clinical trial example in @sec-example-trial?</span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a>c. Which landmark data privacy law<span class="fu">(</span><span class="dv">s</span><span class="fu">)</span> would apply to the EV example in @sec-example-EV?</span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
